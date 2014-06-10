@@ -1,4 +1,5 @@
 QTDIR = /usr/local/qt4
+QT       += webkit
 TEMPLATE = app
 TARGET = mx-network
 TRANSLATIONS += translations/mnetwork_ar.ts \

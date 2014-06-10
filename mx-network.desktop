@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=MX Network Assistant
+Name[de]=
+Name[el]=
+Name[es]=
+Name[fr]=
+Name[it]=
+Name[ja]=
+Name[nl]=
+Name[sv]=
+Comment=Network Configuration and Troubleshooting
+Comment[de]=
+Comment[el]=
+Comment[es]=
+Comment[fr]=
+Comment[it]=
+Comment[ja]=
+Comment[nl]=
+Comment[sv]=
+Exec=su-to-root -X -c mx-netowrk
+Icon=/usr/share/pixmaps/mx/mx-network.png
+NoDisplay=false
+Categories=System;
+Type=Application

@@ -1,0 +1,15 @@
+Source: mx-network
+Section: admin
+Priority: optional
+Maintainer: Adrian <maintainer@mepiscommunity.org>
+Build-Depends: qt4-qmake,
+	debhelper (>=7.0.50~),
+	libqtwebkit-dev
+Standards-Version: 3.9.5
+Vcs-Git: git://github.com/AdrianTM/mx-network
+
+Package: mx-network
+Architecture: any
+Depends: ${misc:Depends}, ${shlib:Depends}
+Description: MX program for network troubleshooting and configuration
+ MX-network is a program used for configuring and troubleshooting antiX MX network configuration.

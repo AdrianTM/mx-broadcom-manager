@@ -1,0 +1,6 @@
+mx-network 		 usr/sbin
+mx-network.desktop	         usr/share/applications/mx
+translations/*.qm 	 usr/share/mx-network/locales
+mx-network.png	usr/share/pixmaps/mx
+icons/*                 usr/share/mx-network/icons
+license.html   /usr/share/doc/mx-network

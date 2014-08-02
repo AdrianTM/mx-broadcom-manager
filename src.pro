@@ -1,7 +1,7 @@
 QTDIR = /usr/local/qt4
 QT       += webkit
 TEMPLATE = app
-TARGET = mx-network
+TARGET = mx-broadcom-manager
 TRANSLATIONS += translations/mnetwork_ar.ts \
                 translations/mnetwork_ca.ts \
                 translations/mnetwork_de.ts \

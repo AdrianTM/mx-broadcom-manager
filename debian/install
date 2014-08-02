@@ -1,6 +1,6 @@
-mx-network 		 usr/sbin
-mx-network.desktop	         usr/share/applications/mx
-translations/*.qm 	 usr/share/mx-network/locales
-mx-network.png	usr/share/pixmaps/mx
-icons/*                 usr/share/mx-network/icons
-license.html   /usr/share/doc/mx-network
+mx-broadcom-manager 		 usr/sbin
+mx-broadcom-manager.desktop	         usr/share/applications/mx
+translations/*.qm 	 usr/share/mx-broadcom-manager/locales
+mx-broadcom-manager.png	usr/share/pixmaps/mx
+icons/*                 usr/share/mx-broadcom-manager/icons
+license.html   /usr/share/doc/mx-boradcom-manager

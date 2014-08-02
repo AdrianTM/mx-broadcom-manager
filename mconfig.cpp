@@ -1,5 +1,6 @@
 //
 //   Copyright (C) 2003-2010 by Warren Woodford
+//   Copyright (C) 2014 by Adrian adrian@mxlinux.org
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -13,6 +14,8 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 //
+
+//   With big modification made by Adrian adrian@mxlinux.org
 
 #include "mconfig.h"
 #include <QFileDialog>
@@ -47,6 +50,8 @@ MConfig::MConfig(QWidget* parent)
             SLOT(showContextMenuForLinuxDrv(const QPoint &)));
     connect(windowsDrvList, SIGNAL(customContextMenuRequested(const QPoint &)),
             SLOT(showContextMenuForWindowsDrv(const QPoint &)));
+    on_hwDiagnosePushButton_clicked();
+    on_linuxDrvDiagnosePushButton_clicked();
 }
 
 MConfig::~MConfig() {
@@ -525,6 +530,7 @@ void MConfig::on_hwDiagnosePushButton_clicked()
 void MConfig::on_linuxDrvList_currentRowChanged(int currentRow )
 {
     linuxDrvBlacklistPushButton->setEnabled(currentRow != -1);
+    linuxDrvInstall->setEnabled(currentRow != -1);
 }
 
 void MConfig::on_linuxDrvDiagnosePushButton_clicked()
@@ -630,6 +636,46 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
         }
     }
 }
+
+// install Linux Driver
+bool MConfig::installModule(QString module)
+{
+    QString cmd = QString("modprobe %1").arg(module);
+    if (system(cmd.toAscii()) != 0) {
+        return false;
+    }
+
+    QFile outputModules(QString("/etc/modules"));;
+    if (!outputModules.open(QFile::Append|QFile::Text))
+    {
+        return false;
+    }
+
+    outputModules.write(QString("%1\n").arg(module).toAscii());
+    outputModules.close();
+    return true;
+}
+
+
+void MConfig::on_linuxDrvInstall_clicked() {
+    if (linuxDrvList->currentRow() != -1) {
+        QListWidgetItem* currentDriver = linuxDrvList->currentItem();
+        QString driver = currentDriver->text();
+        driver = driver.left(driver.indexOf(" "));
+        if (installModule(driver))
+        {
+            QMessageBox::information(0, QString::null, QApplication::tr("Driver installed successfully"));
+        }
+    }
+}
+
+
+
+// install NDISwrapper
+void MConfig::on_installNdiswrapper_clicked() {
+
+}
+
 
 void MConfig::updateNdiswrapStatus()
 {
@@ -816,7 +862,7 @@ void MConfig::on_buttonCancel_clicked() {
 // About button clicked
 void MConfig::on_buttonAbout_clicked() {
     QMessageBox msgBox(QMessageBox::NoIcon,
-                       tr("About MX Network Assistant"), "<p align=\"center\"><b><h2>" +
+                       tr("About MX Broadcom Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX Network Assistant") + "</h2></b></p><p align=\"center\">MX14+git20140609</p><p align=\"center\"><h3>" +
                        tr("Program for troubleshooting and configuring network for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MEPIS LLC and antiX") + "<br /><br /></p>", 0, this);
@@ -837,5 +883,6 @@ void MConfig::displaySite(QString site) {
     webview->show();
     window->show();
 }
+
 
 

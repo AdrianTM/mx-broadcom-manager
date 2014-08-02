@@ -1,15 +1,16 @@
-Source: mx-network
+Source: mx-broadcom-manager
 Section: admin
 Priority: optional
-Maintainer: Adrian <maintainer@mepiscommunity.org>
+Maintainer: Adrian <adrian@mxlinux.org>
 Build-Depends: qt4-qmake,
 	debhelper (>=7.0.50~),
 	libqtwebkit-dev
 Standards-Version: 3.9.5
 Vcs-Git: git://github.com/AdrianTM/mx-network
 
-Package: mx-network
+Package: mx-broadcom-manager
 Architecture: any
 Depends: ${misc:Depends}, ${shlib:Depends}
 Description: MX program for network troubleshooting and configuration
- MX-network is a program used for configuring and troubleshooting antiX MX network configuration.
+ MX Broadcom Manager is a program used for configuring and troubleshooting 
+ antiX MX  network configuration for Broadcom network cards.

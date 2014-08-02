@@ -1,5 +1,6 @@
 //
 //   Copyright (C) 2003-2010 by Warren Woodford
+//   Copyright (C) 2014 by Adrian adrian@mxlinux.org
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -13,6 +14,8 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 //
+
+//   With big modification made by Adrian adrian@mxlinux.org
 
 #ifndef MCONFIG_H
 #define MCONFIG_H
@@ -95,6 +98,7 @@ protected:
     bool configurationChanges[5];
     int currentTab;
     bool blacklistModule(QString module);
+    bool installModule(QString module);
     bool internetConnection;
     bool ndiswrapBlacklisted;
     QProcess *pingProc;
@@ -103,6 +107,9 @@ protected:
 protected slots:
     /*$PROTECTED_SLOTS$*/
 
+private slots:
+    void on_installNdiswrapper_clicked();
+    void on_linuxDrvInstall_clicked();
 };
 
 #endif

@@ -641,7 +641,8 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
 bool MConfig::installModule(QString module)
 {
     QString cmd = QString("modprobe %1").arg(module);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toAscii()) != 0)
+    {
         return false;
     }
 
@@ -657,14 +658,16 @@ bool MConfig::installModule(QString module)
 }
 
 
-void MConfig::on_linuxDrvInstall_clicked() {
-    if (linuxDrvList->currentRow() != -1) {
+void MConfig::on_linuxDrvInstall_clicked()
+{
+    if (linuxDrvList->currentRow() != -1)
+    {
         QListWidgetItem* currentDriver = linuxDrvList->currentItem();
         QString driver = currentDriver->text();
         driver = driver.left(driver.indexOf(" "));
         if (installModule(driver))
         {
-            QMessageBox::information(0, QString::null, QApplication::tr("Driver installed successfully"));
+            QMessageBox::information(0, QString::null, QApplication::tr("Installation successful"));
         }
     }
 }
@@ -672,8 +675,27 @@ void MConfig::on_linuxDrvInstall_clicked() {
 
 
 // install NDISwrapper
-void MConfig::on_installNdiswrapper_clicked() {
+void MConfig::on_installNdiswrapper_clicked()
+{
+    setCursor(QCursor(Qt::BusyCursor));
+    if (system("apt-get install -y ndiswrapper-utils-1.9 ndiswrapper-dkms") == 0)
+    {
+        if (installModule("ndiswrapper"))
+        {
+            QMessageBox::information(0, QString::null, QApplication::tr("Installation successful"));
 
+        }
+        else
+        {
+            QMessageBox::information(0, QString::null, QApplication::tr("Error detected, could not compile ndiswrapper driver."));
+        }
+
+    }
+    else
+    {
+        QMessageBox::information(0, QString::null, QApplication::tr("Error detected, could not install ndiswrapper."));
+    }
+    setCursor(QCursor(Qt::ArrowCursor));
 }
 
 
@@ -854,13 +876,15 @@ void MConfig::on_tabWidget_currentChanged()
 
 
 // close but do not apply
-void MConfig::on_buttonCancel_clicked() {
+void MConfig::on_buttonCancel_clicked()
+{
     close();
 }
 
 
 // About button clicked
-void MConfig::on_buttonAbout_clicked() {
+void MConfig::on_buttonAbout_clicked()
+{
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Broadcom Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX Network Assistant") + "</h2></b></p><p align=\"center\">MX14+git20140609</p><p align=\"center\"><h3>" +
@@ -874,7 +898,8 @@ void MConfig::on_buttonAbout_clicked() {
 
 
 // pop up a window and display website
-void MConfig::displaySite(QString site) {
+void MConfig::displaySite(QString site)
+{
     QWidget *window = new QWidget(this, Qt::Dialog);
     window->setWindowTitle(this->windowTitle());
     window->resize(800, 500);

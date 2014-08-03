@@ -611,7 +611,7 @@ void MConfig::on_windowsDrvDiagnosePushButton_clicked()
 }
 
 bool MConfig::blacklistModule(QString module)
-{
+{   
     QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));;
     if (!outputBlacklist.open(QFile::Append|QFile::Text))
     {
@@ -620,6 +620,11 @@ bool MConfig::blacklistModule(QString module)
 
     outputBlacklist.write(QString("blacklist %1\n").arg(module).toAscii());
     outputBlacklist.close();
+
+    if (!removeModule(module))
+    {
+        return false;
+    }
     return true;
 }
 
@@ -658,7 +663,8 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
             outputBlacklist.write(outputString.toAscii());
             outputBlacklist.close();
             QMessageBox::information(0, QApplication::tr("Driver removed from blacklist"),
-                                     QApplication::tr("Driver removed from blacklist.  You must reboot for the changes to take effect "));
+                                     QApplication::tr("Driver removed from blacklist."));
+            loadModule(driver);
             linuxDrvBlacklistPushButton->setText(QApplication::tr("Blacklist Driver"));
             driverBlacklisted = false;
         }
@@ -671,11 +677,38 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
     }
 }
 
-// install Linux Driver
-bool MConfig::installModule(QString module)
+// load module
+bool MConfig::loadModule(QString module)
 {
     QString cmd = QString("modprobe %1").arg(module);
     if (system(cmd.toAscii()) != 0)
+    {
+        QString msg = QObject::tr("Count not load ");
+        msg += module;
+        QMessageBox::information(0, QString::null, msg);
+        return false;
+    }
+    return true;
+}
+
+// remove module
+bool MConfig::removeModule(QString module)
+{
+    QString cmd = QString("modprobe -r %1").arg(module);
+    if (system(cmd.toAscii()) != 0)
+    {
+        QString msg = QObject::tr("Count not unload ");
+        msg += module;
+        QMessageBox::information(0, QString::null, msg);
+        return false;
+    }
+    return true;
+}
+
+// install Linux Driver
+bool MConfig::installModule(QString module)
+{
+    if (!loadModule(module))
     {
         return false;
     }
@@ -828,17 +861,19 @@ void MConfig::on_windowsDrvBlacklistPushButton_clicked()
         outputBlacklist.write(outputString.toAscii());
         outputBlacklist.close();
         QMessageBox::information(0, QApplication::tr("NDISwrapper removed from blacklist"),
-                                 QApplication::tr("NDISwrapper removed from blacklist.  You must reboot for the changes to take effect "));
+                                 QApplication::tr("NDISwrapper removed from blacklist."));
         windowsDrvBlacklistPushButton->setText(QApplication::tr("Blacklist NDISwrapper"));
         ndiswrapBlacklisted = false;
+        loadModule("ndiswrapper");
     }
     else
     {
         blacklistModule("ndiswrapper");
         QMessageBox::information(0, QApplication::tr("NDISwrapper blacklisted"),
-                                 QApplication::tr("NDISwrapper blacklisted.  You must reboot for the changes to take effect "));
-        windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));
+                                 QApplication::tr("NDISwrapper blacklisted."));
+        windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));        
         ndiswrapBlacklisted = true;
+        removeModule("ndiswrapper");
     }
 }
 
@@ -981,6 +1016,5 @@ void MConfig::displaySite(QString site)
     webview->show();
     window->show();
 }
-
 
 

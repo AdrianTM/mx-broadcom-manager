@@ -95,6 +95,8 @@ protected:
     void executeChild(const char* cmd, const char* param);
     void updateNdiswrapStatus();
     void updateDriverStatus();
+    bool loadModule(QString module);
+    bool removeModule(QString module);
     void displaySite(QString site);
     bool configurationChanges[5];
     int currentTab;

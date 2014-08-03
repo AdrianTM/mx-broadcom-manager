@@ -159,6 +159,10 @@ void MConfig::refresh() {
     switch (i) {
     case 1:
         break;
+    // Windows drivers
+    case 2:
+        updateNdiswrapStatus();
+        break;
 
     default:
         bool changed = configurationChanges[0];

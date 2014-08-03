@@ -166,7 +166,7 @@
       <locale language="English" country="UnitedStates"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -638,7 +638,6 @@
            </widget>
           </item>
          </layout>
-         <zorder>windowsDrvList</zorder>
          <zorder>windowsDrvList</zorder>
          <zorder>windowsDrvDiagnosePushButton</zorder>
          <zorder>windowsDrvAddPushButton</zorder>

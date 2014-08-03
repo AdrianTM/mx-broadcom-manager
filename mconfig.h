@@ -97,6 +97,7 @@ protected:
     void updateDriverStatus();
     bool loadModule(QString module);
     bool removeModule(QString module);
+    bool removable(QString module);
     void displaySite(QString site);
     bool configurationChanges[5];
     int currentTab;

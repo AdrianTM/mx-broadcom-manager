@@ -621,9 +621,12 @@ bool MConfig::blacklistModule(QString module)
     outputBlacklist.write(QString("blacklist %1\n").arg(module).toAscii());
     outputBlacklist.close();
 
-    if (!removeModule(module))
+    if (removable(module))
     {
-        return false;
+        if (!removeModule(module))
+        {
+            return false;
+        }
     }
     return true;
 }
@@ -690,6 +693,18 @@ bool MConfig::loadModule(QString module)
     }
     return true;
 }
+
+// check if the module can be removed
+bool MConfig::removable(QString module)
+{
+    QString cmd = QString("modprobe -rn %1").arg(module);
+    if (system(cmd.toAscii()) != 0)
+    {
+        return false;
+    }
+    return true;
+}
+
 
 // remove module
 bool MConfig::removeModule(QString module)
@@ -834,6 +849,7 @@ void MConfig::updateDriverStatus()
 
 void MConfig::on_windowsDrvBlacklistPushButton_clicked()
 {
+    QString module = "ndiswrapper";
     if (ndiswrapBlacklisted)
     {
         QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
@@ -868,12 +884,15 @@ void MConfig::on_windowsDrvBlacklistPushButton_clicked()
     }
     else
     {
-        blacklistModule("ndiswrapper");
+        blacklistModule(module);
         QMessageBox::information(0, QApplication::tr("NDISwrapper blacklisted"),
                                  QApplication::tr("NDISwrapper blacklisted."));
         windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));        
         ndiswrapBlacklisted = true;
-        removeModule("ndiswrapper");
+        if (removable(module))
+        {
+            removeModule(module);
+        }
     }
 }
 

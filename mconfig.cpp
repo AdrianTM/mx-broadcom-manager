@@ -19,13 +19,11 @@
 
 #include "mconfig.h"
 #include <QFileDialog>
-#include <QFont>
-#include <QProcess>
-#include <QTextStream>
 #include <QWebView>
 #include <QMenu>
 #include <QClipboard>
-#include <QWhatsThis>
+#include <QDesktopWidget>
+
 
 #include <unistd.h>
 
@@ -42,7 +40,10 @@ MConfig::MConfig(QWidget* parent)
     configurationChanges[1] = false;
 
     pingProc  = new QProcess(this);
-    traceProc = new QProcess(this);
+    traceProc = new QProcess(this);    
+    installProc = new QProcess(this);
+
+    installOutputEdit = new QTextEdit();
 
     connect(hwList, SIGNAL(customContextMenuRequested(const QPoint &)),
             SLOT(showContextMenuForHw(const QPoint &)));
@@ -727,16 +728,17 @@ bool MConfig::installModule(QString module)
     {
         return false;
     }
-
-    QFile outputModules(QString("/etc/modules"));;
-    if (!outputModules.open(QFile::Append|QFile::Text))
+    if (module.compare("ndiswrapper") != 0)
     {
-        return false;
-    }
-
+        QFile outputModules(QString("/etc/modules"));;
+        if (!outputModules.open(QFile::Append|QFile::Text))
+        {
+            return false;
+        }
     outputModules.write(QString("%1\n").arg(module).toAscii());
     outputModules.close();
-    return true;
+    }
+    return true;    
 }
 
 
@@ -756,25 +758,64 @@ void MConfig::on_linuxDrvInstall_clicked()
 
 
 
-// install NDISwrapper
+// run apt-get update and at the end start installNDIS
 void MConfig::on_installNdiswrapper_clicked()
 {
     setCursor(QCursor(Qt::BusyCursor));
-
     // enable testing repos
     system("sed -i -r '/testrepo/ s/^#+//' /etc/apt/sources.list.d/mepis.list");
-    if (system("apt-get update; apt-get install -y ndiswrapper-utils-1.9 ndiswrapper-dkms") == 0)
+
+    if (installProc->state() != QProcess::NotRunning)
+    {
+        installProc->kill();
+    }
+    installProc->start("apt-get update");
+    installOutputEdit->show();
+    installOutputEdit->resize(800, 600);
+    // center output window
+    QRect screenGeometry = QApplication::desktop()->screenGeometry();
+    int x = (screenGeometry.width()-installOutputEdit->width()) / 2;
+    int y = (screenGeometry.height()-installOutputEdit->height()) / 2;
+    installOutputEdit->move(x, y);
+    // hide main window
+    this->hide();
+    installOutputEdit->raise();
+    disconnect(installProc, SIGNAL(readyReadStandardOutput()), 0, 0);
+    connect(installProc, SIGNAL(readyReadStandardOutput()), this, SLOT(writeInstallOutput()));
+    disconnect(installProc, SIGNAL(finished(int,QProcess::ExitStatus)), 0, 0);
+    connect(installProc, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(aptUpdateFinished()));
+}
+
+// install NDISwrapper
+void MConfig::aptUpdateFinished()
+{
+    if (installProc->state() != QProcess::NotRunning)
+    {
+        installProc->kill();
+    }
+    installProc->start("apt-get install -y ndiswrapper-utils-1.9 ndiswrapper-dkms");
+    disconnect(installProc, SIGNAL(readyReadStandardOutput()), 0, 0);
+    connect(installProc, SIGNAL(readyReadStandardOutput()), this, SLOT(writeInstallOutput()));
+    disconnect(installProc, SIGNAL(finished(int,QProcess::ExitStatus)), 0, 0);
+    connect(installProc, SIGNAL(finished(int)), this, SLOT(installFinished(int)));
+}
+
+// finished ndiswrapper install
+void MConfig::installFinished(int errorCode)
+{
+    installOutputEdit->close();
+    this->show();
+    setCursor(QCursor(Qt::ArrowCursor));
+    if (errorCode == 0)
     {
         if (installModule("ndiswrapper"))
         {
             QMessageBox::information(0, QString::null, QApplication::tr("Installation successful"));
-
         }
         else
         {
             QMessageBox::information(0, QString::null, QApplication::tr("Error detected, could not compile ndiswrapper driver."));
         }
-
     }
     else
     {
@@ -782,7 +823,19 @@ void MConfig::on_installNdiswrapper_clicked()
     }
     // disable testing repo
     system("sed -i -r '/testrepo/ s/^([^#])/#\\1/' /etc/apt/sources.list.d/mepis.list");
-    setCursor(QCursor(Qt::ArrowCursor));
+}
+
+void MConfig::writeInstallOutput()
+{
+    QByteArray bytes = installProc->readAllStandardOutput();
+    QStringList lines = QString(bytes).split("\n");
+
+    foreach (QString line, lines) {
+        if (!line.isEmpty())
+        {
+            installOutputEdit->append(line);
+        }
+    }
 }
 
 

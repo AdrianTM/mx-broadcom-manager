@@ -21,14 +21,7 @@
 #define MCONFIG_H
 
 #include "ui_meconfig.h"
-#include <QCheckBox>
 #include <QMessageBox>
-#include <QComboBox>
-#include <QRegExp>
-#include <QFile>
-#include <QLineEdit>
-#include <QIcon>
-#include <QHeaderView>
 #include <QProcess>
 #include <QDir>
 
@@ -73,8 +66,11 @@ public slots:
     virtual void on_cancelTrace_clicked();
     virtual void writePingOutput();
     virtual void writeTraceOutput();
+    virtual void writeInstallOutput();
     virtual void pingFinished();
     virtual void tracerouteFinished();
+    virtual void aptUpdateFinished();
+    virtual void installFinished(int);
     virtual void on_windowsDrvList_currentRowChanged(int row);
 
     virtual void hwListToClipboard();
@@ -93,6 +89,9 @@ public slots:
 protected:
     /*$PROTECTED_FUNCTIONS$*/
     void executeChild(const char* cmd, const char* param);
+
+    QTextEdit *installOutputEdit;
+
     void updateNdiswrapStatus();
     void updateDriverStatus();
     bool loadModule(QString module);
@@ -108,6 +107,7 @@ protected:
     bool driverBlacklisted;
     QProcess *pingProc;
     QProcess *traceProc;
+    QProcess *installProc;
 
 protected slots:
     /*$PROTECTED_SLOTS$*/

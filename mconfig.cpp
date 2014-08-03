@@ -535,6 +535,7 @@ void MConfig::on_linuxDrvList_currentRowChanged(int currentRow )
 {
     linuxDrvBlacklistPushButton->setEnabled(currentRow != -1);
     linuxDrvInstall->setEnabled(currentRow != -1);
+    updateDriverStatus();
 }
 
 void MConfig::on_linuxDrvDiagnosePushButton_clicked()
@@ -617,26 +618,55 @@ bool MConfig::blacklistModule(QString module)
         return false;
     }
 
-    outputBlacklist.write(QString("blacklist %1\n\n").arg(module).toAscii());
+    outputBlacklist.write(QString("blacklist %1\n").arg(module).toAscii());
     outputBlacklist.close();
     return true;
 }
 
 void MConfig::on_linuxDrvBlacklistPushButton_clicked()
-{
+{         
     if (linuxDrvList->currentRow() != -1)
     {
         QListWidgetItem* currentDriver = linuxDrvList->currentItem();
         QString driver = currentDriver->text();
         driver = driver.left(driver.indexOf(" "));
-        if (driver.compare("ndiswrapper") == 0 )
+        if (driverBlacklisted)
         {
-            windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));
-            ndiswrapBlacklisted = true;
+            QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
+            QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));;
+            if (!inputBlacklist.open(QFile::ReadOnly|QFile::Text))
+            {
+                return;
+            }
+
+            QString s, outputString("");
+            while (!inputBlacklist.atEnd())
+            {
+                s = inputBlacklist.readLine();
+                QString expr = QString("^\\s*(blacklist)\\s*(%1)\\s*").arg(driver);
+                if (!s.contains(QRegExp(expr)))
+                {
+                    outputString += s;
+                }
+                outputBlacklist.write(s.toAscii());
+            }
+            inputBlacklist.close();
+            if (!outputBlacklist.open(QFile::WriteOnly|QFile::Text))
+            {
+                return;
+            }
+            outputBlacklist.write(outputString.toAscii());
+            outputBlacklist.close();
+            QMessageBox::information(0, QApplication::tr("Driver removed from blacklist"),
+                                     QApplication::tr("Driver removed from blacklist.  You must reboot for the changes to take effect "));
+            linuxDrvBlacklistPushButton->setText(QApplication::tr("Blacklist Driver"));
+            driverBlacklisted = false;
         }
-        if (blacklistModule(driver))
+        else if (blacklistModule(driver))
         {
             QMessageBox::information(0, QString::null, QApplication::tr("Module blacklisted"));
+            linuxDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist Driver"));
+            driverBlacklisted = true;
         }
     }
 }
@@ -729,6 +759,45 @@ void MConfig::updateNdiswrapStatus()
     }
     inputBlacklist.close();
 }
+
+
+void MConfig::updateDriverStatus()
+{
+    driverBlacklisted = false;
+    QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
+    inputBlacklist.open(QFile::ReadOnly|QFile::Text);
+
+    QString driver;
+
+    if (linuxDrvList->currentRow() != -1)
+    {
+        QListWidgetItem* currentDriver = linuxDrvList->currentItem();
+        driver = currentDriver->text();
+        driver = driver.left(driver.indexOf(" "));
+    }
+
+    QString s;
+    while (!inputBlacklist.atEnd())
+    {
+        s = inputBlacklist.readLine();
+        QString expr = QString("^\\s*(blacklist)\\s*(%1)\\s*").arg(driver);
+        if (s.contains(QRegExp(expr)))
+        {
+            driverBlacklisted = true;
+            break;
+        }
+    }
+    if (driverBlacklisted)
+    {
+        linuxDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist Driver"));
+    }
+    else
+    {
+        linuxDrvBlacklistPushButton->setText(QApplication::tr("Blacklist Driver"));
+    }
+    inputBlacklist.close();
+}
+
 
 void MConfig::on_windowsDrvBlacklistPushButton_clicked()
 {

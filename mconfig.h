@@ -94,6 +94,7 @@ protected:
     /*$PROTECTED_FUNCTIONS$*/
     void executeChild(const char* cmd, const char* param);
     void updateNdiswrapStatus();
+    void updateDriverStatus();
     void displaySite(QString site);
     bool configurationChanges[5];
     int currentTab;
@@ -101,6 +102,7 @@ protected:
     bool installModule(QString module);
     bool internetConnection;
     bool ndiswrapBlacklisted;
+    bool driverBlacklisted;
     QProcess *pingProc;
     QProcess *traceProc;
 

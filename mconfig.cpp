@@ -760,7 +760,10 @@ void MConfig::on_linuxDrvInstall_clicked()
 void MConfig::on_installNdiswrapper_clicked()
 {
     setCursor(QCursor(Qt::BusyCursor));
-    if (system("apt-get install -y ndiswrapper-utils-1.9 ndiswrapper-dkms") == 0)
+
+    // enable testing repos
+    system("sed -i -r '/testrepo/ s/^#+//' /etc/apt/sources.list.d/mepis.list");
+    if (system("apt-get update; apt-get install -y ndiswrapper-utils-1.9 ndiswrapper-dkms") == 0)
     {
         if (installModule("ndiswrapper"))
         {
@@ -777,6 +780,8 @@ void MConfig::on_installNdiswrapper_clicked()
     {
         QMessageBox::information(0, QString::null, QApplication::tr("Error detected, could not install ndiswrapper."));
     }
+    // disable testing repo
+    system("sed -i -r '/testrepo/ s/^([^#])/#\\1/' /etc/apt/sources.list.d/mepis.list");
     setCursor(QCursor(Qt::ArrowCursor));
 }
 

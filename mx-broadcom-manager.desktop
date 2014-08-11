@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=MX Network Assistant
+Name=MX Broadcom Manager
 Name[de]=
 Name[el]=
 Name[es]=
@@ -17,8 +17,8 @@ Comment[it]=
 Comment[ja]=
 Comment[nl]=
 Comment[sv]=
-Exec=su-to-root -X -c mx-network
-Icon=/usr/share/pixmaps/mx/mx-network.png
+Exec=su-to-root -X -c mx-broadcom-manager
+Icon=/usr/share/pixmaps/mx/mx-broadcom-manager.png
 NoDisplay=false
 Categories=System;
 Type=Application

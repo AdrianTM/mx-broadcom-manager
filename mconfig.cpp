@@ -24,9 +24,7 @@
 #include <QClipboard>
 #include <QDesktopWidget>
 
-
 #include <unistd.h>
-
 
 MConfig::MConfig(QWidget* parent)
     : QDialog(parent) {
@@ -560,6 +558,26 @@ void MConfig::on_linuxDrvDiagnosePushButton_clicked()
             new QListWidgetItem(QIcon("/usr/share/icons/default.kde4/16x16/apps/ksysguardd.png"), mod, linuxDrvList);
         }
     }
+
+    QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
+    inputBlacklist.open(QFile::ReadOnly|QFile::Text);
+
+    QString driver;
+
+    QString s;
+    while (!inputBlacklist.atEnd())
+    {
+        s = inputBlacklist.readLine();
+        QRegExp expr("^\\s*blacklist\\s*.*");
+        if (expr.exactMatch(s)) {
+            QString captured = expr.cap(0);
+            captured.remove("blacklist");
+            driver = captured.trimmed();
+            QListWidgetItem *blacklisted = new QListWidgetItem(QIcon("/usr/share/icons/default.kde4/16x16/apps/ksysguardd.png"), driver, linuxDrvList);
+            blacklisted->setForeground(Qt::red);
+        }
+    }
+    inputBlacklist.close();
 }
 
 //apName = curLine.split("\"").at(1);
@@ -679,6 +697,7 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
             driverBlacklisted = true;
         }
     }
+    on_linuxDrvDiagnosePushButton_clicked();
 }
 
 // load module

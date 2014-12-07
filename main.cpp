@@ -24,14 +24,14 @@
 
 int main( int argc, char ** argv ) {
     QApplication app(argc, argv);
-    app.setWindowIcon(QIcon("/usr/share/pixmaps/mx/mx-network.png"));
+    app.setWindowIcon(QIcon("/usr/share/pixmaps/mx/mx-broadcom-manager.png"));
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());
     app.installTranslator(&qtTran);
 
     QTranslator appTran;
-    appTran.load(QString("mx-network_") + QLocale::system().name(), "/usr/share/mx-network/locale");
+    appTran.load(QString("mx-network_") + QLocale::system().name(), "/usr/share/mx-broadcom-manager/locale");
     app.installTranslator(&appTran);
 
     if (getuid() == 0) {

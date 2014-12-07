@@ -148,6 +148,11 @@ bool MConfig::replaceStringInFile(QString oldtext, QString newtext, QString file
     return true;
 }
 
+// Get version of the program
+QString MConfig::getVersion(QString name) {
+    QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
+    return getCmdOut(cmd);
+}
 
 /////////////////////////////////////////////////////////////////////////
 // common
@@ -1060,7 +1065,7 @@ void MConfig::on_windowsDrvRemovePushButton_clicked()
 
 void MConfig::on_generalHelpPushButton_clicked()
 {
-    displaySite("file:///usr/local/share/doc/mxapps.html#network");
+    system("mx-viewer file:///usr/local/share/doc/mxapps.html#network 'MX Broadcom Manager Help'");
 }
 
 void MConfig::on_tabWidget_currentChanged()
@@ -1091,26 +1096,14 @@ void MConfig::on_buttonAbout_clicked()
 {
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Broadcom Manager"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Network Assistant") + "</h2></b></p><p align=\"center\">MX14+git20140803</p><p align=\"center\"><h3>" +
+                       tr("MX Network Assistant") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
+                       getVersion("mx-broadcom-manager") + "</p><p align=\"center\"><h3>" +
                        tr("Program for troubleshooting and configuring network for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MEPIS LLC and antiX") + "<br /><br /></p>", 0, this);
-    msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-    msgBox.addButton(QMessageBox::Cancel);
-    if (msgBox.exec() == QMessageBox::AcceptRole)
-        displaySite("file:///usr/share/doc/mx-network/license.html");
-}
-
-
-// pop up a window and display website
-void MConfig::displaySite(QString site)
-{
-    QWidget *window = new QWidget(this, Qt::Dialog);
-    window->setWindowTitle(this->windowTitle());
-    window->resize(800, 500);
-    QWebView *webview = new QWebView(window);
-    webview->load(QUrl(site));
-    webview->show();
-    window->show();
+    msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
+    msgBox.addButton(tr("License"), QMessageBox::RejectRole);
+    if (msgBox.exec() == QMessageBox::RejectRole)
+        system("mx-viewer file:///usr/share/doc/mx-broadcom-manager/license.html 'MX Broadcom Manager License'");
 }
 
 

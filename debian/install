@@ -3,4 +3,4 @@ mx-broadcom-manager.desktop	         usr/share/applications/mx
 translations/*.qm 	 usr/share/mx-broadcom-manager/locales
 mx-broadcom-manager.png	usr/share/pixmaps/mx
 icons/*                 usr/share/mx-broadcom-manager/icons
-license.html   /usr/share/doc/mx-boradcom-manager
+license.html   /usr/share/doc/mx-broadcom-manager

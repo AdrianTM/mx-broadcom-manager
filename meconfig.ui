@@ -166,7 +166,7 @@
       <locale language="English" country="UnitedStates"/>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -220,8 +220,44 @@
          <property name="title">
           <string>Hardware detected</string>
          </property>
-         <layout class="QVBoxLayout">
-          <item>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="1" column="0">
+           <widget class="QPushButton" name="hwDiagnosePushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Re-scan Hardware</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0" colspan="3">
            <widget class="QListWidget" name="hwList">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -279,26 +315,29 @@
             </property>
            </widget>
           </item>
-          <item>
-           <widget class="QPushButton" name="hwDiagnosePushButton">
+          <item row="1" column="1">
+           <widget class="QPushButton" name="hwUnblock">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="maximumSize">
+            <property name="minimumSize">
              <size>
-              <width>180</width>
-              <height>16777215</height>
+              <width>0</width>
+              <height>30</height>
              </size>
             </property>
+            <property name="toolTip">
+             <string>Unblocks all soft/hard blocked wireless devices</string>
+            </property>
             <property name="text">
-             <string>Re-scan Hardware</string>
+             <string>Unblock WiFi Devices</string>
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</iconset>
+              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/network-wireless.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/network-wireless.png</iconset>
             </property>
            </widget>
           </item>
@@ -906,7 +945,6 @@ p, li { white-space: pre-wrap; }
   <tabstop>generalHelpPushButton</tabstop>
   <tabstop>buttonCancel</tabstop>
   <tabstop>hwList</tabstop>
-  <tabstop>hwDiagnosePushButton</tabstop>
   <tabstop>pingHostEdit</tabstop>
   <tabstop>pingPacketNumber</tabstop>
   <tabstop>pingOutputEdit</tabstop>

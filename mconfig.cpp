@@ -359,7 +359,7 @@ void MConfig::on_tracerouteButton_clicked()
                 setCursor(QCursor(Qt::ArrowCursor));
                 statusl = getCmdValue("dpkg -s traceroute | grep '^Status'", "ok", " ", " ");
                 if (statusl.compare("installed") != 0) {
-                    QMessageBox::information(0, tr("Traceroute hasn't been installed"),
+                    QMessageBox::critical(0, tr("Traceroute hasn't been installed"),
                                              tr("Traceroute cannot be installed. This may mean you are using the LiveCD or you are unable to reach the software repository,"),
                                              QMessageBox::Ok);
                 }
@@ -372,7 +372,7 @@ void MConfig::on_tracerouteButton_clicked()
         }
         else
         {
-            QMessageBox::information(0, tr("Traceroute not installed"),
+            QMessageBox::critical(0, tr("Traceroute not installed"),
                                      tr("Traceroute is not installed and no Internet connection could be detected so it cannot be installed"),
                                      QMessageBox::Ok);
             return;
@@ -1083,6 +1083,17 @@ void MConfig::on_tabWidget_currentChanged()
     refresh();
 }
 
+// unblock Wifi devices
+void MConfig::on_hwUnblock_clicked()
+{
+    if (system("rfkill unblock wlan wifi") != 0) {
+        QMessageBox::warning(0, QString::null, QApplication::tr("Could not unlock devices. WiFi device not present, or already unlocked."));
+    } else {
+        QMessageBox::information(0, QString::null, QApplication::tr("WiFi devices unlocked."));
+    }
+
+}
+
 
 // close but do not apply
 void MConfig::on_buttonCancel_clicked()
@@ -1105,5 +1116,7 @@ void MConfig::on_buttonAbout_clicked()
     if (msgBox.exec() == QMessageBox::RejectRole)
         system("mx-viewer file:///usr/share/doc/mx-broadcom-manager/license.html 'MX Broadcom Manager License'");
 }
+
+
 
 

@@ -114,6 +114,7 @@ protected slots:
 private slots:
     void on_installNdiswrapper_clicked();
     void on_linuxDrvInstall_clicked();
+    void on_hwUnblock_clicked();
 };
 
 #endif

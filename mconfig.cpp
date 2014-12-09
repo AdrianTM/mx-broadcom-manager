@@ -470,21 +470,6 @@ void MConfig::show() {
     refresh();
 }
 
-void MConfig::executeChild(const char* cmd, const char* param)
-{
-    pid_t childId;
-    childId = fork();
-    if (childId >= 0)
-    {
-        if (childId == 0)
-        {
-            execl(cmd, cmd, param, (char *) 0);
-
-            //system(cmd);
-        }
-    }
-}
-
 
 // Added
 void MConfig::on_hwDiagnosePushButton_clicked()
@@ -710,11 +695,15 @@ bool MConfig::loadModule(QString module)
 {
     QString cmd = QString("modprobe %1").arg(module);
     if (system(cmd.toAscii()) != 0)
-    {
-        QString msg = QObject::tr("Count not load ");
-        msg += module;
-        QMessageBox::information(0, QString::null, msg);
-        return false;
+    {        
+        // run depmod and try to load again
+        system("depmod");
+        if (system(cmd.toAscii()) != 0) {
+            QString msg = QObject::tr("Count not load ");
+            msg += module;
+            QMessageBox::information(0, QString::null, msg);
+            return false;
+        }
     }
     return true;
 }

@@ -88,8 +88,6 @@ public slots:
 
 protected:
     /*$PROTECTED_FUNCTIONS$*/
-    void executeChild(const char* cmd, const char* param);
-
     QTextEdit *installOutputEdit;
 
     void updateNdiswrapStatus();

@@ -678,12 +678,14 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
                                      QApplication::tr("Driver removed from blacklist."));
             loadModule(driver);
             linuxDrvBlacklistPushButton->setText(QApplication::tr("Blacklist Driver"));
+            linuxDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
             driverBlacklisted = false;
         }
         else if (blacklistModule(driver))
         {
             QMessageBox::information(0, QString::null, QApplication::tr("Module blacklisted"));
             linuxDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist Driver"));
+            linuxDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/redo.png"));
             driverBlacklisted = true;
         }
     }

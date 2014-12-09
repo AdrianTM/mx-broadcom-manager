@@ -911,10 +911,12 @@ void MConfig::updateDriverStatus()
     if (driverBlacklisted)
     {
         linuxDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist Driver"));
+        linuxDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/redo.png"));
     }
     else
     {
         linuxDrvBlacklistPushButton->setText(QApplication::tr("Blacklist Driver"));
+        linuxDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
     }
     inputBlacklist.close();
 }

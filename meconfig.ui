@@ -36,7 +36,7 @@
     <number>9</number>
    </property>
    <item row="1" column="0">
-    <widget class="Line" name="line1">
+    <widget class="Line" name="line">
      <property name="frameShape">
       <enum>QFrame::HLine</enum>
      </property>
@@ -49,7 +49,7 @@
     </widget>
    </item>
    <item row="2" column="0">
-    <layout class="QHBoxLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
      <property name="spacing">
       <number>5</number>
      </property>
@@ -85,7 +85,7 @@
       </widget>
      </item>
      <item>
-      <spacer>
+      <spacer name="spacerLeft">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -98,7 +98,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="MXlogo">
        <property name="maximumSize">
         <size>
          <width>32</width>
@@ -120,7 +120,7 @@
       </widget>
      </item>
      <item>
-      <spacer>
+      <spacer name="spacerRight">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -166,7 +166,7 @@
       <locale language="English" country="UnitedStates"/>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -181,13 +181,13 @@
       </attribute>
       <layout class="QVBoxLayout">
        <item>
-        <widget class="QGroupBox" name="groupBox_2">
+        <widget class="QGroupBox" name="groupBoxIntroduction">
          <property name="title">
           <string>Introduction</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
-           <widget class="QLabel" name="label_7">
+           <widget class="QLabel" name="labelIntroduction">
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can be sometime dificult to set un in Linux.There are a number of different types of drivers that have different capabilties and features: &lt;/p&gt;&lt;p&gt;- reversed-engineered drivers: b43, brcm43xxxx&lt;/p&gt;&lt;p&gt;- open-sourced kernel drivers: brcmsmac, brcmfmac &lt;/p&gt;&lt;p&gt;- proprietary drivers: broadcom-wl&lt;/p&gt;&lt;p&gt;- windows drivers: broadcom NDIS drivers&lt;/p&gt;&lt;p&gt;This tool purpose is to make it easier to set up the needed driver for your network card. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -201,19 +201,6 @@
           </item>
          </layout>
         </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item>
         <widget class="QGroupBox" name="hardwaregroupBox">
@@ -344,19 +331,6 @@
          </layout>
         </widget>
        </item>
-       <item>
-        <spacer>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>1</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="linuxTab">
@@ -369,13 +343,13 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QGroupBox" name="groupBox_3">
+        <widget class="QGroupBox" name="groupBoxLinux">
          <property name="title">
           <string>Linux drivers</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
-           <widget class="QLabel" name="label_8">
+           <widget class="QLabel" name="labelLinux">
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window displays the Linux drivers associated with the detected hardware. If the driver doesn’t work OK and/or you prefer to use another drivers, a Windows driver for example, you’ll need to blacklist the driver (stop it from loading at boot time). Select the driver you want to blacklist and press &amp;quot;Blacklist Driver&amp;quot; button to blacklist it. At the next reboot the driver will not be loaded automatically anymore.&lt;/p&gt;&lt;p&gt;If you want to use a driver that is listed here, but is not loaded automatically at the boot time you might need to install it, select the driver and press &amp;quot;Install Driver&amp;quot; to install it.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -471,7 +445,7 @@
              <bool>false</bool>
             </property>
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -514,19 +488,6 @@
          </layout>
         </widget>
        </item>
-       <item>
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="windowsTab">
@@ -539,13 +500,13 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QGroupBox" name="groupBox_4">
+        <widget class="QGroupBox" name="groupBoxWindows">
          <property name="title">
           <string>About NDISwrapper</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QLabel" name="label_6">
+           <widget class="QLabel" name="labelNdiswrapper">
             <property name="text">
              <string>NDISwrapper is an open source software driver &quot;wrapper&quot; that enables Linux to use the Microsoft Windows drivers for wireless network devices. In general, Windows-XP drivers work much better than other versions. Make sure there is no competing Linux driver. In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</string>
             </property>
@@ -569,19 +530,6 @@
           </item>
          </layout>
         </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item>
         <widget class="QGroupBox" name="groupBox">
@@ -696,6 +644,29 @@
       </attribute>
       <layout class="QVBoxLayout">
        <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>IP address</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="labelIP">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelRouterIP">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
         <widget class="QGroupBox" name="pingGroupBox">
          <property name="minimumSize">
           <size>
@@ -708,7 +679,7 @@
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
           <item row="0" column="0">
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="labelPingURL">
             <property name="text">
              <string>Target URL:</string>
             </property>
@@ -718,7 +689,7 @@
            <widget class="QLineEdit" name="pingHostEdit"/>
           </item>
           <item row="0" column="2">
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="labelPackets">
             <property name="text">
              <string>Packets</string>
             </property>
@@ -818,7 +789,7 @@
          </property>
          <layout class="QGridLayout" name="gridLayout">
           <item row="0" column="0">
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="labelURL">
             <property name="text">
              <string>Target URL:</string>
             </property>
@@ -828,7 +799,7 @@
            <widget class="QLineEdit" name="tracerouteHostEdit"/>
           </item>
           <item row="0" column="2">
-           <widget class="QLabel" name="label_5">
+           <widget class="QLabel" name="labelHops">
             <property name="text">
              <string>Hops</string>
             </property>
@@ -918,19 +889,6 @@ p, li { white-space: pre-wrap; }
           </item>
          </layout>
         </widget>
-       </item>
-       <item>
-        <spacer>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>120</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </widget>

@@ -50,7 +50,7 @@ MConfig::MConfig(QWidget* parent)
     connect(windowsDrvList, SIGNAL(customContextMenuRequested(const QPoint &)),
             SLOT(showContextMenuForWindowsDrv(const QPoint &)));
     on_hwDiagnosePushButton_clicked();
-    on_linuxDrvDiagnosePushButton_clicked();
+    on_linuxDrvDiagnosePushButton_clicked();    
 }
 
 MConfig::~MConfig() {
@@ -166,6 +166,11 @@ void MConfig::refresh() {
     // Windows drivers
     case 2:
         updateNdiswrapStatus();
+        break;
+    case 3:
+        qApp->processEvents();
+        labelIP->setText(tr("External IP addres:") + " " + getIP());
+        labelRouterIP->setText(tr("IP address from router:") + " " + getRouterIP());
         break;
 
     default:
@@ -1111,5 +1116,14 @@ void MConfig::on_buttonAbout_clicked()
 }
 
 
+QString MConfig::getIP()
+{
+    return getCmdOut("wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'");
+}
+
+QString MConfig::getRouterIP()
+{
+    return getCmdOut("ifconfig | grep 'inet ' | sed -e 's/inet addr://' -e 's/ Bcast.*//'  -e 's/127.*//'  -e 's/\\s*//'");
+}
 
 

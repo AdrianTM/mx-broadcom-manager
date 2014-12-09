@@ -37,6 +37,8 @@ public:
     static QStringList getCmdValues(QString cmd, QString key, QString keydel, QString valdel);
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     QString getVersion(QString name);
+    QString getIP();
+    QString getRouterIP();
     // common
     void refresh();
     // special

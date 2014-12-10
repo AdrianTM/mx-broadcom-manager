@@ -73,6 +73,7 @@ public slots:
     virtual void tracerouteFinished();
     virtual void aptUpdateFinished();
     virtual void installFinished(int);
+    virtual void uninstallNdisFinished(int);
     virtual void on_windowsDrvList_currentRowChanged(int row);
 
     virtual void hwListToClipboard();
@@ -115,6 +116,7 @@ private slots:
     void on_installNdiswrapper_clicked();
     void on_linuxDrvInstall_clicked();
     void on_hwUnblock_clicked();
+    void on_uninstallNdiswrapper_clicked();
 };
 
 #endif

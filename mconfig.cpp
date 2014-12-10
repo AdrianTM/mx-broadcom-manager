@@ -26,8 +26,6 @@
 
 #include <unistd.h>
 
-#include <QDebug>
-
 MConfig::MConfig(QWidget* parent)
     : QDialog(parent) {
     setupUi(this);
@@ -172,9 +170,10 @@ void MConfig::refresh() {
         }
         break;
     case 1: // Linux drivers
+        on_linuxDrvDiagnosePushButton_clicked();
         break;    
     case 2: // Windows drivers
-        updateNdiswrapStatus();
+        on_windowsDrvDiagnosePushButton_clicked();
         break;
     case 3: // Diagnostic
         qApp->processEvents();
@@ -799,6 +798,36 @@ void MConfig::on_installNdiswrapper_clicked()
         installProc->kill();
     }
     installProc->start("apt-get update");
+    installOutputEdit->clear();
+    installOutputEdit->show();    
+    installOutputEdit->resize(800, 600);
+    // center output window
+    QRect screenGeometry = QApplication::desktop()->screenGeometry();
+    int x = (screenGeometry.width()-installOutputEdit->width()) / 2;
+    int y = (screenGeometry.height()-installOutputEdit->height()) / 2;
+    installOutputEdit->move(x, y);
+    // hide main window
+    this->hide();
+    installOutputEdit->raise();
+    disconnect(installProc, SIGNAL(readyReadStandardOutput()), 0, 0);
+    connect(installProc, SIGNAL(readyReadStandardOutput()), this, SLOT(writeInstallOutput()));
+    disconnect(installProc, SIGNAL(finished(int)), 0, 0);
+    connect(installProc, SIGNAL(finished(int)), this, SLOT(aptUpdateFinished()));
+}
+
+
+// Uninstall ndiswrapper
+void MConfig::on_uninstallNdiswrapper_clicked()
+{
+    setCursor(QCursor(Qt::BusyCursor));
+
+    if (installProc->state() != QProcess::NotRunning)
+    {
+        installProc->kill();
+    }
+    removeModule("ndiswrapper");
+    installProc->start("apt-get purge -y ndiswrapper-utils-1.9 ndiswrapper-dkms ndiswrapper-common");
+    installOutputEdit->clear();
     installOutputEdit->show();
     installOutputEdit->resize(800, 600);
     // center output window
@@ -811,8 +840,8 @@ void MConfig::on_installNdiswrapper_clicked()
     installOutputEdit->raise();
     disconnect(installProc, SIGNAL(readyReadStandardOutput()), 0, 0);
     connect(installProc, SIGNAL(readyReadStandardOutput()), this, SLOT(writeInstallOutput()));
-    disconnect(installProc, SIGNAL(finished(int,QProcess::ExitStatus)), 0, 0);
-    connect(installProc, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(aptUpdateFinished()));
+    disconnect(installProc, SIGNAL(finished(int)), 0, 0);
+    connect(installProc, SIGNAL(finished(int)), this, SLOT(uninstallNdisFinished(int)));
 }
 
 // install NDISwrapper
@@ -825,7 +854,7 @@ void MConfig::aptUpdateFinished()
     installProc->start("apt-get install -y ndiswrapper-utils-1.9 ndiswrapper-dkms");
     disconnect(installProc, SIGNAL(readyReadStandardOutput()), 0, 0);
     connect(installProc, SIGNAL(readyReadStandardOutput()), this, SLOT(writeInstallOutput()));
-    disconnect(installProc, SIGNAL(finished(int,QProcess::ExitStatus)), 0, 0);
+    disconnect(installProc, SIGNAL(finished(int)), 0, 0);
     connect(installProc, SIGNAL(finished(int)), this, SLOT(installFinished(int)));
 }
 
@@ -848,11 +877,25 @@ void MConfig::installFinished(int errorCode)
     }
     else
     {
-        QMessageBox::information(0, QString::null, QApplication::tr("Error detected, could not install ndiswrapper."));
+        QMessageBox::warning(0, QString::null, QApplication::tr("Error detected, could not install ndiswrapper."));
     }
     // disable testing repo
     system("sed -i -r '/testrepo/ s/^([^#])/#\\1/' /etc/apt/sources.list.d/mepis.list");
 }
+
+void MConfig::uninstallNdisFinished(int errorCode)
+{
+    installOutputEdit->close();
+    this->show();
+    setCursor(QCursor(Qt::ArrowCursor));
+    if (errorCode == 0) {
+        QMessageBox::information(0, QString::null, QApplication::tr("Ndiswrapper successfully uninstalled"));
+    } else {
+        QMessageBox::warning(0, QString::null, QApplication::tr("Error encountered while removing Ndiswrapper"));
+    }
+
+}
+
 
 void MConfig::writeInstallOutput()
 {
@@ -1139,5 +1182,6 @@ QString MConfig::getIPfromRouter()
 {
     return getCmdOut("ifconfig | grep 'inet ' | sed -e 's/inet addr://' -e 's/ Bcast.*//'  -e 's/127.*//'  -e 's/\\s*//'");
 }
+
 
 

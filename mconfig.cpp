@@ -49,8 +49,6 @@ MConfig::MConfig(QWidget* parent)
             SLOT(showContextMenuForLinuxDrv(const QPoint &)));
     connect(windowsDrvList, SIGNAL(customContextMenuRequested(const QPoint &)),
             SLOT(showContextMenuForWindowsDrv(const QPoint &)));
-    on_hwDiagnosePushButton_clicked();
-    on_linuxDrvDiagnosePushButton_clicked();       
 }
 
 MConfig::~MConfig() {
@@ -163,6 +161,7 @@ void MConfig::refresh() {
 
     switch (i) {
     case 0: // Introduction
+        on_hwDiagnosePushButton_clicked();
         if (out == "Can't open RFKILL control device: No such file or directory") {
             hwUnblock->hide();
         } else {
@@ -176,9 +175,8 @@ void MConfig::refresh() {
         on_windowsDrvDiagnosePushButton_clicked();
         break;
     case 3: // Diagnostic
-        qApp->processEvents();
-        labelIP->setText(tr("External IP addres:") + " " + getIP());
         labelRouterIP->setText(tr("IP address from router:") + " " + getIPfromRouter());
+        labelIP->setText(tr("External IP addres:") + " " + getIP());
         break;
 
     default:
@@ -535,14 +533,25 @@ void MConfig::on_hwDiagnosePushButton_clicked()
 
 void MConfig::on_linuxDrvList_currentRowChanged(int currentRow )
 {
-    linuxDrvBlacklistPushButton->setEnabled(currentRow != -1);
-    linuxDrvInstall->setEnabled(currentRow != -1);
+    if (currentRow != -1 && !linuxDrvList->currentItem()->text().contains("---------")) {
+        linuxDrvBlacklistPushButton->setEnabled(true);
+        linuxDrvUnload->setEnabled(loadedModules.contains(linuxDrvList->currentItem()->text()));
+        linuxDrvLoad->setEnabled(unloadedModules.contains(linuxDrvList->currentItem()->text()));
+        if (blacklistedModules.contains(linuxDrvList->currentItem()->text()) && !loadedModules.contains(linuxDrvList->currentItem()->text())){
+            linuxDrvLoad->setEnabled(true);
+        }
+    } else {
+        linuxDrvBlacklistPushButton->setEnabled(false);
+        linuxDrvLoad->setEnabled(false);
+        linuxDrvUnload->setEnabled(false);
+    }
     updateDriverStatus();
 }
 
 void MConfig::on_linuxDrvDiagnosePushButton_clicked()
 {
     linuxDrvList->clear();
+    loadedModules.clear();
     //QStringList queryResult = getCmdOuts("lsmod | grep -i net");
     QStringList loadedKernelModules = getCmdOuts("lsmod");
     QStringList completeKernelNetModules = getCmdOuts("find /lib/modules/$(uname -r)/kernel/drivers/net -name *.ko");
@@ -554,42 +563,69 @@ void MConfig::on_linuxDrvDiagnosePushButton_clicked()
     completeKernelNetModules << "atl2";
     completeKernelNetModules << "wl";
     for (int i = 0; i < loadedKernelModules.size(); ++i)
-    {
+    {        
         QString mod = loadedKernelModules.at(i);
         if (completeKernelNetModules.contains(mod.left(mod.indexOf(' '))))
         {
-            new QListWidgetItem(QIcon("/usr/share/icons/default.kde4/16x16/apps/ksysguardd.png"), mod, linuxDrvList);
+            loadedModules.append(mod.left(mod.indexOf(' '))); //add to the QStringList of loadedModule
         }
+    }
+
+    for (int i = 0; i < loadedModules.size(); ++i)
+    {
+        QString mod = loadedModules.at(i);
+        if (i == 0) {
+            new QListWidgetItem("---------Loaded Drivers-------------", linuxDrvList);
+        }
+        new QListWidgetItem(QIcon("/usr/share/icons/default.kde4/16x16/apps/ksysguardd.png"), mod, linuxDrvList);
+    }
+
+    // list unloaded modules
+    for (int i = 0; i < unloadedModules.size(); ++i)
+    {
+        QString mod = unloadedModules.at(i);
+        if (i == 0) {
+            new QListWidgetItem("---------Unloaded Drivers-----------", linuxDrvList);
+        }
+        QListWidgetItem *unloaded = new QListWidgetItem(QIcon("/usr/share/icons/default.kde4/16x16/apps/ksysguardd.png"), mod, linuxDrvList);
+        unloaded->setForeground(Qt::blue);
     }
 
     QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
     inputBlacklist.open(QFile::ReadOnly|QFile::Text);
 
     QString driver;
-
     QString s;
+    // add blacklisted modules to the list
+    int i = 0;
     while (!inputBlacklist.atEnd())
-    {
-        s = inputBlacklist.readLine();
-        QRegExp expr("^\\s*blacklist\\s*.*");
-        if (expr.exactMatch(s)) {
+    {                        
+        if (i == 0) {
+            new QListWidgetItem("---------Blacklisted Drivers--------", linuxDrvList);
+        }
+        i++;
+        s = inputBlacklist.readLine();                
+        QRegExp expr("^\\s*blacklist\\s*.*");        
+        if (expr.exactMatch(s)) {            
             QString captured = expr.cap(0);
             captured.remove("blacklist");
             driver = captured.trimmed();
             QListWidgetItem *blacklisted = new QListWidgetItem(QIcon("/usr/share/icons/default.kde4/16x16/apps/ksysguardd.png"), driver, linuxDrvList);
             blacklisted->setForeground(Qt::red);
+            blacklistedModules.append(driver);
         }
     }
     inputBlacklist.close();
 }
 
-//apName = curLine.split("\"").at(1);
-//aditionalInfo += tr("Access Point=") + apName + "\n";
-
-
 void MConfig::on_windowsDrvDiagnosePushButton_clicked()
 {
     windowsDrvList->clear();
+    if (system("[ -f /usr/sbin/ndiswrapper ]") != 0) {
+        uninstallNdiswrapper->setVisible(false);
+        QMessageBox::warning(0, QString::null, QApplication::tr("Ndiswrapper is not installed"));
+        return;
+    }
     QStringList queryResult = getCmdOuts("ndiswrapper -l");
     int i = 0;
     while (i < queryResult.size())
@@ -634,7 +670,7 @@ void MConfig::on_windowsDrvDiagnosePushButton_clicked()
 
 bool MConfig::blacklistModule(QString module)
 {   
-    QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));;
+    QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
     if (!outputBlacklist.open(QFile::Append|QFile::Text))
     {
         return false;
@@ -650,6 +686,7 @@ bool MConfig::blacklistModule(QString module)
             return false;
         }
     }
+    loadedModules.removeAll(module);
     return true;
 }
 
@@ -663,7 +700,7 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
         if (driverBlacklisted)
         {
             QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
-            QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));;
+            QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
             if (!inputBlacklist.open(QFile::ReadOnly|QFile::Text))
             {
                 return;
@@ -689,16 +726,15 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
             outputBlacklist.close();
             QMessageBox::information(0, QApplication::tr("Driver removed from blacklist"),
                                      QApplication::tr("Driver removed from blacklist."));
-            loadModule(driver);
-            linuxDrvBlacklistPushButton->setText(QApplication::tr("Blacklist Driver"));
-            linuxDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
+            loadModule(driver);           
             driverBlacklisted = false;
+             unloadedModules.removeAll(driver);
+            blacklistedModules.removeAll(driver);
         }
         else if (blacklistModule(driver))
         {
-            QMessageBox::information(0, QString::null, QApplication::tr("Module blacklisted"));
-            linuxDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist Driver"));
-            linuxDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/redo.png"));
+            QMessageBox::information(0, QApplication::tr("Module blacklisted"),
+                                     QApplication::tr("Module blacklisted"));
             driverBlacklisted = true;
         }
     }
@@ -713,12 +749,17 @@ bool MConfig::loadModule(QString module)
     {        
         // run depmod and try to load again
         system("depmod");
-        if (system(cmd.toAscii()) != 0) {
+        if (system(cmd.toAscii()) != 0)
+        {
             QString msg = QObject::tr("Count not load ");
             msg += module;
             QMessageBox::information(0, QString::null, msg);
             return false;
         }
+    }
+    if (!loadedModules.contains(module))
+    {
+        loadedModules.append(module);
     }
     return true;
 }
@@ -749,6 +790,37 @@ bool MConfig::removeModule(QString module)
     return true;
 }
 
+bool MConfig::removeStart(QString module)
+{
+    QFile inputModules(QString("/etc/modules"));
+    QFile outputModules(QString("/etc/modules"));
+    if (!inputModules.open(QFile::ReadOnly|QFile::Text))
+    {
+        return false;
+    }
+
+    QString s, outputString("");
+    while (!inputModules.atEnd())
+    {
+        s = inputModules.readLine();
+        QString expr = QString("^\\s*(%1)\\s*").arg(module);
+        if (!s.contains(QRegExp(expr)))
+        {
+            outputString += s;
+        }
+        outputModules.write(s.toAscii());
+    }
+    inputModules.close();
+    if (!outputModules.open(QFile::WriteOnly|QFile::Text))
+    {
+        return false;
+    }
+    outputModules.write(outputString.toAscii());
+    outputModules.close();
+    return true;
+}
+
+
 // install Linux Driver
 bool MConfig::installModule(QString module)
 {
@@ -756,35 +828,15 @@ bool MConfig::installModule(QString module)
     {
         return false;
     }
-    if (module.compare("ndiswrapper") != 0)
+    QFile outputModules(QString("/etc/modules"));
+    if (!outputModules.open(QFile::Append|QFile::Text))
     {
-        QFile outputModules(QString("/etc/modules"));;
-        if (!outputModules.open(QFile::Append|QFile::Text))
-        {
-            return false;
-        }
+        return false;
+    }
     outputModules.write(QString("%1\n").arg(module).toAscii());
     outputModules.close();
-    }
-    return true;    
+    return true;
 }
-
-
-void MConfig::on_linuxDrvInstall_clicked()
-{
-    if (linuxDrvList->currentRow() != -1)
-    {
-        QListWidgetItem* currentDriver = linuxDrvList->currentItem();
-        QString driver = currentDriver->text();
-        driver = driver.left(driver.indexOf(" "));
-        if (installModule(driver))
-        {
-            QMessageBox::information(0, QString::null, QApplication::tr("Installation successful"));
-        }
-    }
-}
-
-
 
 // run apt-get update and at the end start installNDIS
 void MConfig::on_installNdiswrapper_clicked()
@@ -868,6 +920,7 @@ void MConfig::installFinished(int errorCode)
     {
         if (installModule("ndiswrapper"))
         {
+            uninstallNdiswrapper->setVisible(true);
             QMessageBox::information(0, QString::null, QApplication::tr("Installation successful"));
         }
         else
@@ -889,13 +942,12 @@ void MConfig::uninstallNdisFinished(int errorCode)
     this->show();
     setCursor(QCursor(Qt::ArrowCursor));
     if (errorCode == 0) {
-        QMessageBox::information(0, QString::null, QApplication::tr("Ndiswrapper successfully uninstalled"));
+        removeStart("ndiswrapper");
     } else {
         QMessageBox::warning(0, QString::null, QApplication::tr("Error encountered while removing Ndiswrapper"));
     }
 
 }
-
 
 void MConfig::writeInstallOutput()
 {
@@ -909,38 +961,6 @@ void MConfig::writeInstallOutput()
         }
     }
 }
-
-
-void MConfig::updateNdiswrapStatus()
-{
-    ndiswrapBlacklisted = false;
-    QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
-    inputBlacklist.open(QFile::ReadOnly|QFile::Text);
-
-    QString s;
-    while (!inputBlacklist.atEnd())
-    {
-        s = inputBlacklist.readLine();
-        if (s.contains(QRegExp("^\\s*(blacklist)\\s*(ndiswrapper)\\s*")))
-        {
-            ndiswrapBlacklisted = true;
-            break;
-        }
-    }
-    if (ndiswrapBlacklisted)
-    {
-        windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));
-        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/redo.png"));
-
-    }
-    else
-    {
-        windowsDrvBlacklistPushButton->setText(QApplication::tr("Blacklist NDISwrapper"));
-        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
-    }
-    inputBlacklist.close();
-}
-
 
 void MConfig::updateDriverStatus()
 {
@@ -979,58 +999,6 @@ void MConfig::updateDriverStatus()
         linuxDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
     }
     inputBlacklist.close();
-}
-
-
-void MConfig::on_windowsDrvBlacklistPushButton_clicked()
-{
-    QString module = "ndiswrapper";
-    if (ndiswrapBlacklisted)
-    {
-        QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
-        QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));;
-        if (!inputBlacklist.open(QFile::ReadOnly|QFile::Text))
-        {
-            return;
-        }
-
-        QString s, outputString("");
-        while (!inputBlacklist.atEnd())
-        {
-            s = inputBlacklist.readLine();
-            if (!s.contains(QRegExp(QRegExp("^\\s*(blacklist)\\s*(ndiswrapper)\\s*"))))
-            {
-                outputString += s;
-            }
-            outputBlacklist.write(s.toAscii());
-        }
-        inputBlacklist.close();
-        if (!outputBlacklist.open(QFile::WriteOnly|QFile::Text))
-        {
-            return;
-        }
-        outputBlacklist.write(outputString.toAscii());
-        outputBlacklist.close();
-        QMessageBox::information(0, QApplication::tr("NDISwrapper removed from blacklist"),
-                                 QApplication::tr("NDISwrapper removed from blacklist."));
-        windowsDrvBlacklistPushButton->setText(QApplication::tr("Blacklist NDISwrapper"));
-        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
-        ndiswrapBlacklisted = false;
-        loadModule("ndiswrapper");
-    }
-    else
-    {
-        blacklistModule(module);
-        QMessageBox::information(0, QApplication::tr("NDISwrapper blacklisted"),
-                                 QApplication::tr("NDISwrapper blacklisted."));
-        windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));
-        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/redo.png"));
-        ndiswrapBlacklisted = true;
-        if (removable(module))
-        {
-            removeModule(module);
-        }
-    }
 }
 
 bool MConfig::checkSysFileExists(QDir searchPath, QString fileName, Qt::CaseSensitivity cs)
@@ -1149,13 +1117,11 @@ void MConfig::on_hwUnblock_clicked()
 
 }
 
-
 // close but do not apply
 void MConfig::on_buttonCancel_clicked()
 {
     close();
 }
-
 
 // About button clicked
 void MConfig::on_buttonAbout_clicked()
@@ -1175,6 +1141,7 @@ void MConfig::on_buttonAbout_clicked()
 
 QString MConfig::getIP()
 {
+    qApp->processEvents();
     return getCmdOut("wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'");
 }
 
@@ -1183,5 +1150,39 @@ QString MConfig::getIPfromRouter()
     return getCmdOut("ifconfig | grep 'inet ' | sed -e 's/inet addr://' -e 's/ Bcast.*//'  -e 's/127.*//'  -e 's/\\s*//'");
 }
 
+void MConfig::on_linuxDrvLoad_clicked()
+{
+    if (linuxDrvList->currentRow() != -1)
+    {
+        QListWidgetItem* currentDriver = linuxDrvList->currentItem();
+        QString driver = currentDriver->text();
+        driver = driver.left(driver.indexOf(" "));
+        if (loadModule(driver))
+        {
+            unloadedModules.removeAll(driver);
+            QMessageBox::information(0, QApplication::tr("Driver loaded successfully"),
+                                     QApplication::tr("Driver loaded successfully"));
+            on_linuxDrvDiagnosePushButton_clicked();
+        }
+    }
+}
 
-
+void MConfig::on_linuxDrvUnload_clicked()
+{
+    if (linuxDrvList->currentRow() != -1)
+    {
+        QListWidgetItem* currentDriver = linuxDrvList->currentItem();
+        QString driver = currentDriver->text();
+        driver = driver.left(driver.indexOf(" "));
+        if ((removable(driver)) && !unloadedModules.contains(driver))
+        {
+            if (removeModule(driver))
+            {
+                unloadedModules.append(driver);
+                QMessageBox::information(0, QApplication::tr("Driver unloaded successfully"),
+                                         QApplication::tr("Driver unloaded successfully"));
+                on_linuxDrvDiagnosePushButton_clicked();
+            }
+        }
+    }
+}

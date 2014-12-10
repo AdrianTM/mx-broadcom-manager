@@ -38,7 +38,7 @@ public:
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     QString getVersion(QString name);
     QString getIP();
-    QString getRouterIP();
+    QString getIPfromRouter();
     // common
     void refresh();
     // special

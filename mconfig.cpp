@@ -15,7 +15,7 @@
 //   limitations under the License.
 //
 
-//   With big modification made by Adrian adrian@mxlinux.org
+//   With heavy modification made by Adrian adrian@mxlinux.org
 
 #include "mconfig.h"
 #include <QFileDialog>
@@ -25,6 +25,8 @@
 #include <QDesktopWidget>
 
 #include <unistd.h>
+
+#include <QDebug>
 
 MConfig::MConfig(QWidget* parent)
     : QDialog(parent) {
@@ -50,7 +52,7 @@ MConfig::MConfig(QWidget* parent)
     connect(windowsDrvList, SIGNAL(customContextMenuRequested(const QPoint &)),
             SLOT(showContextMenuForWindowsDrv(const QPoint &)));
     on_hwDiagnosePushButton_clicked();
-    on_linuxDrvDiagnosePushButton_clicked();    
+    on_linuxDrvDiagnosePushButton_clicked();       
 }
 
 MConfig::~MConfig() {
@@ -159,18 +161,25 @@ QString MConfig::getVersion(QString name) {
 
 void MConfig::refresh() {
     int i = tabWidget->currentIndex();
+    QString out = getCmdOut("rfkill list 2>&1");
 
     switch (i) {
-    case 1:
+    case 0: // Introduction
+        if (out == "Can't open RFKILL control device: No such file or directory") {
+            hwUnblock->hide();
+        } else {
+            hwUnblock->show();
+        }
         break;
-    // Windows drivers
-    case 2:
+    case 1: // Linux drivers
+        break;    
+    case 2: // Windows drivers
         updateNdiswrapStatus();
         break;
-    case 3:
+    case 3: // Diagnostic
         qApp->processEvents();
         labelIP->setText(tr("External IP addres:") + " " + getIP());
-        labelRouterIP->setText(tr("IP address from router:") + " " + getRouterIP());
+        labelRouterIP->setText(tr("IP address from router:") + " " + getIPfromRouter());
         break;
 
     default:
@@ -878,10 +887,13 @@ void MConfig::updateNdiswrapStatus()
     if (ndiswrapBlacklisted)
     {
         windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));
+        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/redo.png"));
+
     }
     else
     {
         windowsDrvBlacklistPushButton->setText(QApplication::tr("Blacklist NDISwrapper"));
+        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
     }
     inputBlacklist.close();
 }
@@ -959,6 +971,7 @@ void MConfig::on_windowsDrvBlacklistPushButton_clicked()
         QMessageBox::information(0, QApplication::tr("NDISwrapper removed from blacklist"),
                                  QApplication::tr("NDISwrapper removed from blacklist."));
         windowsDrvBlacklistPushButton->setText(QApplication::tr("Blacklist NDISwrapper"));
+        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/file_locked.png"));
         ndiswrapBlacklisted = false;
         loadModule("ndiswrapper");
     }
@@ -967,7 +980,8 @@ void MConfig::on_windowsDrvBlacklistPushButton_clicked()
         blacklistModule(module);
         QMessageBox::information(0, QApplication::tr("NDISwrapper blacklisted"),
                                  QApplication::tr("NDISwrapper blacklisted."));
-        windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));        
+        windowsDrvBlacklistPushButton->setText(QApplication::tr("Unblacklist NDISwrapper"));
+        windowsDrvBlacklistPushButton->setIcon(QIcon("/usr/share/mx-broadcom-manager/icons/redo.png"));
         ndiswrapBlacklisted = true;
         if (removable(module))
         {
@@ -1085,7 +1099,7 @@ void MConfig::on_tabWidget_currentChanged()
 void MConfig::on_hwUnblock_clicked()
 {
     if (system("rfkill unblock wlan wifi") != 0) {
-        QMessageBox::warning(0, QString::null, QApplication::tr("Could not unlock devices. WiFi device not present, or already unlocked."));
+        QMessageBox::warning(0, QString::null, QApplication::tr("Could not unlock devices.\nWiFi device(s) might already be unlocked."));
     } else {
         QMessageBox::information(0, QString::null, QApplication::tr("WiFi devices unlocked."));
     }
@@ -1121,7 +1135,7 @@ QString MConfig::getIP()
     return getCmdOut("wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'");
 }
 
-QString MConfig::getRouterIP()
+QString MConfig::getIPfromRouter()
 {
     return getCmdOut("ifconfig | grep 'inet ' | sed -e 's/inet addr://' -e 's/ Bcast.*//'  -e 's/127.*//'  -e 's/\\s*//'");
 }

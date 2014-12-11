@@ -158,6 +158,7 @@ QString MConfig::getVersion(QString name) {
 void MConfig::refresh() {
     int i = tabWidget->currentIndex();
     QString out = getCmdOut("rfkill list 2>&1");
+    qApp->processEvents();
 
     switch (i) {
     case 0: // Introduction

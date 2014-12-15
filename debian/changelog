@@ -1,3 +1,9 @@
+mx-broadcom-manager (0.14.4) mx; urgency=medium
+
+  * added blacklist/unblacklist for Broadcom drivers
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 15 Dec 2014 12:25:33 -0500
+
 mx-broadcom-manager (0.14.3) mx; urgency=low
 
   * Initial release

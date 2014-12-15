@@ -107,6 +107,7 @@ protected:
     QStringList loadedModules;
     QStringList unloadedModules;
     QStringList blacklistedModules;
+    QStringList broadcomModules;
 
     QProcess *pingProc;
     QProcess *traceProc;

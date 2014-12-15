@@ -617,6 +617,30 @@ void MConfig::on_linuxDrvDiagnosePushButton_clicked()
         }
     }
     inputBlacklist.close();
+
+    // add blacklisted modules from /etc/modprobe.d/broadcom-sta-dkms.conf
+    QFile inputBroadcomBlacklist(QString("/etc/modprobe.d/broadcom-sta-dkms.conf"));
+    inputBroadcomBlacklist.open(QFile::ReadOnly|QFile::Text);
+    i = 0;
+    while (!inputBroadcomBlacklist.atEnd())
+    {
+        if (i == 0) {
+            new QListWidgetItem("---------Blacklisted Broadcom Drivers--------", linuxDrvList);
+        }
+        i++;
+        s = inputBroadcomBlacklist.readLine();
+        QRegExp expr("^\\s*blacklist\\s*.*");
+        if (expr.exactMatch(s)) {
+            QString captured = expr.cap(0);
+            captured.remove("blacklist");
+            driver = captured.trimmed();
+            QListWidgetItem *blacklisted = new QListWidgetItem(QIcon("/usr/share/icons/default.kde4/16x16/apps/ksysguardd.png"), driver, linuxDrvList);
+            blacklisted->setForeground(Qt::red);
+            blacklistedModules.append(driver);
+            broadcomModules.append(driver);
+        }
+    }
+    inputBroadcomBlacklist.close();
 }
 
 void MConfig::on_windowsDrvDiagnosePushButton_clicked()
@@ -671,7 +695,16 @@ void MConfig::on_windowsDrvDiagnosePushButton_clicked()
 
 bool MConfig::blacklistModule(QString module)
 {   
-    QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
+    QFile outputBlacklist;
+    if (!broadcomModules.contains(module))
+    {
+        outputBlacklist.setFileName(QString("/etc/modprobe.d/blacklist.conf"));
+    }
+    else
+    {
+        outputBlacklist.setFileName(QString("/etc/modprobe.d/broadcom-sta-dkms.conf"));
+    }
+
     if (!outputBlacklist.open(QFile::Append|QFile::Text))
     {
         return false;
@@ -700,8 +733,19 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
         driver = driver.left(driver.indexOf(" "));
         if (driverBlacklisted)
         {
-            QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
-            QFile outputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
+            QFile inputBlacklist;
+            QFile outputBlacklist;
+            if (broadcomModules.contains(driver))
+            {
+                inputBlacklist.setFileName(QString("/etc/modprobe.d/broadcom-sta-dkms.conf"));
+                outputBlacklist.setFileName(QString("/etc/modprobe.d/broadcom-sta-dkms.conf"));
+
+            }
+            else
+            {
+                inputBlacklist.setFileName(QString("/etc/modprobe.d/blacklist.conf"));
+                outputBlacklist.setFileName(QString("/etc/modprobe.d/blacklist.conf"));
+            }
             if (!inputBlacklist.open(QFile::ReadOnly|QFile::Text))
             {
                 return;
@@ -729,7 +773,7 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
                                      QApplication::tr("Driver removed from blacklist."));
             loadModule(driver);           
             driverBlacklisted = false;
-             unloadedModules.removeAll(driver);
+            unloadedModules.removeAll(driver);
             blacklistedModules.removeAll(driver);
         }
         else if (blacklistModule(driver))
@@ -967,7 +1011,9 @@ void MConfig::updateDriverStatus()
 {
     driverBlacklisted = false;
     QFile inputBlacklist(QString("/etc/modprobe.d/blacklist.conf"));
+    QFile inputBroadcomBlacklist(QString("/etc/modprobe.d/broadcom-sta-dkms.conf"));
     inputBlacklist.open(QFile::ReadOnly|QFile::Text);
+    inputBroadcomBlacklist.open(QFile::ReadOnly|QFile::Text);
 
     QString driver;
 
@@ -982,6 +1028,16 @@ void MConfig::updateDriverStatus()
     while (!inputBlacklist.atEnd())
     {
         s = inputBlacklist.readLine();
+        QString expr = QString("^\\s*(blacklist)\\s*(%1)\\s*").arg(driver);
+        if (s.contains(QRegExp(expr)))
+        {
+            driverBlacklisted = true;
+            break;
+        }
+    }
+    while (!inputBroadcomBlacklist.atEnd())
+    {
+        s = inputBroadcomBlacklist.readLine();
         QString expr = QString("^\\s*(blacklist)\\s*(%1)\\s*").arg(driver);
         if (s.contains(QRegExp(expr)))
         {

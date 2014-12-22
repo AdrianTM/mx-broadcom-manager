@@ -184,7 +184,7 @@
       <locale language="English" country="UnitedStates"/>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -369,7 +369,7 @@
           <item>
            <widget class="QLabel" name="labelLinux">
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window displays the Linux drivers associated with the detected hardware. If the driver doesn’t work OK and/or you prefer to use another drivers, a Windows driver for example, you’ll need to blacklist the driver (stop it from loading at boot time). Select the driver you want to blacklist and press &amp;quot;Blacklist Driver&amp;quot; button to blacklist it. At the next reboot the driver will not be loaded automatically anymore.&lt;/p&gt;&lt;p&gt;You can select a driver to load or unload and press the corresponding button to test. These changes will be reverted after a reboot.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window displays the Linux drivers currently associated with the detected hardware, and allows you to select which will be used with your device on either a temporary or permanent basis. &lt;/p&gt;&lt;p&gt;Example of use: the common BCM43xx chip&lt;br/&gt;--highlight the blacklisted driver &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;br/&gt;&lt;/span&gt;--click on the &amp;quot;Load driver&amp;quot; button and test the wifi connection&lt;br/&gt;--if working, highlight &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;/span&gt; again&lt;br/&gt;--click on the &amp;quot;Unblacklist driver&amp;quot; button to make the change permanent.&lt;br/&gt;--if the &lt;span style=&quot; font-weight:600;&quot;&gt;wl&lt;/span&gt; driver is listed as loaded, highlight it and blacklist it&lt;/p&gt;&lt;p&gt;Click the Help button for information about other chips and drivers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>

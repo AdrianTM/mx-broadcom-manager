@@ -822,17 +822,17 @@ surtirán efecto la proxima vez que inicie la interfaz.</translation>
         <translation type="obsolete">Listar controladores de Linux</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="504"/>
+        <location filename="../meconfig.ui" line="500"/>
         <source>Blacklist Driver</source>
         <translation>Añadir controlador a blacklist</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="650"/>
+        <location filename="../meconfig.ui" line="646"/>
         <source>List Windows drivers</source>
         <translation>Listar controladores de Windows</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="627"/>
+        <location filename="../meconfig.ui" line="623"/>
         <source>Add Driver</source>
         <translation>Añadir controlador</translation>
     </message>
@@ -848,88 +848,103 @@ surtirán efecto la proxima vez que inicie la interfaz.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="230"/>
+        <location filename="../meconfig.ui" line="210"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can be sometime dificult to set un in Linux.There are a number of different types of drivers that have different capabilties and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="226"/>
         <source>Hardware detected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="248"/>
+        <location filename="../meconfig.ui" line="244"/>
         <source>Re-scan Hardware</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="342"/>
+        <location filename="../meconfig.ui" line="338"/>
         <source>Unblocks all soft/hard blocked wireless devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="345"/>
+        <location filename="../meconfig.ui" line="341"/>
         <source>Unblock WiFi Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="364"/>
-        <location filename="../meconfig.ui" line="370"/>
+        <location filename="../meconfig.ui" line="360"/>
+        <location filename="../meconfig.ui" line="366"/>
         <source>Linux drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="395"/>
+        <location filename="../meconfig.ui" line="372"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="391"/>
         <source>Associated Linux drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="404"/>
+        <location filename="../meconfig.ui" line="400"/>
         <source>Load Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="467"/>
+        <location filename="../meconfig.ui" line="463"/>
         <source>Unload Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="484"/>
+        <location filename="../meconfig.ui" line="480"/>
         <source>Re-list Linux Drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="523"/>
+        <location filename="../meconfig.ui" line="519"/>
         <source>Windows drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="529"/>
+        <location filename="../meconfig.ui" line="525"/>
         <source>About NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="541"/>
+        <location filename="../meconfig.ui" line="537"/>
         <source>Install NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="568"/>
+        <location filename="../meconfig.ui" line="548"/>
+        <source>In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="564"/>
         <source>Uninstall NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="582"/>
+        <location filename="../meconfig.ui" line="578"/>
         <source>Windows Drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="616"/>
+        <location filename="../meconfig.ui" line="612"/>
         <source>Remove Driver</source>
         <translation>Quitar controlador</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="673"/>
+        <location filename="../meconfig.ui" line="669"/>
         <source>Net diagnostics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="679"/>
+        <location filename="../meconfig.ui" line="675"/>
         <source>IP address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -942,70 +957,51 @@ surtirán efecto la proxima vez que inicie la interfaz.</translation>
         <translation type="obsolete">Diagnóstico</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="210"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="376"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click the Help button for information about other chips and drivers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="552"/>
-        <source>NDISwrapper is an open source software driver &quot;wrapper&quot; that enables Linux to use the Microsoft Windows drivers for wireless network devices.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="708"/>
+        <location filename="../meconfig.ui" line="704"/>
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="714"/>
-        <location filename="../meconfig.ui" line="824"/>
+        <location filename="../meconfig.ui" line="710"/>
+        <location filename="../meconfig.ui" line="820"/>
         <source>Target URL:</source>
         <translation>URL de destino:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="724"/>
+        <location filename="../meconfig.ui" line="720"/>
         <source>Packets</source>
         <translation>Paquetes</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="759"/>
-        <location filename="../meconfig.ui" line="879"/>
+        <location filename="../meconfig.ui" line="755"/>
+        <location filename="../meconfig.ui" line="875"/>
         <source>Start</source>
         <translation>Iniciar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="776"/>
-        <location filename="../meconfig.ui" line="896"/>
+        <location filename="../meconfig.ui" line="772"/>
+        <location filename="../meconfig.ui" line="892"/>
         <source>Clear</source>
         <translation>Limpiar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="790"/>
-        <location filename="../meconfig.ui" line="910"/>
+        <location filename="../meconfig.ui" line="786"/>
+        <location filename="../meconfig.ui" line="906"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="818"/>
+        <location filename="../meconfig.ui" line="814"/>
         <source>Traceroute</source>
         <translation>Traceroute</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="834"/>
+        <location filename="../meconfig.ui" line="830"/>
         <source>Hops</source>
         <translation>Saltos</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="866"/>
+        <location filename="../meconfig.ui" line="862"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }

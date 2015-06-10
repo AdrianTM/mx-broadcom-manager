@@ -15,14 +15,14 @@ Changes:
  .
    * small fixes, changed version scheme
 Checksums-Sha1: 
- f589468d1f05cc34a38029cc952464154d6bbf12 660 mx-broadcom-manager_15.6mx14.dsc
- 1bf389a7f611899e48ec38a40d4ef88d86c08ff9 117339 mx-broadcom-manager_15.6mx14.tar.gz
- fe8633d897fa40882e38dc2c1e52151896fd9cb1 76750 mx-broadcom-manager_15.6mx14_i386.deb
+ 638bd3c1b64a8cf6c3c3ea9a8f8ee35c35944f29 660 mx-broadcom-manager_15.6mx14.dsc
+ 026a192e70a8abb0333acaa1ef797c15763c5a21 117208 mx-broadcom-manager_15.6mx14.tar.gz
+ be4a8d7c1a8051fd5d4286fdce642316b4ed636f 76608 mx-broadcom-manager_15.6mx14_i386.deb
 Checksums-Sha256: 
- 522daef3cb1ca2cc25f86dfef1b2ea84ad388742a638ae672d27675caea40fdc 660 mx-broadcom-manager_15.6mx14.dsc
- c2af265c82374c8b54c986d8ca3936a2125fbe975544cf2126de36e5d410a277 117339 mx-broadcom-manager_15.6mx14.tar.gz
- 6bcfe27a1a41a64c5bc6aa5e3ed7297232e657e1009f2286eb0ff25173b32d9d 76750 mx-broadcom-manager_15.6mx14_i386.deb
+ 1079418d8f466a10887ba9aa84e7114880eb5c4ba068e7a6a7a8f5884ed8634c 660 mx-broadcom-manager_15.6mx14.dsc
+ 084ed183a201930b0db921faf14549424c97b050f1fbc42b7e4dd10a789df7be 117208 mx-broadcom-manager_15.6mx14.tar.gz
+ 58d2c4cbb0c38ec76a9dcbb842498c9018802e9068080c0d9af24c224ba45265 76608 mx-broadcom-manager_15.6mx14_i386.deb
 Files: 
- 69365b0f33975b3ad71555982ea83850 660 admin optional mx-broadcom-manager_15.6mx14.dsc
- a6b3dc5c9ce7c59447ba440c88540648 117339 admin optional mx-broadcom-manager_15.6mx14.tar.gz
- 352acf1f9d1c9f1c742b40200fe7bf66 76750 admin optional mx-broadcom-manager_15.6mx14_i386.deb
+ 77f94159c95d8e6d5eebd5c73b5b4985 660 admin optional mx-broadcom-manager_15.6mx14.dsc
+ 673ce99960ab2637263b2a8f8dae53c4 117208 admin optional mx-broadcom-manager_15.6mx14.tar.gz
+ e9004bbf451f08f5b2e937f781da41f1 76608 admin optional mx-broadcom-manager_15.6mx14_i386.deb

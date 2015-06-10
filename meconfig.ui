@@ -207,7 +207,11 @@
           <item>
            <widget class="QLabel" name="labelIntroduction">
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can be sometime dificult to set un in Linux.There are a number of different types of drivers that have different capabilties and features: &lt;/p&gt;&lt;p&gt;- reversed-engineered drivers: b43, brcm43xxxx&lt;/p&gt;&lt;p&gt;- open-sourced kernel drivers: brcmsmac, brcmfmac &lt;/p&gt;&lt;p&gt;- proprietary drivers: broadcom-wl&lt;/p&gt;&lt;p&gt;- windows drivers: broadcom NDIS drivers&lt;/p&gt;&lt;p&gt;This tool purpose is to make it easier to set up the needed driver for your network card. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="textFormat">
              <enum>Qt::RichText</enum>
@@ -369,7 +373,7 @@
           <item>
            <widget class="QLabel" name="labelLinux">
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window displays the Linux drivers currently associated with the detected hardware, and allows you to select which will be used with your device on either a temporary or permanent basis. &lt;/p&gt;&lt;p&gt;Example of use: the common BCM43xx chip&lt;br/&gt;--highlight the blacklisted driver &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;br/&gt;&lt;/span&gt;--click on the &amp;quot;Load driver&amp;quot; button and test the wifi connection&lt;br/&gt;--if working, highlight &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;/span&gt; again&lt;br/&gt;--click on the &amp;quot;Unblacklist driver&amp;quot; button to make the change permanent.&lt;br/&gt;--if the &lt;span style=&quot; font-weight:600;&quot;&gt;wl&lt;/span&gt; driver is listed as loaded, highlight it and blacklist it&lt;/p&gt;&lt;p&gt;Click the Help button for information about other chips and drivers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click the Help button for information about other chips and drivers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>
@@ -545,7 +549,7 @@
           <item row="0" column="0" colspan="3">
            <widget class="QLabel" name="labelNdiswrapper">
             <property name="text">
-             <string>NDISwrapper is an open source software driver &quot;wrapper&quot; that enables Linux to use the Microsoft Windows drivers for wireless network devices. In general, Windows-XP drivers work much better than other versions. Make sure there is no competing Linux driver. In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</string>
+             <string>NDISwrapper is an open source software driver &quot;wrapper&quot; that enables Linux to use the Microsoft Windows drivers for wireless network devices.</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>
@@ -862,8 +866,8 @@
              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>

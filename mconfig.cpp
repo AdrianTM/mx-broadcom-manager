@@ -1158,7 +1158,7 @@ void MConfig::on_windowsDrvRemovePushButton_clicked()
 
 void MConfig::on_generalHelpPushButton_clicked()
 {
-    system("mx-viewer file:///usr/local/share/doc/mxapps.html#broadcom 'MX Broadcom Manager Help'");
+    system("mx-viewer http://www.mepiscommunity.org/wiki/networking/help-mx-broadcom-manager 'MX Broadcom Manager Help'");
 }
 
 void MConfig::on_tabWidget_currentChanged()

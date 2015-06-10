@@ -820,17 +820,17 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Laat lijst zien van gebruikte linux drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="500"/>
+        <location filename="../meconfig.ui" line="504"/>
         <source>Blacklist Driver</source>
         <translation>Schakel driver uit (blacklist)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="646"/>
+        <location filename="../meconfig.ui" line="650"/>
         <source>List Windows drivers</source>
         <translation>Laat lijst zien van Windows drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="623"/>
+        <location filename="../meconfig.ui" line="627"/>
         <source>Add Driver</source>
         <translation>Voeg driver toe</translation>
     </message>
@@ -846,113 +846,89 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="210"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can be sometime dificult to set un in Linux.There are a number of different types of drivers that have different capabilties and features: &lt;/p&gt;&lt;p&gt;- reversed-engineered drivers: b43, brcm43xxxx&lt;/p&gt;&lt;p&gt;- open-sourced kernel drivers: brcmsmac, brcmfmac &lt;/p&gt;&lt;p&gt;- proprietary drivers: broadcom-wl&lt;/p&gt;&lt;p&gt;- windows drivers: broadcom NDIS drivers&lt;/p&gt;&lt;p&gt;This tool purpose is to make it easier to set up the needed driver for your network card. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="226"/>
+        <location filename="../meconfig.ui" line="230"/>
         <source>Hardware detected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="244"/>
+        <location filename="../meconfig.ui" line="248"/>
         <source>Re-scan Hardware</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="338"/>
+        <location filename="../meconfig.ui" line="342"/>
         <source>Unblocks all soft/hard blocked wireless devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="341"/>
+        <location filename="../meconfig.ui" line="345"/>
         <source>Unblock WiFi Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="360"/>
-        <location filename="../meconfig.ui" line="366"/>
+        <location filename="../meconfig.ui" line="364"/>
+        <location filename="../meconfig.ui" line="370"/>
         <source>Linux drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="372"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window displays the Linux drivers currently associated with the detected hardware, and allows you to select which will be used with your device on either a temporary or permanent basis. &lt;/p&gt;&lt;p&gt;Example of use: the common BCM43xx chip&lt;br/&gt;--highlight the blacklisted driver &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;br/&gt;&lt;/span&gt;--click on the &amp;quot;Load driver&amp;quot; button and test the wifi connection&lt;br/&gt;--if working, highlight &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;/span&gt; again&lt;br/&gt;--click on the &amp;quot;Unblacklist driver&amp;quot; button to make the change permanent.&lt;br/&gt;--if the &lt;span style=&quot; font-weight:600;&quot;&gt;wl&lt;/span&gt; driver is listed as loaded, highlight it and blacklist it&lt;/p&gt;&lt;p&gt;Click the Help button for information about other chips and drivers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="391"/>
+        <location filename="../meconfig.ui" line="395"/>
         <source>Associated Linux drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="400"/>
+        <location filename="../meconfig.ui" line="404"/>
         <source>Load Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="463"/>
+        <location filename="../meconfig.ui" line="467"/>
         <source>Unload Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="480"/>
+        <location filename="../meconfig.ui" line="484"/>
         <source>Re-list Linux Drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="519"/>
+        <location filename="../meconfig.ui" line="523"/>
         <source>Windows drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="525"/>
+        <location filename="../meconfig.ui" line="529"/>
         <source>About NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="537"/>
+        <location filename="../meconfig.ui" line="541"/>
         <source>Install NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="548"/>
-        <source>NDISwrapper is an open source software driver &quot;wrapper&quot; that enables Linux to use the Microsoft Windows drivers for wireless network devices. In general, Windows-XP drivers work much better than other versions. Make sure there is no competing Linux driver. In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="564"/>
+        <location filename="../meconfig.ui" line="568"/>
         <source>Uninstall NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="578"/>
+        <location filename="../meconfig.ui" line="582"/>
         <source>Windows Drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="612"/>
+        <location filename="../meconfig.ui" line="616"/>
         <source>Remove Driver</source>
         <translation>Verwijder driver</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="669"/>
+        <location filename="../meconfig.ui" line="673"/>
         <source>Net diagnostics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="675"/>
+        <location filename="../meconfig.ui" line="679"/>
         <source>IP address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meconfig.ui" line="862"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -964,48 +940,76 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Diagnose</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="704"/>
+        <location filename="../meconfig.ui" line="210"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="376"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click the Help button for information about other chips and drivers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="552"/>
+        <source>NDISwrapper is an open source software driver &quot;wrapper&quot; that enables Linux to use the Microsoft Windows drivers for wireless network devices.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="708"/>
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="710"/>
-        <location filename="../meconfig.ui" line="820"/>
+        <location filename="../meconfig.ui" line="714"/>
+        <location filename="../meconfig.ui" line="824"/>
         <source>Target URL:</source>
         <translation>Doel URL:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="720"/>
+        <location filename="../meconfig.ui" line="724"/>
         <source>Packets</source>
         <translation>packets</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="755"/>
-        <location filename="../meconfig.ui" line="875"/>
+        <location filename="../meconfig.ui" line="759"/>
+        <location filename="../meconfig.ui" line="879"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="772"/>
-        <location filename="../meconfig.ui" line="892"/>
+        <location filename="../meconfig.ui" line="776"/>
+        <location filename="../meconfig.ui" line="896"/>
         <source>Clear</source>
         <translation>Schoonvegen</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="786"/>
-        <location filename="../meconfig.ui" line="906"/>
+        <location filename="../meconfig.ui" line="790"/>
+        <location filename="../meconfig.ui" line="910"/>
         <source>Cancel</source>
         <translation>Zeg af (cancel)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="814"/>
+        <location filename="../meconfig.ui" line="818"/>
         <source>Traceroute</source>
         <translation>Traceroute</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="830"/>
+        <location filename="../meconfig.ui" line="834"/>
         <source>Hops</source>
         <translation>Hops</translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="866"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;

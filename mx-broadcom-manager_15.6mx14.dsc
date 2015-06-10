@@ -10,8 +10,8 @@ Build-Depends: qt4-qmake, debhelper (>= 7.0.50~), libqtwebkit-dev
 Package-List: 
  mx-broadcom-manager deb admin optional
 Checksums-Sha1: 
- 55c1f6063efada59dbcf39fb6f514ce426892689 101723 mx-broadcom-manager_15.6mx14.tar.gz
+ afc427333f38747170ba7c876e8e87980f597df9 97487 mx-broadcom-manager_15.6mx14.tar.gz
 Checksums-Sha256: 
- c116752b7cec038921b1807cfa94d3de88ecb27c9acbb6f622d5bfdcee3964e1 101723 mx-broadcom-manager_15.6mx14.tar.gz
+ 510874f26c464891e7246fabf1499db04c5dcbedaa83e9d8170c60dd876e7bb7 97487 mx-broadcom-manager_15.6mx14.tar.gz
 Files: 
- 9214c377aee41d028e6e168c802f7fa5 101723 mx-broadcom-manager_15.6mx14.tar.gz
+ 6d3b29b9e883ae9a31be9a635b144fa9 97487 mx-broadcom-manager_15.6mx14.tar.gz

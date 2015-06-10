@@ -32,6 +32,7 @@ public:
     ~MConfig();           
     // helpers
     static QString getCmdOut(QString cmd);
+    static QString getCmdOut2(QString cmd);
     static QStringList getCmdOuts(QString cmd);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);
     static QStringList getCmdValues(QString cmd, QString key, QString keydel, QString valdel);

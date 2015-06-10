@@ -118,239 +118,233 @@ treden in werking bij de volgende start van de interface.</translation>
 <context>
     <name>MConfig</name>
     <message>
-        <location filename="mconfig.cpp" line="156"/>
         <source>Configuration has been modified</source>
-        <translation>Configuratie is gewijzigd</translation>
+        <translation type="obsolete">Configuratie is gewijzigd</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="157"/>
         <source>The configuration options have changed. Do you want to apply the changes?</source>
-        <translation>Configuratie opties zijn gewijzigd. Wilt U de wijzigingen toepassen?</translation>
+        <translation type="obsolete">Configuratie opties zijn gewijzigd. Wilt U de wijzigingen toepassen?</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="265"/>
         <source>Status: Started but failed to connect</source>
-        <translation>Status: Gestart, maar geen verbinding tot stand gekomen</translation>
+        <translation type="obsolete">Status: Gestart, maar geen verbinding tot stand gekomen</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="267"/>
         <source>Status: Connected with IP </source>
-        <translation>Status: Verbonden met IP</translation>
+        <translation type="obsolete">Status: Verbonden met IP</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="272"/>
         <source>Status: Was not started</source>
-        <translation>Status: Was niet gestart</translation>
+        <translation type="obsolete">Status: Was niet gestart</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="276"/>
         <source>Status: Does not exist</source>
-        <translation>Status: Niet bestaand</translation>
+        <translation type="obsolete">Status: Niet bestaand</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="331"/>
         <source>Access Point=</source>
-        <translation>Access Point=</translation>
+        <translation type="obsolete">Access Point=</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="338"/>
-        <location filename="mconfig.cpp" line="345"/>
         <source>Signal level=</source>
-        <translation>Signaalsterkte=</translation>
+        <translation type="obsolete">Signaalsterkte=</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="349"/>
         <source>Protocol=</source>
-        <translation>Protocol=</translation>
+        <translation type="obsolete">Protocol=</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="353"/>
         <source>Mode=</source>
-        <translation>Mode=</translation>
+        <translation type="obsolete">Mode=</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="357"/>
         <source>Frequency=</source>
-        <translation>Frequentie=</translation>
+        <translation type="obsolete">Frequentie=</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="361"/>
         <source>Encryption key=</source>
-        <translation>Encryptie sleutel=</translation>
+        <translation type="obsolete">Encryptie sleutel=</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="365"/>
         <source>Encryption protocol=</source>
-        <translation>Encryptie protocol=</translation>
+        <translation type="obsolete">Encryptie protocol=</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="384"/>
         <source>ADDITIONAL INFO
 
 </source>
-        <translation>Additionele informatie</translation>
+        <translation type="obsolete">Additionele informatie</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="404"/>
         <source>Default Access Point not configured.  Please edit this entry or scroll down to see available networks</source>
         <oldsource>Default Access Point not configured. 
  Please edit this entry or scroll down to see available networks</oldsource>
-        <translation type="unfinished">Standaard Access Point niet geconfigureerd. 
+        <translation type="obsolete">Standaard Access Point niet geconfigureerd. 
 Svp aanpassen of omlaag scrollen om beschikbare netwerken te zien</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="408"/>
         <source>Default Access Point not found.  Please edit this entry or scroll down to see available networks</source>
         <oldsource>Default Access Point not found. 
  Please edit this entry or scroll down to see available networks</oldsource>
-        <translation type="unfinished">Standaard Access Point niet gevonden. Svp hier aanpassen of omlaag scrollen om beschikbare netwerken te zien</translation>
+        <translation type="obsolete">Standaard Access Point niet gevonden. Svp hier aanpassen of omlaag scrollen om beschikbare netwerken te zien</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="534"/>
-        <location filename="mconfig.cpp" line="548"/>
-        <location filename="mconfig.cpp" line="562"/>
+        <location filename="../mconfig.cpp" line="192"/>
+        <source>IP address from router:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="193"/>
+        <source>External IP addres:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="308"/>
+        <location filename="../mconfig.cpp" line="322"/>
+        <location filename="../mconfig.cpp" line="336"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopieer</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="536"/>
-        <location filename="mconfig.cpp" line="550"/>
-        <location filename="mconfig.cpp" line="564"/>
+        <location filename="../mconfig.cpp" line="310"/>
+        <location filename="../mconfig.cpp" line="324"/>
+        <location filename="../mconfig.cpp" line="338"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="537"/>
-        <location filename="mconfig.cpp" line="551"/>
-        <location filename="mconfig.cpp" line="565"/>
+        <location filename="../mconfig.cpp" line="311"/>
+        <location filename="../mconfig.cpp" line="325"/>
+        <location filename="../mconfig.cpp" line="339"/>
         <source>Copy &amp;All</source>
         <translation>Kopieer &amp;Alles</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="539"/>
-        <location filename="mconfig.cpp" line="553"/>
-        <location filename="mconfig.cpp" line="567"/>
+        <location filename="../mconfig.cpp" line="313"/>
+        <location filename="../mconfig.cpp" line="327"/>
+        <location filename="../mconfig.cpp" line="341"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="606"/>
-        <location filename="mconfig.cpp" line="628"/>
+        <location filename="../mconfig.cpp" line="378"/>
+        <location filename="../mconfig.cpp" line="400"/>
         <source>Traceroute not installed</source>
         <translation>Traceroute is niet geinstalleerd</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="607"/>
+        <location filename="../mconfig.cpp" line="379"/>
         <source>Traceroute is not installed, do you want to install it now?</source>
         <translation>Traceroute is niet geinstalleerd, wilt U die nu installeren?</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="615"/>
+        <location filename="../mconfig.cpp" line="387"/>
         <source>Traceroute hasn&apos;t been installed</source>
         <translation>Traceroute werd niet geinstalleerd</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="616"/>
+        <location filename="../mconfig.cpp" line="388"/>
         <source>Traceroute cannot be installed. This may mean you are using the LiveCD or you are unable to reach the software repository,</source>
         <oldsource>Traceroute cannot be installed. This may mean you are using the LiveCD or that there is some kind of transitory problem with the repositories,</oldsource>
         <translation type="unfinished">Traceroute kan niet geinstalleerd worden. Dat zou kunnen als U de LiveCD gebruikt of er een voorbijgaand probleem is met de repositories,</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="629"/>
+        <location filename="../mconfig.cpp" line="401"/>
         <source>Traceroute is not installed and no Internet connection could be detected so it cannot be installed</source>
         <translation>Traceroute is niet geinstalleerd; er kon geen internet verbinding gevonden worden dus kan traceroute niet geinstalleerd worden</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="636"/>
-        <location filename="mconfig.cpp" line="688"/>
+        <location filename="../mconfig.cpp" line="408"/>
+        <location filename="../mconfig.cpp" line="460"/>
         <source>No destination host</source>
         <translation>Geen host bestemming</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="637"/>
+        <location filename="../mconfig.cpp" line="409"/>
         <source>Please fill in the destination host field</source>
         <translation>Vul aub het veld &apos;host bestemming&apos; in</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="689"/>
+        <location filename="../mconfig.cpp" line="461"/>
+        <source>Please, fill the destination host field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1200"/>
+        <source>About MX Broadcom Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1201"/>
+        <source>MX Network Assistant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1201"/>
+        <source>Version: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1203"/>
+        <source>Program for troubleshooting and configuring network for MX Linux</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1204"/>
+        <source>Copyright (c) MEPIS LLC and antiX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1205"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Zeg af (cancel)</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1206"/>
+        <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Plese, fill the destination host field</source>
-        <translation>Vul aub het veld &apos;host bestemming&apos; in</translation>
+        <translation type="obsolete">Vul aub het veld &apos;host bestemming&apos; in</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="737"/>
         <source>Wireless Interfaces:</source>
-        <translation>Draadloze interfaces:</translation>
+        <translation type="obsolete">Draadloze interfaces:</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1058"/>
         <source>With WPA encryption, you must specify a SSID.</source>
-        <translation type="unfinished">Bij gebruik vsan WPA encryptie moet een SSID gespecificeerd worden.</translation>
+        <translation type="obsolete">Bij gebruik vsan WPA encryptie moet een SSID gespecificeerd worden.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1070"/>
         <source>Failed to generate encryption key.  Please check the SSID and passphrase values.</source>
-        <translation type="unfinished">Het aanmaken van een encryptie sleutel mislukte.  Kontroleer aub de waardes voor SSD en Passphrase.</translation>
+        <translation type="obsolete">Het aanmaken van een encryptie sleutel mislukte.  Kontroleer aub de waardes voor SSD en Passphrase.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1076"/>
         <source>With WPA encryption, you must specify a passphrase.</source>
-        <translation type="unfinished">Bij gebruik van WPA moet een passphrase gespecificeerd worden.</translation>
+        <translation type="obsolete">Bij gebruik van WPA moet een passphrase gespecificeerd worden.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1122"/>
         <source>The encryption key appears to be incorrect. The size and value of the key is determined by the configuration of your Access Point. ASCII keys may be 5, 13, 16 or 29 characters long. Optionally, &apos;s:&apos; may be added in front of an ASCII key. Hex keys may be 10, 26, 32 or 56 hex digits.</source>
-        <translation type="unfinished">De encryptie sleutel blijkt foutief te zijn. De grootte en waarde van de sleutel wordt bepaald door de configuratie van Uw Access Point. ASCII sleutels mogen 5,13,16 of 29 karakters lang zijn. Optioneel kan &apos;s:&apos; toegevoegd worden voor een ASCII sleutel.  Hexadecimale sleutels mogen bestaan uit 10, 26, 32 of 56 hex waarden.</translation>
+        <translation type="obsolete">De encryptie sleutel blijkt foutief te zijn. De grootte en waarde van de sleutel wordt bepaald door de configuratie van Uw Access Point. ASCII sleutels mogen 5,13,16 of 29 karakters lang zijn. Optioneel kan &apos;s:&apos; toegevoegd worden voor een ASCII sleutel.  Hexadecimale sleutels mogen bestaan uit 10, 26, 32 of 56 hex waarden.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1143"/>
         <source>The configuration has been updated. The changes should take effect if you restart the active Interface, but it may be necessary to reboot.</source>
         <oldsource>The configuration has been updated. It should take effect if you restart the active Interface, but with some cards it may be necessary to reboot.</oldsource>
-        <translation type="unfinished">De configuratie is bijgewerkt. Deze zal geactiveerd worden bij herstarten van de actieve interface, maar bij sommige kaarten kan het nodig zijn om te rebooten. </translation>
+        <translation type="obsolete">De configuratie is bijgewerkt. Deze zal geactiveerd worden bij herstarten van de actieve interface, maar bij sommige kaarten kan het nodig zijn om te rebooten. </translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1194"/>
         <source>The configuration has been updated. The Interface will be restarted automaticaly but it may be necessary that you reboot.  This may take up to a minulte.</source>
         <oldsource>The configuration has been updated and the Interface
 will be restarted.  This may take up to 15 seconds.</oldsource>
-        <translation type="unfinished">De configuratie is bijgewerkt en de interface
+        <translation type="obsolete">De configuratie is bijgewerkt en de interface
 zal opnieuw gestart worden. Dit kan tot 15 seconden duren.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1202"/>
         <source>The configuration has been updated. The changes
 will take effect the next time you start the Interface.</source>
-        <translation type="unfinished">De configuratie is bijgewerkt. De wijzigingen
+        <translation type="obsolete">De configuratie is bijgewerkt. De wijzigingen
 treden in werking bij de volgende start van de interface.</translation>
-    </message>
-    <message>
-        <location filename="mconfig.cpp" line="1275"/>
-        <source>Attempting to restart network related subsystems.  If this doesn&apos;t work, you will need to reboot! </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mconfig.cpp" line="1435"/>
-        <source>Not Available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mconfig.cpp" line="1772"/>
-        <source>The Mepis manual cannot be installed. This may mean you are using the LiveCD or you are unable to reach the software repository,</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mconfig.cpp" line="1820"/>
-        <source>The network was completely stopped. To restart the network you can click the Re/start button or reboot the system.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mconfig.cpp" line="1825"/>
-        <source>Attempting to completely restart the network.  This may take up to one minute. Please be patient.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mconfig.cpp" line="2053"/>
-        <source>&lt;p&gt;&lt;b&gt;MEPIS Network Assistant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Copyright (C) 2003-10 by MEPIS LLC.  All rights reserved.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You may have to reboot for the changes to take effect.
@@ -362,115 +356,101 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Mogelijkerwijs moet U rebooten om de wijzigingen te activeren! Na rebooten en inloggen dient U wellicht Kmenu&gt;Internet&gt;Connection&gt;Netwerkmanager te starten.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1423"/>
         <source>Running</source>
         <oldsource>Up and Running</oldsource>
-        <translation type="unfinished">Interface is geactiveerd en werkt</translation>
+        <translation type="obsolete">Interface is geactiveerd en werkt</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1429"/>
         <source>Not Running</source>
         <oldsource>Up, not Running</oldsource>
-        <translation type="unfinished">Interface is geactiveerd, maar werkt niet</translation>
+        <translation type="obsolete">Interface is geactiveerd, maar werkt niet</translation>
     </message>
     <message>
         <source>Down</source>
         <translation type="obsolete">Interface niet actief</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1689"/>
+        <location filename="../mconfig.cpp" line="1092"/>
         <source>Locate the Windows driver you want to add</source>
         <translation type="unfinished">Vind de Windows driver die U wilt toevoegen</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1689"/>
+        <location filename="../mconfig.cpp" line="1092"/>
         <source>Windows installation information file (*.inf)</source>
         <translation type="unfinished">Windows installatie informatiebestand (*.inf)</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1721"/>
+        <location filename="../mconfig.cpp" line="1124"/>
         <source>*.sys file not found</source>
         <translation type="unfinished">*.sys bestand niet gevonden</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1721"/>
+        <location filename="../mconfig.cpp" line="1124"/>
         <source>The *.sys files must be in the same location as the *.inf file. %1 cannot be found</source>
         <translation type="unfinished">Het *.sys bestand moet in dezelfde locatie als het *.inf bestand aanwezig zijn. %1 kan niet gevonden worden</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1732"/>
+        <location filename="../mconfig.cpp" line="1135"/>
         <source>sys file reference not found</source>
         <translation type="unfinished">Verwijzing naar sys bestand niet gevonden</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1732"/>
+        <location filename="../mconfig.cpp" line="1135"/>
         <source>The sys file for the given driver cannot be determined after parsing the inf file</source>
         <translation type="unfinished">Na parsen van het .inf bestand kan niet vastgesteld worden welk sys bestand geldt voor de betreffende driver </translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1751"/>
+        <location filename="../mconfig.cpp" line="1154"/>
         <source>Ndiswrapper driver removed.</source>
         <translation type="unfinished">Ndiswrapper driver verwijderd.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1758"/>
         <source>mepis-manual</source>
-        <translation type="unfinished">mepis-manual</translation>
+        <translation type="obsolete">mepis-manual</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1763"/>
-        <location filename="mconfig.cpp" line="1783"/>
         <source>The Mepis manual is not installed</source>
-        <translation type="unfinished">Het Mepis handboek is niet geinstalleerd</translation>
+        <translation type="obsolete">Het Mepis handboek is niet geinstalleerd</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1764"/>
         <source>The Mepis manual is not installed, do you want to install it now?</source>
-        <translation type="unfinished">Het Mepis handboek is niet geinstalleerd, wilt u het nu installeren?</translation>
+        <translation type="obsolete">Het Mepis handboek is niet geinstalleerd, wilt u het nu installeren?</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1771"/>
         <source>The Mepis manual hasn&apos;t been installed</source>
-        <translation type="unfinished">Het Mepis handboek werd niet geinstalleerd</translation>
+        <translation type="obsolete">Het Mepis handboek werd niet geinstalleerd</translation>
     </message>
     <message>
         <source>The Mepis manual cannot be installed. This may mean you are using the LiveCD or that there are some kind of transitory problem with the repositories,</source>
         <translation type="obsolete">Het Mepis handboek kan niet worden geinstalleerd. Dit kan voorkomen als U vanaf de LiveCD draait of als er een voorbijgaand probleem is met de repositories,</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1784"/>
         <source>The Mepis manual is not installed and no Internet connection could be detected so it cannot be installed</source>
-        <translation type="unfinished">Het Mepis handboek is niet geinstalleerd en er kon geen internetverbinding vastgesteld worden, zodat installatie onmogelijk is</translation>
+        <translation type="obsolete">Het Mepis handboek is niet geinstalleerd en er kon geen internetverbinding vastgesteld worden, zodat installatie onmogelijk is</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1793"/>
         <source>file:///usr/share/mepis-manual/en/index.html#s05-3-1_general-tab</source>
-        <translation type="unfinished">file:///usr/share/mepis-manual/en/index.html#s05-3-1_general-tab</translation>
+        <translation type="obsolete">file:///usr/share/mepis-manual/en/index.html#s05-3-1_general-tab</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1796"/>
         <source>file:///usr/share/mepis-manual/en/index.html#s05-3-1_wireless-tab</source>
-        <translation type="unfinished">file:///usr/share/mepis-manual/en/index.html#s05-3-1_wireless-tab</translation>
+        <translation type="obsolete">file:///usr/share/mepis-manual/en/index.html#s05-3-1_wireless-tab</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1799"/>
         <source>file:///usr/share/mepis-manual/en/index.html#s05-3-1_interfaces-tab</source>
-        <translation type="unfinished">file:///usr/share/mepis-manual/en/index.html#s05-3-1_interfaces-tab</translation>
+        <translation type="obsolete">file:///usr/share/mepis-manual/en/index.html#s05-3-1_interfaces-tab</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1802"/>
         <source>file:///usr/share/mepis-manual/en/index.html#s05-3-1_troubleshooting-tab</source>
-        <translation type="unfinished">file:///usr/share/mepis-manual/en/index.html#s05-3-1_troubleshooting-tab</translation>
+        <translation type="obsolete">file:///usr/share/mepis-manual/en/index.html#s05-3-1_troubleshooting-tab</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1805"/>
         <source>file:///usr/share/mepis-manual/en/index.html#s05-3-1_diagnosis-tab</source>
-        <translation type="unfinished">file:///usr/share/mepis-manual/en/index.html#s05-3-1_diagnosis-tab</translation>
+        <translation type="obsolete">file:///usr/share/mepis-manual/en/index.html#s05-3-1_diagnosis-tab</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1808"/>
         <source>file:///usr/share/mepis-manual/en/index.html#section05-3-1</source>
-        <translation type="unfinished">file:///usr/share/mepis-manual/en/index.html#section05-3-1</translation>
+        <translation type="obsolete">file:///usr/share/mepis-manual/en/index.html#section05-3-1</translation>
     </message>
     <message>
         <source>The network was completely stopped. To restart the network you will need to click the Re/start button or reboot the system.</source>
@@ -481,9 +461,8 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Het netwerk zal volledig opnieuw gestrt worden.  Dit kan 40 seconden of meer duren. Svp even geduld hebben.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="2052"/>
         <source>About</source>
-        <translation type="unfinished">Betreft</translation>
+        <translation type="obsolete">Betreft</translation>
     </message>
     <message>
         <source>&lt;p&gt;&lt;b&gt;MEPIS Network Assistant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Copyright (C) 2003-9 by MEPIS LLC.  All rights reserved.&lt;/p&gt;</source>
@@ -493,23 +472,20 @@ treden in werking bij de volgende start van de interface.</translation>
 <context>
     <name>MEConfig</name>
     <message>
-        <location filename="meconfig.ui" line="26"/>
         <source>MEPIS Network Assistant</source>
-        <translation>MEPIS Netwerk Assistent</translation>
+        <translation type="obsolete">MEPIS Netwerk Assistent</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="64"/>
         <source>General</source>
-        <translation>Algemeen</translation>
+        <translation type="obsolete">Algemeen</translation>
     </message>
     <message>
         <source>Interface status</source>
         <translation type="obsolete">Status van de interface</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="137"/>
         <source>Refresh</source>
-        <translation>Verversen</translation>
+        <translation type="obsolete">Verversen</translation>
     </message>
     <message>
         <source>Interface Configuration Mode</source>
@@ -520,18 +496,16 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Stel de interface automatisch in</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="172"/>
         <source>Automatic (networkmanager)</source>
-        <translation>Automatisch (networkmanager)</translation>
+        <translation type="obsolete">Automatisch (networkmanager)</translation>
     </message>
     <message>
         <source>Set Interfaces and Wireless with MEPIS Network Assistant</source>
         <translation type="obsolete">Stel interfaces en draadloos in met de MEPIS Netwerk Assistent</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="194"/>
         <source>Manual (mnetwork)</source>
-        <translation>Handmatig (mnetwork)</translation>
+        <translation type="obsolete">Handmatig (mnetwork)</translation>
     </message>
     <message>
         <source>Ndiswrapper and Broadcom Preference</source>
@@ -554,21 +528,6 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Activeer Ndiswrapper en Broadcom wl driver (voor nieuwere Broadcom draadloos, en voor enkele andere draadloos)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="222"/>
-        <source>wl Broadcom driver</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="235"/>
-        <source>b43 Broadcom driver</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="248"/>
-        <source>ndiswrapper win drivers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Configure Domain Name Service Source</source>
         <translation type="obsolete">Configureer Domain Name Service (DNS) bron</translation>
     </message>
@@ -577,567 +536,514 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Stel handmatig de DNS bron in</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="327"/>
         <source>Use static DNS</source>
-        <translation>Gebruik een statische DNS</translation>
+        <translation type="obsolete">Gebruik een statische DNS</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="343"/>
         <source>Secondary DNS:</source>
-        <translation>Tweede DNS adres:</translation>
+        <translation type="obsolete">Tweede DNS adres:</translation>
     </message>
     <message>
         <source>Get DNS source from DHCP (default)</source>
         <translation type="obsolete">Verkrijg de DNS bron door middel van DHCP (standaard)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="308"/>
-        <source>Primary DNS address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="324"/>
-        <source>Set DNS addresses manually</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="359"/>
-        <source>Secondary DNS address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="375"/>
-        <source>Get DNS addresses from DHCP (default)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="378"/>
         <source>Use DHCP for DNS</source>
-        <translation>Gebruik DHCP voor DNS</translation>
+        <translation type="obsolete">Gebruik DHCP voor DNS</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="394"/>
         <source>Timeout if DHCP does not respond</source>
-        <translation>Timeout indien DHCP niet reageert</translation>
+        <translation type="obsolete">Timeout indien DHCP niet reageert</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="397"/>
         <source>DHCP timeout:</source>
-        <translation>DHCP timeout:</translation>
+        <translation type="obsolete">DHCP timeout:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="413"/>
         <source> sec</source>
-        <translation>sec</translation>
+        <translation type="obsolete">sec</translation>
     </message>
     <message>
         <source>Network control</source>
         <translation type="obsolete">Netwerk besturing</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="511"/>
         <source>Completely re/start the network now</source>
-        <translation>Nu het netwerk re/starten</translation>
+        <translation type="obsolete">Nu het netwerk re/starten</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="514"/>
         <source>Re/Start Network</source>
-        <translation>Re/start het netwerk</translation>
+        <translation type="obsolete">Re/start het netwerk</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="469"/>
         <source>Completely stop the network now</source>
-        <translation>Nu het netwerk volledig stoppen</translation>
+        <translation type="obsolete">Nu het netwerk volledig stoppen</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="76"/>
-        <source>Interface Status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="157"/>
-        <source>Interface Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="169"/>
-        <source>Configure Interfaces and Wireless automatically</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="191"/>
-        <source>Configure Interfaces and Wireless with MEPIS Network Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="213"/>
-        <source>Networking Preferences</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="219"/>
-        <source>Driver for newer Broadcom chips, especially Dell and Apple</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="232"/>
-        <source>Driver for older Broadcom chips, but may interfere with wl driver</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="245"/>
-        <source>Driver for windows Wireless drivers, but may interfere with wl or b43</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="258"/>
-        <source>Enable firewall, if available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="261"/>
-        <source>Enable firewall</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="268"/>
-        <source>Enable IPv6 networking, if available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="271"/>
-        <source>Enable ipv6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="287"/>
-        <source>Domain Name Service (DNS)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="435"/>
-        <source>Network Control</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="472"/>
         <source>Stop Network</source>
-        <translation>Netwerk stoppen</translation>
+        <translation type="obsolete">Netwerk stoppen</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="565"/>
         <source>Wireless</source>
-        <translation>Draadloos</translation>
+        <translation type="obsolete">Draadloos</translation>
     </message>
     <message>
         <source>Configure Wireless Radio Connection</source>
         <translation type="obsolete">Configureer draadloze radio verbinding</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="583"/>
-        <source>Configure wireless radio connection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meconfig.ui" line="604"/>
         <source>Enter WEP encryption key</source>
-        <translation>Voer WEP encryptie sleutel in</translation>
+        <translation type="obsolete">Voer WEP encryptie sleutel in</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="607"/>
         <source>Key:</source>
-        <translation>Sleutel:</translation>
+        <translation type="obsolete">Sleutel:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="623"/>
         <source>Enter the WPA passphrase</source>
-        <translation>Voer de WPA passphrase in</translation>
+        <translation type="obsolete">Voer de WPA passphrase in</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="626"/>
         <source>Passphrase:</source>
-        <translation>Passphrase:</translation>
+        <translation type="obsolete">Passphrase:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="642"/>
         <source>Check if the AP uses restricted mode</source>
-        <translation>Kontroleer of het AP &apos;restricted mode&apos; gebruikt </translation>
+        <translation type="obsolete">Kontroleer of het AP &apos;restricted mode&apos; gebruikt </translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="645"/>
         <source>Restricted mode</source>
-        <translation>Restricted Mode</translation>
+        <translation type="obsolete">Restricted Mode</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="658"/>
         <source>Wireless was detected on these Interfaces</source>
-        <translation>Draadloos werd gevonden op deze infaces</translation>
+        <translation type="obsolete">Draadloos werd gevonden op deze infaces</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="661"/>
         <source>Wireless Interfaces:</source>
-        <translation>Draadloze interface:</translation>
+        <translation type="obsolete">Draadloze interface:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="690"/>
         <source>Check to enter the frequency of the AP (optional)</source>
-        <translation>Aanvinken om de frequentie van het AP in te voeren (optioneel)</translation>
+        <translation type="obsolete">Aanvinken om de frequentie van het AP in te voeren (optioneel)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="693"/>
         <source>Frequency: (optional, &apos;2.xxx GHz&apos;)</source>
-        <translation>Frequentie: (optioneel, &apos;2.xxx Ghz&apos;)</translation>
+        <translation type="obsolete">Frequentie: (optioneel, &apos;2.xxx Ghz&apos;)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="706"/>
         <source>The name of your Wireless access point (AP)</source>
-        <translation>De naam van uw draadloze Access Point  (AP)</translation>
+        <translation type="obsolete">De naam van uw draadloze Access Point  (AP)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="709"/>
         <source>SSID: (access point name)</source>
-        <translation>SSID: (naam van access point)</translation>
+        <translation type="obsolete">SSID: (naam van access point)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="722"/>
         <source>Select no encryption, NOT secure</source>
-        <translation>Kies geen encryptie, NIET veilig</translation>
+        <translation type="obsolete">Kies geen encryptie, NIET veilig</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="725"/>
         <source>No encryption (not secure)</source>
-        <translation>Geen encryptie (niet veilig)</translation>
+        <translation type="obsolete">Geen encryptie (niet veilig)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="741"/>
         <source>Select WEP encryption</source>
-        <translation>Kies WEP encryptie</translation>
+        <translation type="obsolete">Kies WEP encryptie</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="744"/>
         <source>WEP encryption (some security)</source>
-        <translation>WEP encryptie (een beetje veiliger)</translation>
+        <translation type="obsolete">WEP encryptie (een beetje veiliger)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="776"/>
         <source>Enter the frequency of the AP</source>
-        <translation>Voer de frequentie van het AP in</translation>
+        <translation type="obsolete">Voer de frequentie van het AP in</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="795"/>
         <source>Enter the encryption key</source>
-        <translation>Voer de encryptie sleutel in</translation>
+        <translation type="obsolete">Voer de encryptie sleutel in</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="808"/>
         <source>Select WPA encryption</source>
-        <translation>Kies WPA encryptie</translation>
+        <translation type="obsolete">Kies WPA encryptie</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="811"/>
         <source>WPA encryption (best security)</source>
-        <translation>WPA encryptie (meest veiligheid)</translation>
+        <translation type="obsolete">WPA encryptie (meest veiligheid)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="827"/>
         <source>Enter the passphrase</source>
-        <translation>Voer de passphrase in</translation>
+        <translation type="obsolete">Voer de passphrase in</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="843"/>
         <source>Check if the AP hides the SSID</source>
-        <translation>Kontroleer of het AP de SSID verbergt</translation>
+        <translation type="obsolete">Kontroleer of het AP de SSID verbergt</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="846"/>
         <source>Hidden ssid</source>
-        <translation>Verborgen SSID</translation>
+        <translation type="obsolete">Verborgen SSID</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="866"/>
         <source>Scan Access Points</source>
-        <translation>Scan Access Points</translation>
+        <translation type="obsolete">Scan Access Points</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="898"/>
         <source>Interfaces</source>
-        <translation>Interfaces</translation>
+        <translation type="obsolete">Interfaces</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="945"/>
         <source>Settings for:</source>
-        <translation>Instellingen voor:</translation>
+        <translation type="obsolete">Instellingen voor:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="958"/>
         <source>Select Interface to configure</source>
-        <translation>Kies de interface die U wilt configureren</translation>
+        <translation type="obsolete">Kies de interface die U wilt configureren</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="962"/>
         <source>eth0</source>
-        <translation>eth0</translation>
+        <translation type="obsolete">eth0</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="967"/>
         <source>eth1</source>
-        <translation>eth1</translation>
+        <translation type="obsolete">eth1</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="972"/>
         <source>eth2</source>
-        <translation>eth2</translation>
+        <translation type="obsolete">eth2</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="977"/>
         <source>ath0</source>
-        <translation>ath0</translation>
+        <translation type="obsolete">ath0</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="982"/>
         <source>wifi0</source>
-        <translation>wifi0</translation>
+        <translation type="obsolete">wifi0</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="987"/>
         <source>wlan0</source>
-        <translation>wlan0</translation>
+        <translation type="obsolete">wlan0</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="992"/>
         <source>ra0</source>
-        <translation>ra0</translation>
+        <translation type="obsolete">ra0</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="997"/>
         <source>rausb0</source>
-        <translation>rausb0</translation>
+        <translation type="obsolete">rausb0</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1011"/>
         <source>Configuration</source>
-        <translation>Configuratie</translation>
+        <translation type="obsolete">Configuratie</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1048"/>
         <source>Start Interface during system boot</source>
-        <translation>Start de interface tijdens de system boot</translation>
+        <translation type="obsolete">Start de interface tijdens de system boot</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1051"/>
         <source>Start at boot</source>
-        <translation>Start bij booten</translation>
+        <translation type="obsolete">Start bij booten</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1070"/>
         <source>Start Interface when pcmcia card plugged in</source>
-        <translation>Start de interface als een pcmcia kaart ingeplugd wordt</translation>
+        <translation type="obsolete">Start de interface als een pcmcia kaart ingeplugd wordt</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1073"/>
         <source>Start when plugged</source>
-        <translation>Start indien ingeplugd</translation>
+        <translation type="obsolete">Start indien ingeplugd</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1092"/>
         <source>Start or restart Interface when Apply is clicked</source>
-        <translation>Start of herstart als &apos;Apply&apos; wordt aangeklikt</translation>
+        <translation type="obsolete">Start of herstart als &apos;Apply&apos; wordt aangeklikt</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1095"/>
         <source>Start/restart on Apply</source>
-        <translation>Start/restart bij &apos;Apply&apos;</translation>
+        <translation type="obsolete">Start/restart bij &apos;Apply&apos;</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1111"/>
         <source>IP address:</source>
-        <translation>IP adres:</translation>
+        <translation type="obsolete">IP adres:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1124"/>
         <source>Set Interface manually (needed by some older networks)</source>
-        <translation>Stel de interface handmatig in (nodig bij sommige oudere netwerken)</translation>
+        <translation type="obsolete">Stel de interface handmatig in (nodig bij sommige oudere netwerken)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1127"/>
         <source>Use static IP settings</source>
-        <translation>Gebruik statische IP instellingen</translation>
+        <translation type="obsolete">Gebruik statische IP instellingen</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1140"/>
         <source>Get Interface settings from DHCP (default)</source>
-        <translation>Verkrijg de interface instellingen via DHCP (standaard)</translation>
+        <translation type="obsolete">Verkrijg de interface instellingen via DHCP (standaard)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1143"/>
         <source>Use DHCP to get IP settings</source>
-        <translation>Gebruik DHCP om IP instellingen te verkrijgen</translation>
+        <translation type="obsolete">Gebruik DHCP om IP instellingen te verkrijgen</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1178"/>
         <source>Netmask:</source>
-        <translation>Netmask:</translation>
+        <translation type="obsolete">Netmask:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1194"/>
         <source>Gateway address:</source>
-        <translation>Gateway adres:</translation>
+        <translation type="obsolete">Gateway adres:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1210"/>
         <source>Broadcast address:</source>
-        <translation>Broadcast adres:</translation>
+        <translation type="obsolete">Broadcast adres:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1290"/>
         <source>Current status of the selected Interface</source>
-        <translation>Huidige status van de geselecteerde interface</translation>
+        <translation type="obsolete">Huidige status van de geselecteerde interface</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1293"/>
         <source>Status: Interface does not exist</source>
-        <translation>Status: Interface bestaat niet</translation>
+        <translation type="obsolete">Status: Interface bestaat niet</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1321"/>
         <source>Troubleshooting</source>
-        <translation>Probleemoplossen (troubleshooting)</translation>
+        <translation type="obsolete">Probleemoplossen (troubleshooting)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1327"/>
         <source>Hardware</source>
-        <translation>Hardware</translation>
+        <translation type="obsolete">Hardware</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1403"/>
         <source>Scan Hardware</source>
-        <translation>Scan hardware</translation>
+        <translation type="obsolete">Scan hardware</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1439"/>
         <source>Associated drivers</source>
-        <translation>Geassocieerde drivers</translation>
+        <translation type="obsolete">Geassocieerde drivers</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1506"/>
         <source>List Linux drivers</source>
-        <translation>Laat lijst zien van gebruikte linux drivers</translation>
+        <translation type="obsolete">Laat lijst zien van gebruikte linux drivers</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1526"/>
+        <location filename="../meconfig.ui" line="500"/>
         <source>Blacklist Driver</source>
         <translation>Schakel driver uit (blacklist)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1581"/>
+        <location filename="../meconfig.ui" line="646"/>
         <source>List Windows drivers</source>
         <translation>Laat lijst zien van Windows drivers</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1592"/>
+        <location filename="../meconfig.ui" line="623"/>
         <source>Add Driver</source>
         <translation>Voeg driver toe</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1606"/>
+        <location filename="../meconfig.ui" line="26"/>
+        <source>MX Broadcom Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="198"/>
+        <location filename="../meconfig.ui" line="204"/>
+        <source>Introduction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="210"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can be sometime dificult to set un in Linux.There are a number of different types of drivers that have different capabilties and features: &lt;/p&gt;&lt;p&gt;- reversed-engineered drivers: b43, brcm43xxxx&lt;/p&gt;&lt;p&gt;- open-sourced kernel drivers: brcmsmac, brcmfmac &lt;/p&gt;&lt;p&gt;- proprietary drivers: broadcom-wl&lt;/p&gt;&lt;p&gt;- windows drivers: broadcom NDIS drivers&lt;/p&gt;&lt;p&gt;This tool purpose is to make it easier to set up the needed driver for your network card. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="226"/>
+        <source>Hardware detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="244"/>
+        <source>Re-scan Hardware</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="338"/>
+        <source>Unblocks all soft/hard blocked wireless devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="341"/>
+        <source>Unblock WiFi Devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="360"/>
+        <location filename="../meconfig.ui" line="366"/>
+        <source>Linux drivers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="372"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window displays the Linux drivers currently associated with the detected hardware, and allows you to select which will be used with your device on either a temporary or permanent basis. &lt;/p&gt;&lt;p&gt;Example of use: the common BCM43xx chip&lt;br/&gt;--highlight the blacklisted driver &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;br/&gt;&lt;/span&gt;--click on the &amp;quot;Load driver&amp;quot; button and test the wifi connection&lt;br/&gt;--if working, highlight &lt;span style=&quot; font-weight:600;&quot;&gt;b43&lt;/span&gt; again&lt;br/&gt;--click on the &amp;quot;Unblacklist driver&amp;quot; button to make the change permanent.&lt;br/&gt;--if the &lt;span style=&quot; font-weight:600;&quot;&gt;wl&lt;/span&gt; driver is listed as loaded, highlight it and blacklist it&lt;/p&gt;&lt;p&gt;Click the Help button for information about other chips and drivers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="391"/>
+        <source>Associated Linux drivers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="400"/>
+        <source>Load Driver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="463"/>
+        <source>Unload Driver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="480"/>
+        <source>Re-list Linux Drivers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="519"/>
+        <source>Windows drivers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="525"/>
+        <source>About NDISwrapper</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="537"/>
+        <source>Install NDISwrapper</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="548"/>
+        <source>NDISwrapper is an open source software driver &quot;wrapper&quot; that enables Linux to use the Microsoft Windows drivers for wireless network devices. In general, Windows-XP drivers work much better than other versions. Make sure there is no competing Linux driver. In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="564"/>
+        <source>Uninstall NDISwrapper</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="578"/>
+        <source>Windows Drivers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="612"/>
         <source>Remove Driver</source>
         <translation>Verwijder driver</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1620"/>
+        <location filename="../meconfig.ui" line="669"/>
+        <source>Net diagnostics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="675"/>
+        <source>IP address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meconfig.ui" line="862"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Blacklist NDISwrapper</source>
-        <translation>Schakel Ndiswrapper uit (blacklist)</translation>
+        <translation type="obsolete">Schakel Ndiswrapper uit (blacklist)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1639"/>
         <source>Diagnosis</source>
-        <translation>Diagnose</translation>
+        <translation type="obsolete">Diagnose</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1651"/>
+        <location filename="../meconfig.ui" line="704"/>
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1657"/>
-        <location filename="meconfig.ui" line="1767"/>
+        <location filename="../meconfig.ui" line="710"/>
+        <location filename="../meconfig.ui" line="820"/>
         <source>Target URL:</source>
         <translation>Doel URL:</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1667"/>
+        <location filename="../meconfig.ui" line="720"/>
         <source>Packets</source>
         <translation>packets</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1702"/>
-        <location filename="meconfig.ui" line="1822"/>
+        <location filename="../meconfig.ui" line="755"/>
+        <location filename="../meconfig.ui" line="875"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1719"/>
-        <location filename="meconfig.ui" line="1839"/>
+        <location filename="../meconfig.ui" line="772"/>
+        <location filename="../meconfig.ui" line="892"/>
         <source>Clear</source>
         <translation>Schoonvegen</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1733"/>
-        <location filename="meconfig.ui" line="1853"/>
+        <location filename="../meconfig.ui" line="786"/>
+        <location filename="../meconfig.ui" line="906"/>
         <source>Cancel</source>
         <translation>Zeg af (cancel)</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1761"/>
+        <location filename="../meconfig.ui" line="814"/>
         <source>Traceroute</source>
         <translation>Traceroute</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1777"/>
+        <location filename="../meconfig.ui" line="830"/>
         <source>Hops</source>
         <translation>Hops</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1809"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;p, li { white-space: pre-wrap; }&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="obsolete">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;p, li { white-space: pre-wrap; }&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;DejaVu Sans&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1907"/>
+        <location filename="../meconfig.ui" line="80"/>
         <source>About...</source>
         <translation>Over...</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1924"/>
+        <location filename="../meconfig.ui" line="97"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="1986"/>
         <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
+        <translation type="obsolete">&amp;OK</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="2009"/>
         <source>&amp;Apply</source>
-        <translation>&amp;Apply</translation>
+        <translation type="obsolete">&amp;Apply</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="2022"/>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation type="obsolete">Alt+A</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="2029"/>
+        <location filename="../meconfig.ui" line="159"/>
         <source>&amp;Close</source>
         <translation>&amp;Close</translation>
     </message>
     <message>
-        <location filename="meconfig.ui" line="2036"/>
+        <location filename="../meconfig.ui" line="166"/>
         <source>Alt+C</source>
         <translation>Alt+C</translation>
     </message>
@@ -1145,66 +1051,118 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="mconfig.cpp" line="1657"/>
-        <source>NDISwrapper removed from blacklist.  You must reboot for the changes to take effect </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mconfig.cpp" line="1665"/>
-        <source>NDISwrapper blacklisted.  You must reboot for the changes to take effect </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="main.cpp" line="40"/>
+        <location filename="../main.cpp" line="44"/>
         <source>You must run this program as root.</source>
         <translation>U moet dit programma as root draaien.</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1533"/>
+        <location filename="../mconfig.cpp" line="664"/>
+        <source>Ndiswrapper is not installed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="673"/>
         <source>driver installed</source>
         <translation>driver geinstalleerd</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1544"/>
+        <location filename="../mconfig.cpp" line="684"/>
         <source> and in use by </source>
         <translation>en in gebruik door</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1553"/>
+        <location filename="../mconfig.cpp" line="693"/>
         <source>. Alternate driver: </source>
         <translation>. Alternatieve driver:</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1591"/>
-        <location filename="mconfig.cpp" line="1619"/>
-        <location filename="mconfig.cpp" line="1666"/>
-        <source>Unblacklist NDISwrapper</source>
-        <translation>Inschakelen NDISwrapper (Unblacklist)</translation>
+        <location filename="../mconfig.cpp" line="785"/>
+        <source>Driver removed from blacklist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1596"/>
+        <location filename="../mconfig.cpp" line="786"/>
+        <source>Driver removed from blacklist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="982"/>
+        <source>Installation successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="986"/>
+        <source>Error detected, could not compile ndiswrapper driver.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="991"/>
+        <source>Error detected, could not install ndiswrapper.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1005"/>
+        <source>Error encountered while removing Ndiswrapper</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1063"/>
+        <source>Unblacklist Driver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1068"/>
+        <source>Blacklist Driver</source>
+        <translation type="unfinished">Schakel driver uit (blacklist)</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1183"/>
+        <source>Could not unlock devices.
+WiFi device(s) might already be unlocked.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1185"/>
+        <source>WiFi devices unlocked.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1232"/>
+        <location filename="../mconfig.cpp" line="1233"/>
+        <source>Driver loaded successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1251"/>
+        <location filename="../mconfig.cpp" line="1252"/>
+        <source>Driver unloaded successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unblacklist NDISwrapper</source>
+        <translation type="obsolete">Inschakelen NDISwrapper (Unblacklist)</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="794"/>
+        <location filename="../mconfig.cpp" line="795"/>
         <source>Module blacklisted</source>
         <translation>Module uitgeschakeld (blacklisted)</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1623"/>
-        <location filename="mconfig.cpp" line="1658"/>
         <source>Blacklist NDISwrapper</source>
-        <translation>NDISwrapper uitgeschakelen (&apos;blacklisten&apos;)</translation>
+        <translation type="obsolete">NDISwrapper uitgeschakelen (&apos;blacklisten&apos;)</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1656"/>
         <source>NDISwrapper removed from blacklist</source>
-        <translation>NDISwrapper verwijderen uit de uitschakellijst (de blacklist)</translation>
+        <translation type="obsolete">NDISwrapper verwijderen uit de uitschakellijst (de blacklist)</translation>
     </message>
     <message>
         <source>NDISwrapper removed from blacklist. You have to reboot for the changes to take effect </source>
         <translation type="obsolete">NDISwrapper verwijderd uit de uitschakellijst.  U moet rebooten om dit te activeren</translation>
     </message>
     <message>
-        <location filename="mconfig.cpp" line="1664"/>
         <source>NDISwrapper blacklisted</source>
-        <translation>NDISwrapper uitgeschakeld (blacklisted)</translation>
+        <translation type="obsolete">NDISwrapper uitgeschakeld (blacklisted)</translation>
     </message>
     <message>
         <source>NDISwrapper blacklisted. You have to reboot for the changes to take effect </source>
@@ -1231,6 +1189,19 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>About</source>
         <translation type="obsolete">Betreft</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../mconfig.cpp" line="812"/>
+        <source>Count not load </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="843"/>
+        <source>Count not unload </source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

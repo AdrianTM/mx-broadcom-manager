@@ -38,7 +38,7 @@ MConfig::MConfig(QWidget* parent)
     configurationChanges[1] = false;
 
     pingProc  = new QProcess(this);
-    traceProc = new QProcess(this);    
+    traceProc = new QProcess(this);
     installProc = new QProcess(this);
 
     installOutputEdit = new QTextEdit();
@@ -72,6 +72,19 @@ QString MConfig::getCmdOut(QString cmd) {
     }
     pclose(fp);
     return QString (ret);
+}
+
+// Non blocking return function
+QString MConfig::getCmdOut2(QString cmd)
+{
+    QEventLoop loop;
+    QProcess *proc = new QProcess();
+    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
+    proc->start("/bin/bash", QStringList() << "-c" << cmd);
+    loop.exec();
+    QString out = proc->readAllStandardOutput().trimmed();
+    delete proc;
+    return out;
 }
 
 QStringList MConfig::getCmdOuts(QString cmd) {
@@ -171,7 +184,7 @@ void MConfig::refresh() {
         break;
     case 1: // Linux drivers
         on_linuxDrvDiagnosePushButton_clicked();
-        break;    
+        break;
     case 2: // Windows drivers
         on_windowsDrvDiagnosePushButton_clicked();
         break;
@@ -564,7 +577,7 @@ void MConfig::on_linuxDrvDiagnosePushButton_clicked()
     completeKernelNetModules << "atl2";
     completeKernelNetModules << "wl";
     for (int i = 0; i < loadedKernelModules.size(); ++i)
-    {        
+    {
         QString mod = loadedKernelModules.at(i);
         if (completeKernelNetModules.contains(mod.left(mod.indexOf(' '))))
         {
@@ -600,14 +613,14 @@ void MConfig::on_linuxDrvDiagnosePushButton_clicked()
     // add blacklisted modules to the list
     int i = 0;
     while (!inputBlacklist.atEnd())
-    {                        
+    {
         if (i == 0) {
             new QListWidgetItem("---------Blacklisted Drivers--------", linuxDrvList);
         }
         i++;
-        s = inputBlacklist.readLine();                
-        QRegExp expr("^\\s*blacklist\\s*.*");        
-        if (expr.exactMatch(s)) {            
+        s = inputBlacklist.readLine();
+        QRegExp expr("^\\s*blacklist\\s*.*");
+        if (expr.exactMatch(s)) {
             QString captured = expr.cap(0);
             captured.remove("blacklist");
             driver = captured.trimmed();
@@ -694,7 +707,7 @@ void MConfig::on_windowsDrvDiagnosePushButton_clicked()
 }
 
 bool MConfig::blacklistModule(QString module)
-{   
+{
     QFile outputBlacklist;
     if (!broadcomModules.contains(module))
     {
@@ -725,7 +738,7 @@ bool MConfig::blacklistModule(QString module)
 }
 
 void MConfig::on_linuxDrvBlacklistPushButton_clicked()
-{         
+{
     if (linuxDrvList->currentRow() != -1)
     {
         QListWidgetItem* currentDriver = linuxDrvList->currentItem();
@@ -771,7 +784,7 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
             outputBlacklist.close();
             QMessageBox::information(0, QApplication::tr("Driver removed from blacklist"),
                                      QApplication::tr("Driver removed from blacklist."));
-            loadModule(driver);           
+            loadModule(driver);
             driverBlacklisted = false;
             unloadedModules.removeAll(driver);
             blacklistedModules.removeAll(driver);
@@ -791,7 +804,7 @@ bool MConfig::loadModule(QString module)
 {
     QString cmd = QString("modprobe %1").arg(module);
     if (system(cmd.toAscii()) != 0)
-    {        
+    {
         // run depmod and try to load again
         system("depmod");
         if (system(cmd.toAscii()) != 0)
@@ -896,7 +909,7 @@ void MConfig::on_installNdiswrapper_clicked()
     }
     installProc->start("apt-get update");
     installOutputEdit->clear();
-    installOutputEdit->show();    
+    installOutputEdit->show();
     installOutputEdit->resize(800, 600);
     // center output window
     QRect screenGeometry = QApplication::desktop()->screenGeometry();
@@ -1198,13 +1211,12 @@ void MConfig::on_buttonAbout_clicked()
 
 QString MConfig::getIP()
 {
-    qApp->processEvents();
-    return getCmdOut("wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'");
+    return getCmdOut2("wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'");
 }
 
 QString MConfig::getIPfromRouter()
 {
-    return getCmdOut("ifconfig | grep 'inet ' | sed -e 's/inet addr://' -e 's/ Bcast.*//'  -e 's/127.*//'  -e 's/\\s*//'");
+    return getCmdOut2("ifconfig | grep 'inet ' | sed -e 's/inet addr://' -e 's/ Bcast.*//'  -e 's/127.*//'  -e 's/\\s*//'");
 }
 
 void MConfig::on_linuxDrvLoad_clicked()

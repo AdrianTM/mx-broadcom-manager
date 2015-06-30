@@ -1,5 +1,5 @@
-QTDIR = /usr/local/qt4
-QT       += webkit
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 TEMPLATE = app
 TARGET = mx-broadcom-manager
 TRANSLATIONS += translations/mnetwork_ar.ts \
@@ -11,13 +11,13 @@ TRANSLATIONS += translations/mnetwork_ar.ts \
                 translations/mnetwork_hi.ts \
                 translations/mnetwork_it.ts \
                 translations/mnetwork_ja.ts \
-                translations/mnetwork_ko.ts \                
+                translations/mnetwork_ko.ts \
                 translations/mnetwork_nl.ts \
                 translations/mnetwork_pl.ts \
                 translations/mnetwork_pt.ts \
-                translations/mnetwork_pt_BR.ts \ 
+                translations/mnetwork_pt_BR.ts \
                 translations/mnetwork_zh_CN.ts \
-                translations/mnetwork_zh_TW.ts 
+                translations/mnetwork_zh_TW.ts
 FORMS += meconfig.ui
 HEADERS += mconfig.h
 SOURCES += main.cpp mconfig.cpp

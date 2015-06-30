@@ -2,9 +2,8 @@ Source: mx-broadcom-manager
 Section: admin
 Priority: optional
 Maintainer: Adrian <adrian@mxlinux.org>
-Build-Depends: qt4-qmake,
-	debhelper (>=7.0.50~),
-	libqtwebkit-dev
+Build-Depends: qt5-qmake,
+	debhelper (>=7.0.50~)
 Standards-Version: 3.9.5
 Vcs-Git: git://github.com/AdrianTM/mx-network
 

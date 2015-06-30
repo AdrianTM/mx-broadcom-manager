@@ -19,7 +19,6 @@
 
 #include "mconfig.h"
 #include <QFileDialog>
-#include <QWebView>
 #include <QMenu>
 #include <QClipboard>
 #include <QDesktopWidget>
@@ -60,7 +59,7 @@ MConfig::~MConfig() {
 QString MConfig::getCmdOut(QString cmd) {
     char line[260];
     const char* ret = "";
-    FILE* fp = popen(cmd.toAscii(), "r");
+    FILE* fp = popen(cmd.toUtf8(), "r");
     if (fp == NULL) {
         return QString (ret);
     }
@@ -89,7 +88,7 @@ QString MConfig::getCmdOut2(QString cmd)
 
 QStringList MConfig::getCmdOuts(QString cmd) {
     char line[260];
-    FILE* fp = popen(cmd.toAscii(), "r");
+    FILE* fp = popen(cmd.toUtf8(), "r");
     QStringList results;
     if (fp == NULL) {
         return results;
@@ -110,12 +109,12 @@ QString MConfig::getCmdValue(QString cmd, QString key, QString keydel, QString v
 
     QStringList strings = getCmdOuts(cmd);
     for (QStringList::Iterator it = strings.begin(); it != strings.end(); ++it) {
-        strcpy(line, ((QString)*it).toAscii());
-        char* keyptr = strstr(line, key.toAscii());
+        strcpy(line, ((QString)*it).toUtf8());
+        char* keyptr = strstr(line, key.toUtf8());
         if (keyptr != NULL) {
             // key found
-            strtok(keyptr, keydel.toAscii());
-            const char* val = strtok(NULL, valdel.toAscii());
+            strtok(keyptr, keydel.toUtf8());
+            const char* val = strtok(NULL, valdel.toUtf8());
             if (val != NULL) {
                 ret = val;
             }
@@ -127,7 +126,7 @@ QString MConfig::getCmdValue(QString cmd, QString key, QString keydel, QString v
 
 QStringList MConfig::getCmdValues(QString cmd, QString key, QString keydel, QString valdel) {
     char line[130];
-    FILE* fp = popen(cmd.toAscii(), "r");
+    FILE* fp = popen(cmd.toUtf8(), "r");
     QStringList results;
     if (fp == NULL) {
         return results;
@@ -136,11 +135,11 @@ QStringList MConfig::getCmdValues(QString cmd, QString key, QString keydel, QStr
     while (fgets(line, sizeof line, fp) != NULL) {
         i = strlen(line);
         line[--i] = '\0';
-        char* keyptr = strstr(line, key.toAscii());
+        char* keyptr = strstr(line, key.toUtf8());
         if (keyptr != NULL) {
             // key found
-            strtok(keyptr, keydel.toAscii());
-            const char* val = strtok(NULL, valdel.toAscii());
+            strtok(keyptr, keydel.toUtf8());
+            const char* val = strtok(NULL, valdel.toUtf8());
             if (val != NULL) {
                 results.append(val);
             }
@@ -153,7 +152,7 @@ QStringList MConfig::getCmdValues(QString cmd, QString key, QString keydel, QStr
 bool MConfig::replaceStringInFile(QString oldtext, QString newtext, QString filepath) {
 
     QString cmd = QString("sed -i 's/%1/%2/g' %3").arg(oldtext).arg(newtext).arg(filepath);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
         return false;
     }
     return true;
@@ -723,7 +722,7 @@ bool MConfig::blacklistModule(QString module)
         return false;
     }
 
-    outputBlacklist.write(QString("blacklist %1\n").arg(module).toAscii());
+    outputBlacklist.write(QString("blacklist %1\n").arg(module).toUtf8());
     outputBlacklist.close();
 
     if (removable(module))
@@ -773,14 +772,14 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
                 {
                     outputString += s;
                 }
-                outputBlacklist.write(s.toAscii());
+                outputBlacklist.write(s.toUtf8());
             }
             inputBlacklist.close();
             if (!outputBlacklist.open(QFile::WriteOnly|QFile::Text))
             {
                 return;
             }
-            outputBlacklist.write(outputString.toAscii());
+            outputBlacklist.write(outputString.toUtf8());
             outputBlacklist.close();
             QMessageBox::information(0, QApplication::tr("Driver removed from blacklist"),
                                      QApplication::tr("Driver removed from blacklist."));
@@ -803,11 +802,11 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
 bool MConfig::loadModule(QString module)
 {
     QString cmd = QString("modprobe %1").arg(module);
-    if (system(cmd.toAscii()) != 0)
+    if (system(cmd.toUtf8()) != 0)
     {
         // run depmod and try to load again
         system("depmod");
-        if (system(cmd.toAscii()) != 0)
+        if (system(cmd.toUtf8()) != 0)
         {
             QString msg = QObject::tr("Count not load ");
             msg += module;
@@ -826,7 +825,7 @@ bool MConfig::loadModule(QString module)
 bool MConfig::removable(QString module)
 {
     QString cmd = QString("modprobe -rn %1").arg(module);
-    if (system(cmd.toAscii()) != 0)
+    if (system(cmd.toUtf8()) != 0)
     {
         return false;
     }
@@ -838,7 +837,7 @@ bool MConfig::removable(QString module)
 bool MConfig::removeModule(QString module)
 {
     QString cmd = QString("modprobe -r %1").arg(module);
-    if (system(cmd.toAscii()) != 0)
+    if (system(cmd.toUtf8()) != 0)
     {
         QString msg = QObject::tr("Count not unload ");
         msg += module;
@@ -866,14 +865,14 @@ bool MConfig::removeStart(QString module)
         {
             outputString += s;
         }
-        outputModules.write(s.toAscii());
+        outputModules.write(s.toUtf8());
     }
     inputModules.close();
     if (!outputModules.open(QFile::WriteOnly|QFile::Text))
     {
         return false;
     }
-    outputModules.write(outputString.toAscii());
+    outputModules.write(outputString.toUtf8());
     outputModules.close();
     return true;
 }
@@ -891,7 +890,7 @@ bool MConfig::installModule(QString module)
     {
         return false;
     }
-    outputModules.write(QString("%1\n").arg(module).toAscii());
+    outputModules.write(QString("%1\n").arg(module).toUtf8());
     outputModules.close();
     return true;
 }
@@ -1125,9 +1124,9 @@ void MConfig::on_windowsDrvAddPushButton_clicked()
             }
             else {
                 QString cmd = QString("ndiswrapper -i %1").arg(infFileName);
-                system(cmd.toAscii());
+                system(cmd.toUtf8());
                 cmd = QString("ndiswrapper -ma");
-                system(cmd.toAscii());
+                system(cmd.toUtf8());
                 on_windowsDrvDiagnosePushButton_clicked();
             }
         }
@@ -1150,7 +1149,7 @@ void MConfig::on_windowsDrvRemovePushButton_clicked()
         QListWidgetItem* currentDriver = windowsDrvList->currentItem();
         QString driver = currentDriver->text();
         QString cmd = QString("ndiswrapper -r %1").arg(driver.left(driver.indexOf(" ")));
-        system(cmd.toAscii());
+        system(cmd.toUtf8());
         QMessageBox::information(0, QString::null, tr("Ndiswrapper driver removed."));
         on_windowsDrvDiagnosePushButton_clicked();
     }

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 30 Jun 2015 12:40:53 -0400
+Source: mx-broadcom-manager
+Binary: mx-broadcom-manager
+Architecture: source amd64
+Version: 15.7mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-broadcom-manager - MX program for network troubleshooting and configuration
+Changes: 
+ mx-broadcom-manager (15.7mx14) mx; urgency=medium
+ .
+   * update to qt5
+Checksums-Sha1: 
+ 308fa6ce858e0b9716f3b836aed1b09a28319590 640 mx-broadcom-manager_15.7mx14.dsc
+ 9435e562ad3541015400e13a96c535d78182222f 97626 mx-broadcom-manager_15.7mx14.tar.gz
+ 39df5372497712bf78a3c75ec74d1a6f091398d5 78126 mx-broadcom-manager_15.7mx14_amd64.deb
+Checksums-Sha256: 
+ f5adf52d8c311f87e38e5ee6feae2f15bb446277bf074968154529faa80aabbb 640 mx-broadcom-manager_15.7mx14.dsc
+ 5ec503f4f069b97a76ddd51c201d3b12d57eac39fca5bd0ee7e3d634f004b40f 97626 mx-broadcom-manager_15.7mx14.tar.gz
+ aa276770b29319717ab63307d16f86a0bca6ba84ca959a39a1f684780e5e7f7b 78126 mx-broadcom-manager_15.7mx14_amd64.deb
+Files: 
+ 784edfc6fd4bc23629adf204233071db 640 admin optional mx-broadcom-manager_15.7mx14.dsc
+ a2610c2968fce4e91138cf2d07bb5f99 97626 admin optional mx-broadcom-manager_15.7mx14.tar.gz
+ c574a49ea2e9f34b471bbf0c0d6edd36 78126 admin optional mx-broadcom-manager_15.7mx14_amd64.deb

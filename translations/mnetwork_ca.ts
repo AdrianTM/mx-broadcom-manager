@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ca_ES">
+<TS version="2.1" language="ca_ES">
 <context>
     <name></name>
     <message>
@@ -185,118 +185,118 @@ efectius quan torneu a engegar la initerfície.</translation>
         <translation type="obsolete">No es troba el punt d&apos;accés per omissió. Si us plau, editeu aquesta entrada o cerqueu noves xarxes</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="192"/>
+        <location filename="../mconfig.cpp" line="191"/>
         <source>IP address from router:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="193"/>
+        <location filename="../mconfig.cpp" line="192"/>
         <source>External IP addres:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="308"/>
-        <location filename="../mconfig.cpp" line="322"/>
-        <location filename="../mconfig.cpp" line="336"/>
+        <location filename="../mconfig.cpp" line="307"/>
+        <location filename="../mconfig.cpp" line="321"/>
+        <location filename="../mconfig.cpp" line="335"/>
         <source>&amp;Copy</source>
         <translation>&amp;Copia</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="309"/>
+        <location filename="../mconfig.cpp" line="323"/>
+        <location filename="../mconfig.cpp" line="337"/>
+        <source>Ctrl+C</source>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="310"/>
         <location filename="../mconfig.cpp" line="324"/>
         <location filename="../mconfig.cpp" line="338"/>
-        <source>Ctrl+C</source>
-        <translation>Ctrl+C</translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="311"/>
-        <location filename="../mconfig.cpp" line="325"/>
-        <location filename="../mconfig.cpp" line="339"/>
         <source>Copy &amp;All</source>
         <translation>Copi&amp;a Tot</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="313"/>
-        <location filename="../mconfig.cpp" line="327"/>
-        <location filename="../mconfig.cpp" line="341"/>
+        <location filename="../mconfig.cpp" line="312"/>
+        <location filename="../mconfig.cpp" line="326"/>
+        <location filename="../mconfig.cpp" line="340"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="378"/>
-        <location filename="../mconfig.cpp" line="400"/>
+        <location filename="../mconfig.cpp" line="377"/>
+        <location filename="../mconfig.cpp" line="399"/>
         <source>Traceroute not installed</source>
         <translation>No s&apos;ha instal·lat el Traceroute</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="379"/>
+        <location filename="../mconfig.cpp" line="378"/>
         <source>Traceroute is not installed, do you want to install it now?</source>
         <translation>No s&apos;ha instal·lat el Traceroute, voleu fer-ho ara?</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="387"/>
+        <location filename="../mconfig.cpp" line="386"/>
         <source>Traceroute hasn&apos;t been installed</source>
         <translation>El Traceroute no s&apos;ha instal·lat</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="388"/>
+        <location filename="../mconfig.cpp" line="387"/>
         <source>Traceroute cannot be installed. This may mean you are using the LiveCD or you are unable to reach the software repository,</source>
         <oldsource>Traceroute cannot be installed. This may mean you are using the LiveCD or that there is some kind of transitory problem with the repositories,</oldsource>
         <translation>No es pot instal·lar el Traceroute. Això vol dir que esteu usant el CD autònom o que hi ha algun problema puntual amb els dipòsits,</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="401"/>
+        <location filename="../mconfig.cpp" line="400"/>
         <source>Traceroute is not installed and no Internet connection could be detected so it cannot be installed</source>
         <translation>No s&apos;ha instal·lat el Traceroute i no es detecta connexió a Internet, o sigui que no es pot instal·lar</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="408"/>
-        <location filename="../mconfig.cpp" line="460"/>
+        <location filename="../mconfig.cpp" line="407"/>
+        <location filename="../mconfig.cpp" line="459"/>
         <source>No destination host</source>
         <translation>No hi ha amfitrió de destinació</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="409"/>
+        <location filename="../mconfig.cpp" line="408"/>
         <source>Please fill in the destination host field</source>
         <translation>Ompliu el camp de l&apos;amfitrió de destinació, si us plau</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="461"/>
+        <location filename="../mconfig.cpp" line="460"/>
         <source>Please, fill the destination host field</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1200"/>
+        <location filename="../mconfig.cpp" line="1199"/>
         <source>About MX Broadcom Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1201"/>
+        <location filename="../mconfig.cpp" line="1200"/>
         <source>MX Network Assistant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1201"/>
+        <location filename="../mconfig.cpp" line="1200"/>
         <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1203"/>
+        <location filename="../mconfig.cpp" line="1202"/>
         <source>Program for troubleshooting and configuring network for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1203"/>
         <source>Copyright (c) MEPIS LLC and antiX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1205"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>Cancel</source>
         <translation type="unfinished">Cancel·la</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1206"/>
+        <location filename="../mconfig.cpp" line="1205"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
@@ -391,37 +391,37 @@ efectius quan torneu a engegar la initerfície.</translation>
         <translation type="obsolete">Apagat</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1092"/>
+        <location filename="../mconfig.cpp" line="1091"/>
         <source>Locate the Windows driver you want to add</source>
         <translation type="unfinished">Cerqueu el controlador Windows que voleu afegir</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1092"/>
+        <location filename="../mconfig.cpp" line="1091"/>
         <source>Windows installation information file (*.inf)</source>
         <translation type="unfinished">Fitxer d&apos;informació d&apos;instal·lació Windows (*.inf)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1124"/>
+        <location filename="../mconfig.cpp" line="1123"/>
         <source>*.sys file not found</source>
         <translation type="unfinished">No s&apos;ha trobat el fitxer *.sys</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1124"/>
+        <location filename="../mconfig.cpp" line="1123"/>
         <source>The *.sys files must be in the same location as the *.inf file. %1 cannot be found</source>
         <translation type="unfinished">Els fitxers *.sys han d&apos;estar al mateix lloc que els fitxers *.inf. No es pot trobar el fitxer %1</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1135"/>
+        <location filename="../mconfig.cpp" line="1134"/>
         <source>sys file reference not found</source>
         <translation type="unfinished">No es troba la referência al fitxer *.sys</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1135"/>
+        <location filename="../mconfig.cpp" line="1134"/>
         <source>The sys file for the given driver cannot be determined after parsing the inf file</source>
         <translation type="unfinished">Després d&apos;analitzar el fitxer *.inf, no es pot esbrinar el fitxer *.sys per al controlador</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1154"/>
+        <location filename="../mconfig.cpp" line="1153"/>
         <source>Ndiswrapper driver removed.</source>
         <translation type="unfinished">Tret el controlador Ndiswrapper.</translation>
     </message>
@@ -1143,85 +1143,85 @@ p, li { white-space: pre-wrap; }
         <translation>Cal ser administrador per executar el programa.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="664"/>
+        <location filename="../mconfig.cpp" line="663"/>
         <source>Ndiswrapper is not installed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="673"/>
+        <location filename="../mconfig.cpp" line="672"/>
         <source>driver installed</source>
         <translation>Controlador instal·lat</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="684"/>
+        <location filename="../mconfig.cpp" line="683"/>
         <source> and in use by </source>
         <translation>i usat per</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="693"/>
+        <location filename="../mconfig.cpp" line="692"/>
         <source>. Alternate driver: </source>
         <translation>. Controlador alternatiu:</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="785"/>
+        <location filename="../mconfig.cpp" line="784"/>
         <source>Driver removed from blacklist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="786"/>
+        <location filename="../mconfig.cpp" line="785"/>
         <source>Driver removed from blacklist.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="982"/>
+        <location filename="../mconfig.cpp" line="981"/>
         <source>Installation successful</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="986"/>
+        <location filename="../mconfig.cpp" line="985"/>
         <source>Error detected, could not compile ndiswrapper driver.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="991"/>
+        <location filename="../mconfig.cpp" line="990"/>
         <source>Error detected, could not install ndiswrapper.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1005"/>
+        <location filename="../mconfig.cpp" line="1004"/>
         <source>Error encountered while removing Ndiswrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1063"/>
+        <location filename="../mconfig.cpp" line="1062"/>
         <source>Unblacklist Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1068"/>
+        <location filename="../mconfig.cpp" line="1067"/>
         <source>Blacklist Driver</source>
         <translation type="unfinished">Controlador a la llista negra</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1183"/>
+        <location filename="../mconfig.cpp" line="1182"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1185"/>
+        <location filename="../mconfig.cpp" line="1184"/>
         <source>WiFi devices unlocked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="1231"/>
         <location filename="../mconfig.cpp" line="1232"/>
-        <location filename="../mconfig.cpp" line="1233"/>
         <source>Driver loaded successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="1250"/>
         <location filename="../mconfig.cpp" line="1251"/>
-        <location filename="../mconfig.cpp" line="1252"/>
         <source>Driver unloaded successfully</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1230,8 +1230,8 @@ WiFi device(s) might already be unlocked.</source>
         <translation type="obsolete">Treu el NDISwrapper de la llista negra</translation>
     </message>
     <message>
+        <location filename="../mconfig.cpp" line="793"/>
         <location filename="../mconfig.cpp" line="794"/>
-        <location filename="../mconfig.cpp" line="795"/>
         <source>Module blacklisted</source>
         <translation>Mòdul a la llista negra</translation>
     </message>
@@ -1297,12 +1297,12 @@ WiFi device(s) might already be unlocked.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../mconfig.cpp" line="812"/>
+        <location filename="../mconfig.cpp" line="811"/>
         <source>Count not load </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="843"/>
+        <location filename="../mconfig.cpp" line="842"/>
         <source>Count not unload </source>
         <translation type="unfinished"></translation>
     </message>

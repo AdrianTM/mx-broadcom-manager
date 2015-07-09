@@ -1,3 +1,9 @@
+mx-broadcom-manager (15.7.1mx15) mx; urgency=medium
+
+  * change license URL
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 09 Jul 2015 17:52:04 -0400
+
 mx-broadcom-manager (15.7mx15) mx; urgency=medium
 
   * update to qt5

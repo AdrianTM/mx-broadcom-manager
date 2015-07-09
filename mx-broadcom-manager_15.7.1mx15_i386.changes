@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 09 Jul 2015 17:52:04 -0400
+Source: mx-broadcom-manager
+Binary: mx-broadcom-manager
+Architecture: source i386
+Version: 15.7.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-broadcom-manager - MX program for network troubleshooting and configuration
+Changes:
+ mx-broadcom-manager (15.7.1mx15) mx; urgency=medium
+ .
+   * change license URL
+Checksums-Sha1:
+ 9377ba67b72ac2b04a2131c6760244655dae0aee 689 mx-broadcom-manager_15.7.1mx15.dsc
+ c1485d97f284952be7671cc8b73b503f257a8ce8 230592 mx-broadcom-manager_15.7.1mx15.tar.xz
+ e0901b699cb59f5ec5ecea30a9acf92c3355d61e 77476 mx-broadcom-manager_15.7.1mx15_i386.deb
+Checksums-Sha256:
+ b30be0076e8a31e4271fe7cc46e9e72bc4446ec667bae0d405c9acd7e7f7c9ba 689 mx-broadcom-manager_15.7.1mx15.dsc
+ 35f6660342460b9effe1425efb4b2394d93f52408f4e351a88d4ffb619a53c3b 230592 mx-broadcom-manager_15.7.1mx15.tar.xz
+ 622797587f1edc3a77404cc508d7c104aad7a1056deb7b396e03b0b6a77e8d70 77476 mx-broadcom-manager_15.7.1mx15_i386.deb
+Files:
+ 5441b27089e90355ba4824d2d24f1720 689 admin optional mx-broadcom-manager_15.7.1mx15.dsc
+ dfc7666e11128b76d2ef5d38844428de 230592 admin optional mx-broadcom-manager_15.7.1mx15.tar.xz
+ 294b43f754104f8ad9e6f6ab05b44b80 77476 admin optional mx-broadcom-manager_15.7.1mx15_i386.deb

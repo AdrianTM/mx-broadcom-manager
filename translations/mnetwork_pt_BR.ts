@@ -110,12 +110,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1205"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1205"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>

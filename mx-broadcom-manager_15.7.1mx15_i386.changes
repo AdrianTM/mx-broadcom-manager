@@ -15,14 +15,14 @@ Changes:
  .
    * change license URL
 Checksums-Sha1:
- 9377ba67b72ac2b04a2131c6760244655dae0aee 689 mx-broadcom-manager_15.7.1mx15.dsc
- c1485d97f284952be7671cc8b73b503f257a8ce8 230592 mx-broadcom-manager_15.7.1mx15.tar.xz
- e0901b699cb59f5ec5ecea30a9acf92c3355d61e 77476 mx-broadcom-manager_15.7.1mx15_i386.deb
+ 0c33a7ac59950a70284d79cbcfbbfce95c7ffd5c 689 mx-broadcom-manager_15.7.1mx15.dsc
+ bea569df15fba65584d71603c443ad9904386f3e 583464 mx-broadcom-manager_15.7.1mx15.tar.xz
+ ab1e76a20bad939409d1ecf98a0e57e0a506705f 78002 mx-broadcom-manager_15.7.1mx15_i386.deb
 Checksums-Sha256:
- b30be0076e8a31e4271fe7cc46e9e72bc4446ec667bae0d405c9acd7e7f7c9ba 689 mx-broadcom-manager_15.7.1mx15.dsc
- 35f6660342460b9effe1425efb4b2394d93f52408f4e351a88d4ffb619a53c3b 230592 mx-broadcom-manager_15.7.1mx15.tar.xz
- 622797587f1edc3a77404cc508d7c104aad7a1056deb7b396e03b0b6a77e8d70 77476 mx-broadcom-manager_15.7.1mx15_i386.deb
+ 5e0329a204defd7abdf1fb57060984f34498d68b2bffc7c946f49946ec17504e 689 mx-broadcom-manager_15.7.1mx15.dsc
+ a7bfee5c3405a4be6a56ba0ae7c7714d9a27627920a26203ecd99787aed68263 583464 mx-broadcom-manager_15.7.1mx15.tar.xz
+ 1a2974f53bc2fbfbdb616920aa36d478b918bb4471ea09b3213167a7a8829548 78002 mx-broadcom-manager_15.7.1mx15_i386.deb
 Files:
- 5441b27089e90355ba4824d2d24f1720 689 admin optional mx-broadcom-manager_15.7.1mx15.dsc
- dfc7666e11128b76d2ef5d38844428de 230592 admin optional mx-broadcom-manager_15.7.1mx15.tar.xz
- 294b43f754104f8ad9e6f6ab05b44b80 77476 admin optional mx-broadcom-manager_15.7.1mx15_i386.deb
+ a5b0592d2578abe0b6843eac7cc86111 689 admin optional mx-broadcom-manager_15.7.1mx15.dsc
+ d17dffa3164ac38ea445f1bcd7b57871 583464 admin optional mx-broadcom-manager_15.7.1mx15.tar.xz
+ fd2383fc10aa68860c083bd3ad166ca2 78002 admin optional mx-broadcom-manager_15.7.1mx15_i386.deb

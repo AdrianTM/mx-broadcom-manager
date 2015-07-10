@@ -227,12 +227,12 @@ Merci d&apos;entrer le nom du point d&apos;accès ou de chercher les réseaux di
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1205"/>
         <source>Cancel</source>
         <translation type="unfinished">Annuler</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1205"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>

@@ -295,12 +295,12 @@ Svp aanpassen of omlaag scrollen om beschikbare netwerken te zien</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1205"/>
         <source>Cancel</source>
         <translation type="unfinished">Zeg af (cancel)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1205"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>

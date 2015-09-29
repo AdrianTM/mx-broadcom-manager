@@ -808,7 +808,7 @@ bool MConfig::loadModule(QString module)
         system("depmod");
         if (system(cmd.toUtf8()) != 0)
         {
-            QString msg = QObject::tr("Count not load ");
+            QString msg = QObject::tr("Could not load ");
             msg += module;
             QMessageBox::information(0, QString::null, msg);
             return false;
@@ -839,7 +839,7 @@ bool MConfig::removeModule(QString module)
     QString cmd = QString("modprobe -r %1").arg(module);
     if (system(cmd.toUtf8()) != 0)
     {
-        QString msg = QObject::tr("Count not unload ");
+        QString msg = QObject::tr("Could not unload ");
         msg += module;
         QMessageBox::information(0, QString::null, msg);
         return false;

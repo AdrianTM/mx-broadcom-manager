@@ -207,7 +207,7 @@
           <item>
            <widget class="QLabel" name="labelIntroduction">
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can be sometime dificult to set un in Linux.There are a number of different types of drivers that have different capabilties and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometime be dificult to set un in Linux. There are a number of different types of drivers that have different capabilties and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="textFormat">
              <enum>Qt::RichText</enum>

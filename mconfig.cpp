@@ -189,7 +189,7 @@ void MConfig::refresh() {
         break;
     case 3: // Diagnostic
         labelRouterIP->setText(tr("IP address from router:") + " " + getIPfromRouter());
-        labelIP->setText(tr("External IP addres:") + " " + getIP());
+        labelIP->setText(tr("External IP address:") + " " + getIP());
         break;
 
     default:
@@ -457,7 +457,7 @@ void MConfig::on_pingButton_clicked()
     if (pingHostEdit->text().isEmpty())
     {
         QMessageBox::information(0, tr("No destination host"),
-                                 tr("Please, fill the destination host field"),
+                                 tr("Please fill in the destination host field"),
                                  QMessageBox::Ok);
     }
     else
@@ -1197,7 +1197,7 @@ void MConfig::on_buttonAbout_clicked()
 {
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Broadcom Manager"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Network Assistant") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
+                       tr("MX Broadcom Manager") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
                        getVersion("mx-broadcom-manager") + "</p><p align=\"center\"><h3>" +
                        tr("Program for troubleshooting and configuring network for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MEPIS LLC and antiX") + "<br /><br /></p>", 0, this);

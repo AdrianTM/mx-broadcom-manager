@@ -328,12 +328,6 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>30</height>
-             </size>
-            </property>
             <property name="toolTip">
              <string>Unblocks all soft/hard blocked wireless devices</string>
             </property>

@@ -195,7 +195,7 @@ Svp aanpassen of omlaag scrollen om beschikbare netwerken te zien</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="192"/>
-        <source>External IP addres:</source>
+        <source>External IP address:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -261,46 +261,42 @@ Svp aanpassen of omlaag scrollen om beschikbare netwerken te zien</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="408"/>
+        <location filename="../mconfig.cpp" line="460"/>
         <source>Please fill in the destination host field</source>
         <translation>Vul aub het veld &apos;host bestemming&apos; in</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="460"/>
-        <source>Please, fill the destination host field</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="1199"/>
+        <location filename="../mconfig.cpp" line="1194"/>
         <source>About MX Broadcom Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1200"/>
-        <source>MX Network Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mconfig.cpp" line="1200"/>
+        <location filename="../mconfig.cpp" line="1195"/>
         <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1202"/>
+        <location filename="../mconfig.cpp" line="1195"/>
+        <source>MX Broadcom Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1197"/>
         <source>Program for troubleshooting and configuring network for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1203"/>
+        <location filename="../mconfig.cpp" line="1198"/>
         <source>Copyright (c) MEPIS LLC and antiX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1205"/>
+        <location filename="../mconfig.cpp" line="1200"/>
         <source>Cancel</source>
         <translation type="unfinished">Zeg af (cancel)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1199"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
@@ -370,37 +366,37 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Interface niet actief</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1091"/>
+        <location filename="../mconfig.cpp" line="1086"/>
         <source>Locate the Windows driver you want to add</source>
         <translation type="unfinished">Vind de Windows driver die U wilt toevoegen</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1091"/>
+        <location filename="../mconfig.cpp" line="1086"/>
         <source>Windows installation information file (*.inf)</source>
         <translation type="unfinished">Windows installatie informatiebestand (*.inf)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1123"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>*.sys file not found</source>
         <translation type="unfinished">*.sys bestand niet gevonden</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1123"/>
+        <location filename="../mconfig.cpp" line="1118"/>
         <source>The *.sys files must be in the same location as the *.inf file. %1 cannot be found</source>
         <translation type="unfinished">Het *.sys bestand moet in dezelfde locatie als het *.inf bestand aanwezig zijn. %1 kan niet gevonden worden</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1134"/>
+        <location filename="../mconfig.cpp" line="1129"/>
         <source>sys file reference not found</source>
         <translation type="unfinished">Verwijzing naar sys bestand niet gevonden</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1134"/>
+        <location filename="../mconfig.cpp" line="1129"/>
         <source>The sys file for the given driver cannot be determined after parsing the inf file</source>
         <translation type="unfinished">Na parsen van het .inf bestand kan niet vastgesteld worden welk sys bestand geldt voor de betreffende driver </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1153"/>
+        <location filename="../mconfig.cpp" line="1148"/>
         <source>Ndiswrapper driver removed.</source>
         <translation type="unfinished">Ndiswrapper driver verwijderd.</translation>
     </message>
@@ -820,17 +816,17 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Laat lijst zien van gebruikte linux drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="500"/>
+        <location filename="../meconfig.ui" line="494"/>
         <source>Blacklist Driver</source>
         <translation>Schakel driver uit (blacklist)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="646"/>
+        <location filename="../meconfig.ui" line="640"/>
         <source>List Windows drivers</source>
         <translation>Laat lijst zien van Windows drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="623"/>
+        <location filename="../meconfig.ui" line="617"/>
         <source>Add Driver</source>
         <translation>Voeg driver toe</translation>
     </message>
@@ -847,7 +843,7 @@ treden in werking bij de volgende start van de interface.</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="210"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can be sometime dificult to set un in Linux.There are a number of different types of drivers that have different capabilties and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometimes be difficult to set up in Linux. There are a number of different types of drivers that have different capabilties and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -861,88 +857,88 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="338"/>
+        <location filename="../meconfig.ui" line="332"/>
         <source>Unblocks all soft/hard blocked wireless devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="341"/>
+        <location filename="../meconfig.ui" line="335"/>
         <source>Unblock WiFi Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../meconfig.ui" line="354"/>
         <location filename="../meconfig.ui" line="360"/>
-        <location filename="../meconfig.ui" line="366"/>
         <source>Linux drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="372"/>
+        <location filename="../meconfig.ui" line="366"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="391"/>
+        <location filename="../meconfig.ui" line="385"/>
         <source>Associated Linux drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="400"/>
+        <location filename="../meconfig.ui" line="394"/>
         <source>Load Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="463"/>
+        <location filename="../meconfig.ui" line="457"/>
         <source>Unload Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="480"/>
+        <location filename="../meconfig.ui" line="474"/>
         <source>Re-list Linux Drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="519"/>
+        <location filename="../meconfig.ui" line="513"/>
         <source>Windows drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="525"/>
+        <location filename="../meconfig.ui" line="519"/>
         <source>About NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="537"/>
+        <location filename="../meconfig.ui" line="531"/>
         <source>Install NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="548"/>
+        <location filename="../meconfig.ui" line="542"/>
         <source>In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="564"/>
+        <location filename="../meconfig.ui" line="558"/>
         <source>Uninstall NDISwrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="578"/>
+        <location filename="../meconfig.ui" line="572"/>
         <source>Windows Drivers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="612"/>
+        <location filename="../meconfig.ui" line="606"/>
         <source>Remove Driver</source>
         <translation>Verwijder driver</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="669"/>
+        <location filename="../meconfig.ui" line="663"/>
         <source>Net diagnostics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="675"/>
+        <location filename="../meconfig.ui" line="669"/>
         <source>IP address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -955,51 +951,51 @@ treden in werking bij de volgende start van de interface.</translation>
         <translation type="obsolete">Diagnose</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="704"/>
+        <location filename="../meconfig.ui" line="698"/>
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="710"/>
-        <location filename="../meconfig.ui" line="820"/>
+        <location filename="../meconfig.ui" line="704"/>
+        <location filename="../meconfig.ui" line="814"/>
         <source>Target URL:</source>
         <translation>Doel URL:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="720"/>
+        <location filename="../meconfig.ui" line="714"/>
         <source>Packets</source>
         <translation>packets</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="755"/>
-        <location filename="../meconfig.ui" line="875"/>
+        <location filename="../meconfig.ui" line="749"/>
+        <location filename="../meconfig.ui" line="869"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="772"/>
-        <location filename="../meconfig.ui" line="892"/>
+        <location filename="../meconfig.ui" line="766"/>
+        <location filename="../meconfig.ui" line="886"/>
         <source>Clear</source>
         <translation>Schoonvegen</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="786"/>
-        <location filename="../meconfig.ui" line="906"/>
+        <location filename="../meconfig.ui" line="780"/>
+        <location filename="../meconfig.ui" line="900"/>
         <source>Cancel</source>
         <translation>Zeg af (cancel)</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="814"/>
+        <location filename="../meconfig.ui" line="808"/>
         <source>Traceroute</source>
         <translation>Traceroute</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="830"/>
+        <location filename="../meconfig.ui" line="824"/>
         <source>Hops</source>
         <translation>Hops</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="862"/>
+        <location filename="../meconfig.ui" line="856"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -1086,55 +1082,55 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="981"/>
+        <location filename="../mconfig.cpp" line="978"/>
         <source>Installation successful</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="985"/>
+        <location filename="../mconfig.cpp" line="982"/>
         <source>Error detected, could not compile ndiswrapper driver.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="990"/>
+        <location filename="../mconfig.cpp" line="987"/>
         <source>Error detected, could not install ndiswrapper.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1004"/>
+        <location filename="../mconfig.cpp" line="999"/>
         <source>Error encountered while removing Ndiswrapper</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1062"/>
+        <location filename="../mconfig.cpp" line="1057"/>
         <source>Unblacklist Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1067"/>
+        <location filename="../mconfig.cpp" line="1062"/>
         <source>Blacklist Driver</source>
         <translation type="unfinished">Schakel driver uit (blacklist)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1182"/>
+        <location filename="../mconfig.cpp" line="1177"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1184"/>
+        <location filename="../mconfig.cpp" line="1179"/>
         <source>WiFi devices unlocked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1231"/>
-        <location filename="../mconfig.cpp" line="1232"/>
+        <location filename="../mconfig.cpp" line="1226"/>
+        <location filename="../mconfig.cpp" line="1227"/>
         <source>Driver loaded successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1250"/>
-        <location filename="../mconfig.cpp" line="1251"/>
+        <location filename="../mconfig.cpp" line="1245"/>
+        <location filename="../mconfig.cpp" line="1246"/>
         <source>Driver unloaded successfully</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1195,12 +1191,12 @@ WiFi device(s) might already be unlocked.</source>
     <name>QObject</name>
     <message>
         <location filename="../mconfig.cpp" line="811"/>
-        <source>Count not load </source>
+        <source>Could not load </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="842"/>
-        <source>Count not unload </source>
+        <source>Could not unload </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

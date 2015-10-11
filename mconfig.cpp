@@ -898,10 +898,7 @@ bool MConfig::installModule(QString module)
 // run apt-get update and at the end start installNDIS
 void MConfig::on_installNdiswrapper_clicked()
 {
-    setCursor(QCursor(Qt::BusyCursor));
-    // enable testing repos
-    system("sed -i -r '/testrepo/ s/^#+//' /etc/apt/sources.list.d/mepis.list");
-
+    setCursor(QCursor(Qt::BusyCursor));    
     if (installProc->state() != QProcess::NotRunning)
     {
         installProc->kill();
@@ -988,9 +985,7 @@ void MConfig::installFinished(int errorCode)
     else
     {
         QMessageBox::warning(0, QString::null, QApplication::tr("Error detected, could not install ndiswrapper."));
-    }
-    // disable testing repo
-    system("sed -i -r '/testrepo/ s/^([^#])/#\\1/' /etc/apt/sources.list.d/mepis.list");
+    }    
 }
 
 void MConfig::uninstallNdisFinished(int errorCode)

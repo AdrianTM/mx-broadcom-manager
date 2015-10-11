@@ -1,3 +1,9 @@
+mx-broadcom-manager (15.10mx15) mx; urgency=medium
+
+  * ndiswrapper fix for Jessie
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 11 Oct 2015 10:19:04 -0400
+
 mx-broadcom-manager (15.7.1mx15) mx; urgency=medium
 
   * change license URL

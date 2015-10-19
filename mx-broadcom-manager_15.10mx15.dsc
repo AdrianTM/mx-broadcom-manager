@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-broadcom-manager deb admin optional arch=any
 Checksums-Sha1:
- 989b93c5c5b0c6574ad3aec483839a607b3ab58a 655272 mx-broadcom-manager_15.10mx15.tar.xz
+ 094c88cdbc9fb318cc5270290dbffc94bf65756d 727180 mx-broadcom-manager_15.10mx15.tar.xz
 Checksums-Sha256:
- 44cd57679e59b4e3b5c8615cfa0ff232832e07b5c65ad0f79c2b6c462e489ed1 655272 mx-broadcom-manager_15.10mx15.tar.xz
+ 6b190fb41d080c3986ff4e4395990eaf984c37384d2dd303d2c01dc662d3fa49 727180 mx-broadcom-manager_15.10mx15.tar.xz
 Files:
- 460b6075011d063c9d74aa43e9aebb3c 655272 mx-broadcom-manager_15.10mx15.tar.xz
+ f3326a5bb4006f3d25e4abc9993a3acf 727180 mx-broadcom-manager_15.10mx15.tar.xz

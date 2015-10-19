@@ -15,14 +15,14 @@ Changes:
  .
    * ndiswrapper fix for Jessie
 Checksums-Sha1:
- b83988ce36892fdf4de6bb3bf4c50539dd330cc0 685 mx-broadcom-manager_15.10mx15.dsc
- 989b93c5c5b0c6574ad3aec483839a607b3ab58a 655272 mx-broadcom-manager_15.10mx15.tar.xz
- d63ed592eb76b35686de032af46336996eb1ea72 77836 mx-broadcom-manager_15.10mx15_i386.deb
+ 111669a1ac5912ce16aa131ec69c87762982fa57 685 mx-broadcom-manager_15.10mx15.dsc
+ 094c88cdbc9fb318cc5270290dbffc94bf65756d 727180 mx-broadcom-manager_15.10mx15.tar.xz
+ 219ed47b0ff183475e6f625b6befa60603dc2eca 77796 mx-broadcom-manager_15.10mx15_i386.deb
 Checksums-Sha256:
- a5c1edbcb2b4c2b62c70f6e341d2e4dcd29f47926a3fc3e444e3b637e57b81c3 685 mx-broadcom-manager_15.10mx15.dsc
- 44cd57679e59b4e3b5c8615cfa0ff232832e07b5c65ad0f79c2b6c462e489ed1 655272 mx-broadcom-manager_15.10mx15.tar.xz
- 845c5bca374836ac2b9237ca62fb5105d29b0f16b59161ccc048214aab05ff9e 77836 mx-broadcom-manager_15.10mx15_i386.deb
+ 6b565f12adec49d63059ffa02642330373329868af8373fa3d71125807af6e09 685 mx-broadcom-manager_15.10mx15.dsc
+ 6b190fb41d080c3986ff4e4395990eaf984c37384d2dd303d2c01dc662d3fa49 727180 mx-broadcom-manager_15.10mx15.tar.xz
+ 9125955f0e3c9c5d5c3a128034611a26645d789aa2cd1b6843f7b7f1649d1d06 77796 mx-broadcom-manager_15.10mx15_i386.deb
 Files:
- 261663d29ad4d845c1bd21c7abdbf644 685 admin optional mx-broadcom-manager_15.10mx15.dsc
- 460b6075011d063c9d74aa43e9aebb3c 655272 admin optional mx-broadcom-manager_15.10mx15.tar.xz
- 280fa9dd75e5ceeab37598eb9e8787d4 77836 admin optional mx-broadcom-manager_15.10mx15_i386.deb
+ f35f0d42b9ba41f1a9dd285a9f5918ad 685 admin optional mx-broadcom-manager_15.10mx15.dsc
+ f3326a5bb4006f3d25e4abc9993a3acf 727180 admin optional mx-broadcom-manager_15.10mx15.tar.xz
+ 60478614501fea74099871946b6b9539 77796 admin optional mx-broadcom-manager_15.10mx15_i386.deb

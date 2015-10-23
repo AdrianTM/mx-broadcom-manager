@@ -31,7 +31,7 @@ int main( int argc, char ** argv ) {
     app.installTranslator(&qtTran);
 
     QTranslator appTran;
-    appTran.load(QString("mx-network_") + QLocale::system().name(), "/usr/share/mx-broadcom-manager/locale");
+    appTran.load(QString("mx-broadcom-manager_") + QLocale::system().name(), "/usr/share/mx-broadcom-manager/locale");
     app.installTranslator(&appTran);
 
     if (getuid() == 0) {

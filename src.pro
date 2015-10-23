@@ -2,22 +2,16 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TEMPLATE = app
 TARGET = mx-broadcom-manager
-TRANSLATIONS += translations/mnetwork_ar.ts \
-                translations/mnetwork_ca.ts \
-                translations/mnetwork_de.ts \
-                translations/mnetwork_el.ts \
-                translations/mnetwork_es.ts \
-                translations/mnetwork_fr.ts \
-                translations/mnetwork_hi.ts \
-                translations/mnetwork_it.ts \
-                translations/mnetwork_ja.ts \
-                translations/mnetwork_ko.ts \
-                translations/mnetwork_nl.ts \
-                translations/mnetwork_pl.ts \
-                translations/mnetwork_pt.ts \
-                translations/mnetwork_pt_BR.ts \
-                translations/mnetwork_zh_CN.ts \
-                translations/mnetwork_zh_TW.ts
+TRANSLATIONS += translations/mx-broadcom-manager_ca.ts \
+                translations/mx-broadcom-manager_de.ts \
+                translations/mx-broadcom-manager_el.ts \
+                translations/mx-broadcom-manager_es.ts \
+                translations/mx-broadcom-manager_fr.ts \
+                translations/mx-broadcom-manager_it.ts \
+                translations/mx-broadcom-manager_ja.ts \
+                translations/mx-broadcom-manager_nl.ts \
+                translations/mx-broadcom-manager_ru.ts \
+                translations/mx-broadcom-manager_sv.ts
 FORMS += meconfig.ui
 HEADERS += mconfig.h
 SOURCES += main.cpp mconfig.cpp

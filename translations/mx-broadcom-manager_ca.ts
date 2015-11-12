@@ -80,72 +80,72 @@
         <translation>Si us plau, ompliu el camp d&apos;amfitrió de destinació </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1086"/>
+        <location filename="../mconfig.cpp" line="1095"/>
         <source>Locate the Windows driver you want to add</source>
         <translation>Localitzeu el controlador de Windows que voleu afegir </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1086"/>
+        <location filename="../mconfig.cpp" line="1095"/>
         <source>Windows installation information file (*.inf)</source>
         <translation>Fitxer d&apos;informació d&apos;instal·lació Windows (*.inf) </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1118"/>
+        <location filename="../mconfig.cpp" line="1127"/>
         <source>*.sys file not found</source>
         <translation>No trobo el fitxer *.sys </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1118"/>
+        <location filename="../mconfig.cpp" line="1127"/>
         <source>The *.sys files must be in the same location as the *.inf file. %1 cannot be found</source>
         <translation>Els fitxers *.sys han d&apos;estar al mateix lloc que els *.inf. No trobo el fitxer %1 </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1129"/>
+        <location filename="../mconfig.cpp" line="1138"/>
         <source>sys file reference not found</source>
         <translation>No trobo el fitxer de referència sys </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1129"/>
+        <location filename="../mconfig.cpp" line="1138"/>
         <source>The sys file for the given driver cannot be determined after parsing the inf file</source>
         <translation>El fitxer sys per al controlador triat no es pot determinar després d&apos;analitzar el fitxer inf </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1148"/>
+        <location filename="../mconfig.cpp" line="1157"/>
         <source>Ndiswrapper driver removed.</source>
         <translation>S&apos;ha eliminat el controlador ndiswrapper </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1194"/>
+        <location filename="../mconfig.cpp" line="1203"/>
         <source>About MX Broadcom Manager</source>
         <translation>Quant al MX Broadcom Manager </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1195"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>MX Broadcom Manager</source>
         <translation>MX Broadcom Manager </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1195"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1197"/>
+        <location filename="../mconfig.cpp" line="1206"/>
         <source>Program for troubleshooting and configuring network for MX Linux</source>
         <translation>Programa per a resolució de problemes i configuració de xarxa de MX Linux </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1198"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>Copyright (c) MEPIS LLC and antiX</source>
         <translation>Copyright (c) MEPIS LLC i antiX </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1199"/>
+        <location filename="../mconfig.cpp" line="1208"/>
         <source>License</source>
         <translation>Llicència </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1200"/>
+        <location filename="../mconfig.cpp" line="1209"/>
         <source>Cancel</source>
         <translation>Cancel·la </translation>
     </message>
@@ -401,56 +401,56 @@ p, li { white-space: pre-wrap; }
         <translation>Mòdul a la llista negra </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="978"/>
+        <location filename="../mconfig.cpp" line="987"/>
         <source>Installation successful</source>
         <translation>Instal·lació acabada amb èxit </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="982"/>
+        <location filename="../mconfig.cpp" line="991"/>
         <source>Error detected, could not compile ndiswrapper driver.</source>
         <translation>S&apos;ha detectat un error, no es pot compilar el controlador ndiswrapper. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="987"/>
+        <location filename="../mconfig.cpp" line="996"/>
         <source>Error detected, could not install ndiswrapper.</source>
         <translation>S&apos;ha detectat un error, no es pot instal·lar ndiswrapper. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="999"/>
+        <location filename="../mconfig.cpp" line="1008"/>
         <source>Error encountered while removing Ndiswrapper</source>
         <translation>S&apos;ha trobat un error en eliminar Ndiswrapper </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1057"/>
+        <location filename="../mconfig.cpp" line="1066"/>
         <source>Unblacklist Driver</source>
         <translation>Controlador fora de la llista negra </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1062"/>
+        <location filename="../mconfig.cpp" line="1071"/>
         <source>Blacklist Driver</source>
         <translation>Controlador a la llista negra </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1177"/>
+        <location filename="../mconfig.cpp" line="1186"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
         <translation>No es poden desbloquejar els dispositius.
 El(s) dispositiu(s) WiFi potser ja estan desbloquejats. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1179"/>
+        <location filename="../mconfig.cpp" line="1188"/>
         <source>WiFi devices unlocked.</source>
         <translation>Dispositius WiFi desbloquejats. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1226"/>
-        <location filename="../mconfig.cpp" line="1227"/>
+        <location filename="../mconfig.cpp" line="1235"/>
+        <location filename="../mconfig.cpp" line="1236"/>
         <source>Driver loaded successfully</source>
         <translation>Controlador carregat amb èxit </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1245"/>
-        <location filename="../mconfig.cpp" line="1246"/>
+        <location filename="../mconfig.cpp" line="1254"/>
+        <location filename="../mconfig.cpp" line="1255"/>
         <source>Driver unloaded successfully</source>
         <translation>Controlador descarregat amb èxit </translation>
     </message>
@@ -458,12 +458,12 @@ El(s) dispositiu(s) WiFi potser ja estan desbloquejats. </translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../mconfig.cpp" line="811"/>
+        <location filename="../mconfig.cpp" line="813"/>
         <source>Could not load </source>
         <translation>No es pot carregar </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="842"/>
+        <location filename="../mconfig.cpp" line="849"/>
         <source>Could not unload </source>
         <translation>No es pot descarregar </translation>
     </message>

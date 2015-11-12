@@ -801,6 +801,8 @@ void MConfig::on_linuxDrvBlacklistPushButton_clicked()
 // load module
 bool MConfig::loadModule(QString module)
 {
+    system("service network-manager stop");
+    system("modprobe cfg80211"); //this has to get loaded and some drivers don't put it back correctly
     QString cmd = QString("modprobe %1").arg(module);
     if (system(cmd.toUtf8()) != 0)
     {
@@ -811,6 +813,8 @@ bool MConfig::loadModule(QString module)
             QString msg = QObject::tr("Could not load ");
             msg += module;
             QMessageBox::information(0, QString::null, msg);
+            system("pkill wpa_supplicant");
+            system("service network-manager start");
             return false;
         }
     }
@@ -818,6 +822,8 @@ bool MConfig::loadModule(QString module)
     {
         loadedModules.append(module);
     }
+    system("pkill wpa_supplicant");
+    system("service network-manager start");
     return true;
 }
 
@@ -836,14 +842,17 @@ bool MConfig::removable(QString module)
 // remove module
 bool MConfig::removeModule(QString module)
 {
+    system("service network-manager stop");
     QString cmd = QString("modprobe -r %1").arg(module);
     if (system(cmd.toUtf8()) != 0)
     {
         QString msg = QObject::tr("Could not unload ");
         msg += module;
         QMessageBox::information(0, QString::null, msg);
+        system("service network-manager start");
         return false;
     }
+    system("service network-manager start");
     return true;
 }
 
@@ -898,7 +907,7 @@ bool MConfig::installModule(QString module)
 // run apt-get update and at the end start installNDIS
 void MConfig::on_installNdiswrapper_clicked()
 {
-    setCursor(QCursor(Qt::BusyCursor));    
+    setCursor(QCursor(Qt::BusyCursor));
     if (installProc->state() != QProcess::NotRunning)
     {
         installProc->kill();
@@ -985,7 +994,7 @@ void MConfig::installFinished(int errorCode)
     else
     {
         QMessageBox::warning(0, QString::null, QApplication::tr("Error detected, could not install ndiswrapper."));
-    }    
+    }
 }
 
 void MConfig::uninstallNdisFinished(int errorCode)

@@ -1,3 +1,9 @@
+mx-broadcom-manager (15.11mx15) mx; urgency=medium
+
+  * fix for loading/unloading modules
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 12 Nov 2015 16:23:43 -0500
+
 mx-broadcom-manager (15.10.1mx15) mx; urgency=medium
 
   * new translations

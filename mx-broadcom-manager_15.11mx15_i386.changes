@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 12 Nov 2015 16:23:43 -0500
+Source: mx-broadcom-manager
+Binary: mx-broadcom-manager
+Architecture: i386
+Version: 15.11mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-broadcom-manager - MX program for network troubleshooting and configuration
+Changes: 
+ mx-broadcom-manager (15.11mx15) mx; urgency=medium
+ .
+   * fix for loading/unloading modules
+Checksums-Sha1: 
+ 11682fcec66d405eba30b28ad014ef13a5f31cfe 83912 mx-broadcom-manager_15.11mx15_i386.deb
+Checksums-Sha256: 
+ 7478a6c2ff898e5119f80c6caac0ff4a365d9d666fcef2d02f214682384d113c 83912 mx-broadcom-manager_15.11mx15_i386.deb
+Files: 
+ 794a905ab1469bbd49ca6c53b7cb44ac 83912 admin optional mx-broadcom-manager_15.11mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJWRQXoAAoJEHCTjHgGee6YePQH/iOeW9v3M4ZpqG3TValtWtMD
+zCAVR6l3WvA/keePfZfz1b+co2N1tmWesOhGsTd+saViGeQylLoz6A0J8YKvILFE
+YM1xVUtRsbyEXIU/m07vUUbBel5uYsE048L9YF2nREzg0P6nuOIEspCiHiSuloyR
+TaMALmM/qrTVuNAJFrfXv23ajnE9GbDvhywXhl6ogBw6h2wubt1bee/dlLq3Ytd3
+bXr9wt0K7H7CR6LXH7WXGK3PYlUHzvoxKsi0b6PWLE9vV7t/fyvRtG1GmLrzv5Je
+5c+guiQKHgjhA6ZtU6BqfFC3tQcISMyrVjudDjWZWAF7jVsTwhm34uTSOSKOmZE=
+=ondt
+-----END PGP SIGNATURE-----

@@ -11,27 +11,27 @@ Distribution: mx
 Urgency: medium
 Maintainer: Adrian <adrian@mxlinux.org>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description: 
+Description:
  mx-broadcom-manager - MX program for network troubleshooting and configuration
-Changes: 
+Changes:
  mx-broadcom-manager (15.11mx15) mx; urgency=medium
  .
    * fix for loading/unloading modules
-Checksums-Sha1: 
- 11682fcec66d405eba30b28ad014ef13a5f31cfe 83912 mx-broadcom-manager_15.11mx15_i386.deb
-Checksums-Sha256: 
- 7478a6c2ff898e5119f80c6caac0ff4a365d9d666fcef2d02f214682384d113c 83912 mx-broadcom-manager_15.11mx15_i386.deb
-Files: 
- 794a905ab1469bbd49ca6c53b7cb44ac 83912 admin optional mx-broadcom-manager_15.11mx15_i386.deb
+Checksums-Sha1:
+ 4e4bf646ae0a0409cd57d62a1d6a3f112f04ddb7 83568 mx-broadcom-manager_15.11mx15_i386.deb
+Checksums-Sha256:
+ e5cb473da21b5cf1d07124f794412aa512a9ad88fe5a88e87044991515603adf 83568 mx-broadcom-manager_15.11mx15_i386.deb
+Files:
+ 6ff77d764b6046a517d2994e772bc178 83568 admin optional mx-broadcom-manager_15.11mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWRQXoAAoJEHCTjHgGee6YePQH/iOeW9v3M4ZpqG3TValtWtMD
-zCAVR6l3WvA/keePfZfz1b+co2N1tmWesOhGsTd+saViGeQylLoz6A0J8YKvILFE
-YM1xVUtRsbyEXIU/m07vUUbBel5uYsE048L9YF2nREzg0P6nuOIEspCiHiSuloyR
-TaMALmM/qrTVuNAJFrfXv23ajnE9GbDvhywXhl6ogBw6h2wubt1bee/dlLq3Ytd3
-bXr9wt0K7H7CR6LXH7WXGK3PYlUHzvoxKsi0b6PWLE9vV7t/fyvRtG1GmLrzv5Je
-5c+guiQKHgjhA6ZtU6BqfFC3tQcISMyrVjudDjWZWAF7jVsTwhm34uTSOSKOmZE=
-=ondt
+iQEcBAEBAgAGBQJWRRgzAAoJEHCTjHgGee6YUU4IAJjxl5tbcMd0aozffrL0eEzN
+nw9yZr53JaOMU+gHWqOZEoPTpaAV+KnXEDDYHD40EMcmdOVjI4xtUuAtOtGkZHal
+V3sQ0FiihnYXGXQsT0DgPKCRkME8Jr7lEgu2OtZYNtidJC5lh51EujgBeaXXUWdw
+tddk950eS71kYzZ2Jizv08mMeKWD17VecWMErsii3CUYeabX47hn31wcnHC4ovM/
+GHLZlmaGbxhXLkemqsHX1kB+/biGDFKWX0+7HbsyureTNkEkBGV8ejBS9qD1cGKE
+r/qTTCxMXJciLzk8Txp/DAMpRbaqaJO45c0pYOJ/KGOsDo3h/B+FFyegSw/cPE4=
+=Z1YX
 -----END PGP SIGNATURE-----

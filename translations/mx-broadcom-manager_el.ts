@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -102,7 +100,7 @@
     <message>
         <location filename="../mconfig.cpp" line="1138"/>
         <source>sys file reference not found</source>
-        <translation type="unfinished"></translation>
+        <translation>δε βρέθηκε το αρχείο sys</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1138"/>
@@ -191,7 +189,7 @@
     <message>
         <location filename="../meconfig.ui" line="226"/>
         <source>Hardware detected</source>
-        <translation type="unfinished"></translation>
+        <translation>ανιχνεύθηκε το υλικό</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="244"/>
@@ -212,7 +210,7 @@
         <location filename="../meconfig.ui" line="354"/>
         <location filename="../meconfig.ui" line="360"/>
         <source>Linux drivers</source>
-        <translation type="unfinished"></translation>
+        <translation>οδηγοί του Linux</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="366"/>
@@ -222,7 +220,7 @@
     <message>
         <location filename="../meconfig.ui" line="385"/>
         <source>Associated Linux drivers</source>
-        <translation type="unfinished"></translation>
+        <translation>Associated Linux drivers</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="394"/>
@@ -237,17 +235,18 @@
     <message>
         <location filename="../meconfig.ui" line="474"/>
         <source>Re-list Linux Drivers</source>
-        <translation type="unfinished"></translation>
+        <translation>Re-list Linux Drivers</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="494"/>
         <source>Blacklist Driver</source>
-        <translation type="unfinished"></translation>
+        <translation>Προγραφή του Driver
+ </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="513"/>
         <source>Windows drivers</source>
-        <translation type="unfinished"></translation>
+        <translation>οδηγοί του Windows</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="519"/>
@@ -267,12 +266,12 @@
     <message>
         <location filename="../meconfig.ui" line="558"/>
         <source>Uninstall NDISwrapper</source>
-        <translation type="unfinished"></translation>
+        <translation>Απεγκατάσταση του NDISwrapper</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="572"/>
         <source>Windows Drivers</source>
-        <translation type="unfinished"></translation>
+        <translation>οδηγοί του Windows</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="606"/>
@@ -282,17 +281,17 @@
     <message>
         <location filename="../meconfig.ui" line="617"/>
         <source>Add Driver</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρόσθεση του Driver</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="640"/>
         <source>List Windows drivers</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάλογος οδηγων του Windows</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="663"/>
         <source>Net diagnostics</source>
-        <translation type="unfinished"></translation>
+        <translation>Διάγνωση του διαδίκτυο</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="669"/>
@@ -302,18 +301,18 @@
     <message>
         <location filename="../meconfig.ui" line="698"/>
         <source>Ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Ping</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="704"/>
         <location filename="../meconfig.ui" line="814"/>
         <source>Target URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Στόχος URL:</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="714"/>
         <source>Packets</source>
-        <translation type="unfinished"></translation>
+        <translation>Πακέτα</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="749"/>
@@ -336,21 +335,25 @@
     <message>
         <location filename="../meconfig.ui" line="808"/>
         <source>Traceroute</source>
-        <translation type="unfinished"></translation>
+        <translation>Traceroute</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="824"/>
         <source>Hops</source>
-        <translation type="unfinished"></translation>
+        <translation>Hops</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="856"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -368,86 +371,88 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mconfig.cpp" line="672"/>
         <source>driver installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Το driver εγκαταστάθηκε</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="683"/>
         <source> and in use by </source>
-        <translation type="unfinished"></translation>
+        <translation>και σε χρήση από</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="692"/>
         <source>. Alternate driver: </source>
-        <translation type="unfinished"></translation>
+        <translation>Εναλλακτικό driver: </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="784"/>
         <source>Driver removed from blacklist</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση του driver από τη μαύρη λίστα</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="785"/>
         <source>Driver removed from blacklist.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση του driver από τη μαύρη λίστα</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="793"/>
         <location filename="../mconfig.cpp" line="794"/>
         <source>Module blacklisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Module blacklisted</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="987"/>
         <source>Installation successful</source>
-        <translation type="unfinished"></translation>
+        <translation>Εγκατάσταση με επιτυχια</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="991"/>
         <source>Error detected, could not compile ndiswrapper driver.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εντοπίστηκε σφάλμα, δεν θα μπορούσαν να καταρτίσουν πρόγραμμα οδήγησης ndiswrapper.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="996"/>
         <source>Error detected, could not install ndiswrapper.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εντοπίστηκε σφάλμα, δεν θα μπορούσε να εγκαταστήσετε το πακέτο ndiswrapper.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1008"/>
         <source>Error encountered while removing Ndiswrapper</source>
-        <translation type="unfinished"></translation>
+        <translation>Προέκυψε σφάλμα κατά την αφαίρεση του ndiswrapper</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1066"/>
         <source>Unblacklist Driver</source>
-        <translation type="unfinished"></translation>
+        <translation>Unblacklist Driver</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1071"/>
         <source>Blacklist Driver</source>
-        <translation type="unfinished"></translation>
+        <translation>Προγραφή του Driver
+ </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1186"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν θα μπορούσε να ξεκλειδώσει τις συσκευές.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1188"/>
         <source>WiFi devices unlocked.</source>
-        <translation type="unfinished"></translation>
+        <translation>Συσκευές WiFi εχει ξεκλειδωθεί.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1235"/>
         <location filename="../mconfig.cpp" line="1236"/>
         <source>Driver loaded successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Το Driver φορτώθηκε επιτυχώς</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1254"/>
         <location filename="../mconfig.cpp" line="1255"/>
         <source>Driver unloaded successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Το Driver ξεφορτώθηκε επιτυχώς
+</translation>
     </message>
 </context>
 <context>
@@ -455,12 +460,12 @@ WiFi device(s) might already be unlocked.</source>
     <message>
         <location filename="../mconfig.cpp" line="813"/>
         <source>Could not load </source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν ήταν δυνατή η φόρτωση</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="849"/>
         <source>Could not unload </source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν ήταν δυνατή η ξεφόρτωση</translation>
     </message>
 </context>
 </TS>

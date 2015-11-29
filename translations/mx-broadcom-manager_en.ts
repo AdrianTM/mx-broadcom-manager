@@ -78,72 +78,72 @@
         <translation>Please fill in the destination host field</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1086"/>
+        <location filename="../mconfig.cpp" line="1095"/>
         <source>Locate the Windows driver you want to add</source>
         <translation>Locate the Windows driver you want to add</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1086"/>
+        <location filename="../mconfig.cpp" line="1095"/>
         <source>Windows installation information file (*.inf)</source>
         <translation>Windows installation information file (*.inf)</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1118"/>
+        <location filename="../mconfig.cpp" line="1127"/>
         <source>*.sys file not found</source>
         <translation>*.sys file not found</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1118"/>
+        <location filename="../mconfig.cpp" line="1127"/>
         <source>The *.sys files must be in the same location as the *.inf file. %1 cannot be found</source>
         <translation>The *.sys files must be in the same location as the *.inf file. %1 cannot be found</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1129"/>
+        <location filename="../mconfig.cpp" line="1138"/>
         <source>sys file reference not found</source>
         <translation>sys file reference not found</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1129"/>
+        <location filename="../mconfig.cpp" line="1138"/>
         <source>The sys file for the given driver cannot be determined after parsing the inf file</source>
         <translation>The sys file for the given driver cannot be determined after parsing the inf file</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1148"/>
+        <location filename="../mconfig.cpp" line="1157"/>
         <source>Ndiswrapper driver removed.</source>
         <translation>Ndiswrapper driver removed.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1194"/>
+        <location filename="../mconfig.cpp" line="1203"/>
         <source>About MX Broadcom Manager</source>
         <translation>About MX Broadcom Manager</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1195"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>MX Broadcom Manager</source>
         <translation>MX Broadcom Manager</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1195"/>
+        <location filename="../mconfig.cpp" line="1204"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1197"/>
+        <location filename="../mconfig.cpp" line="1206"/>
         <source>Program for troubleshooting and configuring network for MX Linux</source>
         <translation>Program for troubleshooting and configuring network for MX Linux</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1198"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>Copyright (c) MEPIS LLC and antiX</source>
         <translation>Copyright (c) MEPIS LLC and antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1199"/>
+        <location filename="../mconfig.cpp" line="1208"/>
         <source>License</source>
         <translation>License</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1200"/>
+        <location filename="../mconfig.cpp" line="1209"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
@@ -399,56 +399,56 @@ p, li { white-space: pre-wrap; }
         <translation>Module blacklisted</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="978"/>
+        <location filename="../mconfig.cpp" line="987"/>
         <source>Installation successful</source>
         <translation>Installation successful</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="982"/>
+        <location filename="../mconfig.cpp" line="991"/>
         <source>Error detected, could not compile ndiswrapper driver.</source>
         <translation>Error detected, could not compile ndiswrapper driver.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="987"/>
+        <location filename="../mconfig.cpp" line="996"/>
         <source>Error detected, could not install ndiswrapper.</source>
         <translation>Error detected, could not install ndiswrapper.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="999"/>
+        <location filename="../mconfig.cpp" line="1008"/>
         <source>Error encountered while removing Ndiswrapper</source>
         <translation>Error encountered while removing Ndiswrapper</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1057"/>
+        <location filename="../mconfig.cpp" line="1066"/>
         <source>Unblacklist Driver</source>
         <translation>Unblacklist Driver</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1062"/>
+        <location filename="../mconfig.cpp" line="1071"/>
         <source>Blacklist Driver</source>
         <translation>Blacklist Driver</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1177"/>
+        <location filename="../mconfig.cpp" line="1186"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
         <translation>Could not unlock devices.
 WiFi device(s) might already be unlocked.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1179"/>
+        <location filename="../mconfig.cpp" line="1188"/>
         <source>WiFi devices unlocked.</source>
         <translation>WiFi devices unlocked.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1226"/>
-        <location filename="../mconfig.cpp" line="1227"/>
+        <location filename="../mconfig.cpp" line="1235"/>
+        <location filename="../mconfig.cpp" line="1236"/>
         <source>Driver loaded successfully</source>
         <translation>Driver loaded successfully</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1245"/>
-        <location filename="../mconfig.cpp" line="1246"/>
+        <location filename="../mconfig.cpp" line="1254"/>
+        <location filename="../mconfig.cpp" line="1255"/>
         <source>Driver unloaded successfully</source>
         <translation>Driver unloaded successfully</translation>
     </message>
@@ -456,12 +456,12 @@ WiFi device(s) might already be unlocked.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../mconfig.cpp" line="811"/>
+        <location filename="../mconfig.cpp" line="813"/>
         <source>Could not load </source>
         <translation>Could not load </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="842"/>
+        <location filename="../mconfig.cpp" line="849"/>
         <source>Could not unload </source>
         <translation>Could not unload </translation>
     </message>

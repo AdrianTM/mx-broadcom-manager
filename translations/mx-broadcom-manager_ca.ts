@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ca">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.0">
 <context>
     <name>MConfig</name>
     <message>
@@ -45,7 +43,7 @@
         <location filename="../mconfig.cpp" line="377"/>
         <location filename="../mconfig.cpp" line="399"/>
         <source>Traceroute not installed</source>
-        <translation>El Traceroute no està instal·lat </translation>
+        <translation>Traceroute no està instal·lat </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="378"/>
@@ -196,7 +194,7 @@
     <message>
         <location filename="../meconfig.ui" line="244"/>
         <source>Re-scan Hardware</source>
-        <translation>Torna a explorar el maquinari </translation>
+        <translation>Re-explora el maquinari </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="332"/>
@@ -237,7 +235,7 @@
     <message>
         <location filename="../meconfig.ui" line="474"/>
         <source>Re-list Linux Drivers</source>
-        <translation>Torna a mostrar els controladors Linux </translation>
+        <translation>Mostra controladors Linux </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="494"/>
@@ -287,7 +285,7 @@
     <message>
         <location filename="../meconfig.ui" line="640"/>
         <source>List Windows drivers</source>
-        <translation>Llista els controladors Windows </translation>
+        <translation>Llista controladors Windows </translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="663"/>
@@ -348,7 +346,7 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -408,7 +406,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mconfig.cpp" line="991"/>
         <source>Error detected, could not compile ndiswrapper driver.</source>
-        <translation>S&apos;ha detectat un error, no es pot compilar el controlador ndiswrapper. </translation>
+        <translation>S&apos;ha detectat un error, no es pot compilar el ndiswrapper. </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="996"/>

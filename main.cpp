@@ -24,7 +24,7 @@
 
 int main( int argc, char ** argv ) {
     QApplication app(argc, argv);
-    app.setWindowIcon(QIcon("/usr/share/pixmaps/mx/mx-broadcom-manager.png"));
+    app.setWindowIcon(QIcon("/usr/share/pixmaps/mx-broadcom-manager.png"));
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());

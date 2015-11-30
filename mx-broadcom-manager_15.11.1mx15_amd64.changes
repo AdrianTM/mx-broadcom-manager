@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 30 Nov 2015 11:43:04 -0500
+Source: mx-broadcom-manager
+Binary: mx-broadcom-manager
+Architecture: source amd64
+Version: 15.11.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-broadcom-manager - MX program for network troubleshooting and configuration
+Changes:
+ mx-broadcom-manager (15.11.1mx15) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ c925df5ba473c67517dd1eab5b13b4ed11359f6d 1211 mx-broadcom-manager_15.11.1mx15.dsc
+ 7c36cb3fbd436a89ef4a64c60a8afb56d2fa5cb8 49084 mx-broadcom-manager_15.11.1mx15.tar.xz
+ 9f0c660339e5d522df491083fd7afb8f2c015157 84732 mx-broadcom-manager_15.11.1mx15_amd64.deb
+Checksums-Sha256:
+ b53370ad675b4bab8a5b15f3439080f56f5f84e40683bb45d309843b472693c8 1211 mx-broadcom-manager_15.11.1mx15.dsc
+ 6e516b708227d2abc861b1734eb2befe727faeb66e49b5d920a3d9598e08df01 49084 mx-broadcom-manager_15.11.1mx15.tar.xz
+ 3eb324e9ca1523f93f618d9a69bf5c0d9757d2bf81221eb510c4eab686f9723b 84732 mx-broadcom-manager_15.11.1mx15_amd64.deb
+Files:
+ 9cb8fa863ea43d9b110bde36b8e629e9 1211 admin optional mx-broadcom-manager_15.11.1mx15.dsc
+ 31dd6c86c69bee37ccbf97e91e443271 49084 admin optional mx-broadcom-manager_15.11.1mx15.tar.xz
+ 9cd24f3bde939afa94eba3cb68918544 84732 admin optional mx-broadcom-manager_15.11.1mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWXNiaAAoJEHCTjHgGee6Y6mAH/R3O6iYsbzetwhXKy2CEKmj2
+D2TYwd2Bh/OXwIo1a77Astwv4qIKJI3zINpF+krKahlCfGLvFeQyA5oKKwvs5ie2
+n6/Anxoe2PPsEOrZqP+xP5uxUMQdTUUZ9nkhp1I7knS90aALim8QLKKRDzBh6Xsp
+lqaDN10wlnxPWFY8mqSgevSHKOyCw/emEjmiucXRn3mLi+DFKY6Wq/guczm49lF+
+Vs+vcN8PYIgcPyPIrBXHXueYoa63aktif6f4TJ2s0cE/jLqLjRXzCKwl5BKLLuks
+6JqP1QL1bIF58j4I6kKkUz1/g2deu0c/tgTIUnUaoh4X7yNEp4SVWM3+yNLuOZ8=
+=q5eV
+-----END PGP SIGNATURE-----

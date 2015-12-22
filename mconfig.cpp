@@ -1161,7 +1161,9 @@ void MConfig::on_windowsDrvRemovePushButton_clicked()
 
 void MConfig::on_generalHelpPushButton_clicked()
 {
+    this->hide();
     system("mx-viewer http://www.mepiscommunity.org/wiki/networking/help-mx-broadcom-manager 'MX Broadcom Manager Help'");
+    this->show();
 }
 
 void MConfig::on_tabWidget_currentChanged()
@@ -1199,6 +1201,7 @@ void MConfig::on_buttonCancel_clicked()
 // About button clicked
 void MConfig::on_buttonAbout_clicked()
 {
+    this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Broadcom Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX Broadcom Manager") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
@@ -1209,6 +1212,7 @@ void MConfig::on_buttonAbout_clicked()
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
         system("mx-viewer file:///usr/share/doc/mx-broadcom-manager/license.html 'MX Broadcom Manager License'");
+    this->show();
 }
 
 

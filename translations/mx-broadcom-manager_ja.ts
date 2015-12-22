@@ -115,37 +115,37 @@
         <translation>Ndiswrapper ドライバーは削除されました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1203"/>
+        <location filename="../mconfig.cpp" line="1206"/>
         <source>About MX Broadcom Manager</source>
         <translation>MX Broadcom マネージャーについて</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>MX Broadcom Manager</source>
         <translation>MX Broadcom マネージャー</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1206"/>
+        <location filename="../mconfig.cpp" line="1209"/>
         <source>Program for troubleshooting and configuring network for MX Linux</source>
         <translation>MX Linux のネットワーク設定・トラブル解決を行うプログラム</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1207"/>
+        <location filename="../mconfig.cpp" line="1210"/>
         <source>Copyright (c) MEPIS LLC and antiX</source>
         <translation>Copyright (c) MEPIS LLC and antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1208"/>
+        <location filename="../mconfig.cpp" line="1211"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1209"/>
+        <location filename="../mconfig.cpp" line="1212"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -431,26 +431,26 @@ p, li { white-space: pre-wrap; }
         <translation>ドライバーをブラックリストに追加</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1186"/>
+        <location filename="../mconfig.cpp" line="1188"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
         <translation>デバイスのロック解除を行えません。
 Wi-Fi デバイスはすでにロック解除されています。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1188"/>
+        <location filename="../mconfig.cpp" line="1190"/>
         <source>WiFi devices unlocked.</source>
         <translation>Wi-Fi デバイスのロックを解除しました。</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1235"/>
-        <location filename="../mconfig.cpp" line="1236"/>
+        <location filename="../mconfig.cpp" line="1239"/>
+        <location filename="../mconfig.cpp" line="1240"/>
         <source>Driver loaded successfully</source>
         <translation>ドライバーの読み込みを有効にしました</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1254"/>
-        <location filename="../mconfig.cpp" line="1255"/>
+        <location filename="../mconfig.cpp" line="1258"/>
+        <location filename="../mconfig.cpp" line="1259"/>
         <source>Driver unloaded successfully</source>
         <translation>ドライバーの読み込みを無効にしました</translation>
     </message>

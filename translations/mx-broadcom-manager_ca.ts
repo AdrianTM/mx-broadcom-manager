@@ -115,37 +115,37 @@
         <translation>S&apos;ha eliminat el controlador ndiswrapper </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1203"/>
+        <location filename="../mconfig.cpp" line="1206"/>
         <source>About MX Broadcom Manager</source>
         <translation>Quant al MX Broadcom Manager </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>MX Broadcom Manager</source>
         <translation>MX Broadcom Manager </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1206"/>
+        <location filename="../mconfig.cpp" line="1209"/>
         <source>Program for troubleshooting and configuring network for MX Linux</source>
         <translation>Programa per a resolució de problemes i configuració de xarxa de MX Linux </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1207"/>
+        <location filename="../mconfig.cpp" line="1210"/>
         <source>Copyright (c) MEPIS LLC and antiX</source>
         <translation>Copyright (c) MEPIS LLC i antiX </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1208"/>
+        <location filename="../mconfig.cpp" line="1211"/>
         <source>License</source>
         <translation>Llicència </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1209"/>
+        <location filename="../mconfig.cpp" line="1212"/>
         <source>Cancel</source>
         <translation>Cancel·la </translation>
     </message>
@@ -431,26 +431,26 @@ p, li { white-space: pre-wrap; }
         <translation>Controlador a la llista negra </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1186"/>
+        <location filename="../mconfig.cpp" line="1188"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
         <translation>No es poden desbloquejar els dispositius.
 El(s) dispositiu(s) WiFi potser ja estan desbloquejats. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1188"/>
+        <location filename="../mconfig.cpp" line="1190"/>
         <source>WiFi devices unlocked.</source>
         <translation>Dispositius WiFi desbloquejats. </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1235"/>
-        <location filename="../mconfig.cpp" line="1236"/>
+        <location filename="../mconfig.cpp" line="1239"/>
+        <location filename="../mconfig.cpp" line="1240"/>
         <source>Driver loaded successfully</source>
         <translation>Controlador carregat amb èxit </translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1254"/>
-        <location filename="../mconfig.cpp" line="1255"/>
+        <location filename="../mconfig.cpp" line="1258"/>
+        <location filename="../mconfig.cpp" line="1259"/>
         <source>Driver unloaded successfully</source>
         <translation>Controlador descarregat amb èxit </translation>
     </message>

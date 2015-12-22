@@ -115,37 +115,37 @@
         <translation>Ndiswrapper driver verwijderd.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1203"/>
+        <location filename="../mconfig.cpp" line="1206"/>
         <source>About MX Broadcom Manager</source>
         <translation>Over MX Broadcom Beheer</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>MX Broadcom Manager</source>
         <translation>MX Broadcom Beheer</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1204"/>
+        <location filename="../mconfig.cpp" line="1207"/>
         <source>Version: </source>
         <translation>Versie:</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1206"/>
+        <location filename="../mconfig.cpp" line="1209"/>
         <source>Program for troubleshooting and configuring network for MX Linux</source>
         <translation>Programma voor netwerk probleemoplossing en configuratie.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1207"/>
+        <location filename="../mconfig.cpp" line="1210"/>
         <source>Copyright (c) MEPIS LLC and antiX</source>
         <translation>Copyright (c) MEPIS LLC en antiX</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1208"/>
+        <location filename="../mconfig.cpp" line="1211"/>
         <source>License</source>
         <translation>Licentie</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1209"/>
+        <location filename="../mconfig.cpp" line="1212"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
@@ -435,26 +435,26 @@ p, li { white-space: pre-wrap; }
         <translation>Zet Driver Op De Zwarte Lijst</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1186"/>
+        <location filename="../mconfig.cpp" line="1188"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
         <translation>Kon apparaten niet ontgrendelen.
 WiFi appara(a)t(en) zouden al ontgrendeld kunnen zijn.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1188"/>
+        <location filename="../mconfig.cpp" line="1190"/>
         <source>WiFi devices unlocked.</source>
         <translation>WiFi apparaten ontgrendeld.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1235"/>
-        <location filename="../mconfig.cpp" line="1236"/>
+        <location filename="../mconfig.cpp" line="1239"/>
+        <location filename="../mconfig.cpp" line="1240"/>
         <source>Driver loaded successfully</source>
         <translation>Driver succesvol geladen</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1254"/>
-        <location filename="../mconfig.cpp" line="1255"/>
+        <location filename="../mconfig.cpp" line="1258"/>
+        <location filename="../mconfig.cpp" line="1259"/>
         <source>Driver unloaded successfully</source>
         <translation>Driver succesvol ont-laden</translation>
     </message>

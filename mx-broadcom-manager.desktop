@@ -24,5 +24,5 @@ Comment[sv]=Nätverkskonfiguration och felsökning
 Exec=su-to-root -X -c mx-broadcom-manager
 Icon=mx-broadcom-manager
 NoDisplay=false
-Categories=System;
+Categories=System;MX-Setup;
 Type=Application

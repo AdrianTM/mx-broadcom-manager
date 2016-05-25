@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 22 May 2016 20:26:51 -0400
+Source: mx-broadcom-manager
+Binary: mx-broadcom-manager
+Architecture: source amd64
+Version: 16.1mx15
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: dolphin_oracle <dolphinoracle@gmail.com>
+Description:
+ mx-broadcom-manager - MX program for network troubleshooting and configuration
+Changes:
+ mx-broadcom-manager (16.1mx15) UNRELEASED; urgency=medium
+ .
+   * revised .desktop file
+Checksums-Sha1:
+ 828c332091f0ac671a52f9ed09805a20f5e2d89a 678 mx-broadcom-manager_16.1mx15.dsc
+ fd735824a2257345bf8780f3d2836711ce86f5b1 49320 mx-broadcom-manager_16.1mx15.tar.xz
+ 13527504b03bb8d2081c0de00552e84c46b4bdef 84998 mx-broadcom-manager_16.1mx15_amd64.deb
+Checksums-Sha256:
+ 9fb53dbc5c6c4c7fb80c38fc4242d20253d6afdc4eb57b35cd9881741d8499d6 678 mx-broadcom-manager_16.1mx15.dsc
+ 67893bace238e9f28d5772b9c734ed750a4b6b10e5f10f4ef8a47346191b397b 49320 mx-broadcom-manager_16.1mx15.tar.xz
+ bcf84213a694c7f30bd5982a2fe28243fccdca88c4f62310ea234712e94d7f2c 84998 mx-broadcom-manager_16.1mx15_amd64.deb
+Files:
+ 8174fc5d956898cb85cf628c31a4d119 678 admin optional mx-broadcom-manager_16.1mx15.dsc
+ b0740dbb99f6bc283b2b0cc2742b3f44 49320 admin optional mx-broadcom-manager_16.1mx15.tar.xz
+ a94c0cde63f66b81b48ff91b9861b6eb 84998 admin optional mx-broadcom-manager_16.1mx15_amd64.deb

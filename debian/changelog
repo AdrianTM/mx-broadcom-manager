@@ -1,8 +1,8 @@
-mx-broadcom-manager (16.1mx15) UNRELEASED; urgency=medium
+mx-broadcom-manager (16.6mx15) mx; urgency=medium
 
-  * revised .desktop file 
+  * minor fix
 
- -- dolphin_oracle <dolphinoracle@gmail.com>  Sun, 22 May 2016 20:26:51 -0400
+ -- Adrian <adrian@mxlinux.org>  Mon, 06 Jun 2016 17:59:20 -0400
 
 mx-broadcom-manager (15.12mx15) mx; urgency=medium
 

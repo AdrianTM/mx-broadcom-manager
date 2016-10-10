@@ -136,8 +136,8 @@
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1210"/>
-        <source>Copyright (c) MEPIS LLC and antiX</source>
-        <translation>Copyright (c) MEPIS LLC i antiX </translation>
+        <source>Copyright (c) MEPIS LLC and MX Linux</source>
+        <translation>Copyright (c) MEPIS LLC i MX Linux </translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1211"/>

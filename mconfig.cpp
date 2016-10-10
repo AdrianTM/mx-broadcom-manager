@@ -1162,7 +1162,7 @@ void MConfig::on_windowsDrvRemovePushButton_clicked()
 void MConfig::on_generalHelpPushButton_clicked()
 {
     this->hide();
-    system("mx-viewer http://www.mepiscommunity.org/wiki/networking/help-mx-broadcom-manager 'MX Broadcom Manager Help'");
+    system("mx-viewer https://mxlinux.org/wiki/networking/help-mx-broadcom-manager 'MX Broadcom Manager Help'");
     this->show();
 }
 
@@ -1206,8 +1206,8 @@ void MConfig::on_buttonAbout_clicked()
                        tr("About MX Broadcom Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX Broadcom Manager") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
                        getVersion("mx-broadcom-manager") + "</p><p align=\"center\"><h3>" +
-                       tr("Program for troubleshooting and configuring network for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MEPIS LLC and antiX") + "<br /><br /></p>", 0, this);
+                       tr("Program for troubleshooting and configuring network for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
+                       tr("Copyright (c) MEPIS LLC and MX Linux") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)

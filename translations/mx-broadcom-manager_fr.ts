@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -112,7 +110,7 @@
     <message>
         <location filename="../mconfig.cpp" line="1157"/>
         <source>Ndiswrapper driver removed.</source>
-        <translation>NDISwrapper a été supprimé.</translation>
+        <translation>Ndiswrapper a été supprimé.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1206"/>
@@ -122,7 +120,7 @@
     <message>
         <location filename="../mconfig.cpp" line="1207"/>
         <source>MX Broadcom Manager</source>
-        <translation>MX Gestionnaire du Broadcom</translation>
+        <translation>MX Gestionnaire de carte réseau  Broadcom</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1207"/>
@@ -186,7 +184,7 @@
     <message>
         <location filename="../meconfig.ui" line="210"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometimes be difficult to set up in Linux. There are a number of different types of drivers that have different capabilities and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;L&apos;initialisation en Linux de l&apos;adapteur sans fil Broadcom se trouve parfois difficile à effectuer. Il y a beaucoup de pilotes de sortes différentes et avec des capabilités et fonctions divers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;L&apos;initialisation dans Linux de l&apos;adapteur sans fil Broadcom se trouve parfois difficile à effectuer. Il y a beaucoup de pilotes de sortes différentes et avec des capabilités et fonctions divers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../meconfig.ui" line="226"/>
@@ -348,7 +346,7 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -362,7 +360,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../main.cpp" line="44"/>
         <source>You must run this program as root.</source>
-        <translation>Vous devez lancer cette application avec les droits root.</translation>
+        <translation>Vous devez lancer cette application avec les droits administrateur.</translation>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="663"/>

@@ -10,8 +10,12 @@ TRANSLATIONS += translations/mx-broadcom-manager_ca.ts \
                 translations/mx-broadcom-manager_it.ts \
                 translations/mx-broadcom-manager_ja.ts \
                 translations/mx-broadcom-manager_nl.ts \
+                translations/mx-broadcom-manager_pl.ts \
+                translations/mx-broadcom-manager_pt.ts \
+                translations/mx-broadcom-manager_ro.ts \
                 translations/mx-broadcom-manager_ru.ts \
-                translations/mx-broadcom-manager_sv.ts
+                translations/mx-broadcom-manager_sv.ts \
+                translations/mx-broadcom-manager_tr.ts
 FORMS += meconfig.ui
 HEADERS += mconfig.h
 SOURCES += main.cpp mconfig.cpp

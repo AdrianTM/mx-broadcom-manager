@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 30 Nov 2016 10:34:59 -0500
+Source: mx-broadcom-manager
+Binary: mx-broadcom-manager
+Architecture: source amd64
+Version: 16.11mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-broadcom-manager - MX program for network troubleshooting and configuration
+Changes:
+ mx-broadcom-manager (16.11mx16+1) mx; urgency=medium
+ .
+   * FR translations
+Checksums-Sha1:
+ 81409cd757615fe5316d5fd22c13fc8efb92a44c 1211 mx-broadcom-manager_16.11mx16+1.dsc
+ 237ae40ce9d363a6413db3da4f8bfbd95d1277a6 52256 mx-broadcom-manager_16.11mx16+1.tar.xz
+ e223ab723a4019e8d551bda463c55ab07e449e58 87692 mx-broadcom-manager_16.11mx16+1_amd64.deb
+Checksums-Sha256:
+ 8f108f7b2c74bbeb6a29181044bc5a998c7c3203bee3268d1051248f062d83a3 1211 mx-broadcom-manager_16.11mx16+1.dsc
+ 72a81e0097d692a6a8708610dcb6dd3ef65d6e50d4cb05939ce475da9de21f23 52256 mx-broadcom-manager_16.11mx16+1.tar.xz
+ 7a57e97777f486cc6e050913d6df21a4c874fbc0baf170363d3d9497367a8210 87692 mx-broadcom-manager_16.11mx16+1_amd64.deb
+Files:
+ 3d09d1664759d2fd9fa7604938335900 1211 admin optional mx-broadcom-manager_16.11mx16+1.dsc
+ b0e38089cabeb8c3b1b8d4c6e7bd3259 52256 admin optional mx-broadcom-manager_16.11mx16+1.tar.xz
+ c423fb394d2d4b499ea42441cb95e382 87692 admin optional mx-broadcom-manager_16.11mx16+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYPvHJAAoJEHCTjHgGee6YfDsIAMxduWzB4A5eMk+7APzNaTLO
+NYNnRfDocfBKEmioYcyoB2KDY17IwnxqRfm+ScU7mjeu5F7L64oJWOryr3IIKG1+
+7qS6klfemChne4ku16i4kEW7XPSGecoX0VvZRunS3wdHiCMBy8nLa3YFzftYA1a1
+G6xNgXRW3fPPpHYwVeW3aZ0VmGlKuo8si0CB90Tauy+Tp9MR94c2pT4ToQOioFM4
+WOgUSpdFo22/vnxl8MJ9kzZpITd3eWDgM9+uhWvsL0w8VMILYZR/TLCaAz9a0rX+
+ea9xNmNHK/sM2uuGLRZ0X1CznMFJLaxHP2ttzL2ZAXLSpA32+/Owbzr564517Vw=
+=Spnf
+-----END PGP SIGNATURE-----

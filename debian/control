@@ -11,7 +11,7 @@ Vcs-Git: git://github.com/AdrianTM/mx-network
 
 Package: mx-broadcom-manager
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer, rfkill
+Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer, rfkill, menu
 Description: MX program for network troubleshooting and configuration
  MX Broadcom Manager is a program used for configuring and troubleshooting 
  antiX MX  network configuration for Broadcom network cards.

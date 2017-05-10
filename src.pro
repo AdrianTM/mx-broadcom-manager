@@ -23,4 +23,7 @@ HEADERS += mconfig.h
 SOURCES += main.cpp mconfig.cpp
 CONFIG += release warn_on thread qt
 
+RESOURCES += \
+    images.qrc
+
 

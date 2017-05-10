@@ -163,192 +163,192 @@
         <translation>Hakkında...</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="97"/>
+        <location filename="../meconfig.ui" line="96"/>
         <source>Help</source>
         <translation>Yardım</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="159"/>
+        <location filename="../meconfig.ui" line="157"/>
         <source>&amp;Close</source>
         <translation>&amp;Kapat</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="166"/>
+        <location filename="../meconfig.ui" line="163"/>
         <source>Alt+C</source>
         <translation>Alt+C</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="198"/>
-        <location filename="../meconfig.ui" line="204"/>
+        <location filename="../meconfig.ui" line="195"/>
+        <location filename="../meconfig.ui" line="201"/>
         <source>Introduction</source>
         <translation>Giriş</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="210"/>
+        <location filename="../meconfig.ui" line="207"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometimes be difficult to set up in Linux. There are a number of different types of drivers that have different capabilities and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="226"/>
+        <location filename="../meconfig.ui" line="223"/>
         <source>Hardware detected</source>
         <translation>Donanım algılandı</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="244"/>
+        <location filename="../meconfig.ui" line="241"/>
         <source>Re-scan Hardware</source>
         <translation>Donanımı yeniden tara</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="332"/>
+        <location filename="../meconfig.ui" line="329"/>
         <source>Unblocks all soft/hard blocked wireless devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="335"/>
+        <location filename="../meconfig.ui" line="332"/>
         <source>Unblock WiFi Devices</source>
         <translation>WiFi aygıtlarının engelini kaldırma</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="354"/>
-        <location filename="../meconfig.ui" line="360"/>
+        <location filename="../meconfig.ui" line="351"/>
+        <location filename="../meconfig.ui" line="357"/>
         <source>Linux drivers</source>
         <translation>Linux sürücüleri</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="366"/>
+        <location filename="../meconfig.ui" line="363"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="385"/>
+        <location filename="../meconfig.ui" line="382"/>
         <source>Associated Linux drivers</source>
         <translation>Linux Sürücüleriyle İlişkili</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="394"/>
+        <location filename="../meconfig.ui" line="391"/>
         <source>Load Driver</source>
         <translation>Sürücü Yükle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="457"/>
+        <location filename="../meconfig.ui" line="454"/>
         <source>Unload Driver</source>
         <translation>Sürücüyü Kaldır</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="474"/>
+        <location filename="../meconfig.ui" line="471"/>
         <source>Re-list Linux Drivers</source>
         <translation>Linux Sürücülerini Yeniden Listele</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="494"/>
+        <location filename="../meconfig.ui" line="491"/>
         <source>Blacklist Driver</source>
         <translation>Kara Listedeki Sürücüler</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="513"/>
+        <location filename="../meconfig.ui" line="510"/>
         <source>Windows drivers</source>
         <translation>Windows sürücüleri</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="519"/>
+        <location filename="../meconfig.ui" line="516"/>
         <source>About NDISwrapper</source>
         <translation>NDISwrapper Hakkında</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="531"/>
+        <location filename="../meconfig.ui" line="528"/>
         <source>Install NDISwrapper</source>
         <translation>NDISwrapper Kur</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="542"/>
+        <location filename="../meconfig.ui" line="539"/>
         <source>In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="558"/>
+        <location filename="../meconfig.ui" line="555"/>
         <source>Uninstall NDISwrapper</source>
         <translation>NDISwrapper kurulumu kaldır</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="572"/>
+        <location filename="../meconfig.ui" line="569"/>
         <source>Windows Drivers</source>
         <translation>Windows Sürücüleri</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="606"/>
+        <location filename="../meconfig.ui" line="603"/>
         <source>Remove Driver</source>
         <translation>Sürücü Kaldır</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="617"/>
+        <location filename="../meconfig.ui" line="614"/>
         <source>Add Driver</source>
         <translation>Sürücü Ekle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="640"/>
+        <location filename="../meconfig.ui" line="637"/>
         <source>List Windows drivers</source>
         <translation>Windows sürücüleri listesi</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="663"/>
+        <location filename="../meconfig.ui" line="660"/>
         <source>Net diagnostics</source>
         <translation>Ağ tanılama</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="669"/>
+        <location filename="../meconfig.ui" line="666"/>
         <source>IP address</source>
         <translation>İP adresi</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="698"/>
+        <location filename="../meconfig.ui" line="695"/>
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="704"/>
-        <location filename="../meconfig.ui" line="814"/>
+        <location filename="../meconfig.ui" line="701"/>
+        <location filename="../meconfig.ui" line="811"/>
         <source>Target URL:</source>
         <translation>Hedef URL:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="714"/>
+        <location filename="../meconfig.ui" line="711"/>
         <source>Packets</source>
         <translation>Paketler</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="749"/>
-        <location filename="../meconfig.ui" line="869"/>
+        <location filename="../meconfig.ui" line="746"/>
+        <location filename="../meconfig.ui" line="866"/>
         <source>Start</source>
         <translation>Başla</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="766"/>
-        <location filename="../meconfig.ui" line="886"/>
+        <location filename="../meconfig.ui" line="763"/>
+        <location filename="../meconfig.ui" line="883"/>
         <source>Clear</source>
         <translation>Temizle</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="780"/>
-        <location filename="../meconfig.ui" line="900"/>
+        <location filename="../meconfig.ui" line="777"/>
+        <location filename="../meconfig.ui" line="897"/>
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="808"/>
+        <location filename="../meconfig.ui" line="805"/>
         <source>Traceroute</source>
         <translation>İz yolu</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="824"/>
+        <location filename="../meconfig.ui" line="821"/>
         <source>Hops</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="856"/>
+        <location filename="../meconfig.ui" line="853"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -438,14 +438,14 @@ WiFi device(s) might already be unlocked.</source>
         <translation>WiFi aygıların engeli kaldırıldı.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1239"/>
         <location filename="../mconfig.cpp" line="1240"/>
+        <location filename="../mconfig.cpp" line="1241"/>
         <source>Driver loaded successfully</source>
         <translation>Sürücü başarıyla yüklendi</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1258"/>
         <location filename="../mconfig.cpp" line="1259"/>
+        <location filename="../mconfig.cpp" line="1260"/>
         <source>Driver unloaded successfully</source>
         <translation>Sürücü başarıyla kaldırıldı</translation>
     </message>

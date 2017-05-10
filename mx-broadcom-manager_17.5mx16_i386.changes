@@ -18,20 +18,20 @@ Changes:
  .
    * update icons
 Checksums-Sha1:
- a1aca9df9a37f362d72d16872e2c21c5de993834 90684 mx-broadcom-manager_17.5mx16_i386.deb
+ 2f2a5d37c1315a59886b52ec288593aa29a5cf57 84156 mx-broadcom-manager_17.5mx16_i386.deb
 Checksums-Sha256:
- 6c51bf12faf9e17db8096edf2287b9b709fdf3b1ebc2939ccdabc260ce04612d 90684 mx-broadcom-manager_17.5mx16_i386.deb
+ a9e00eac894ff6f9650e6ad0e909d568b1b76a65dd10ee50fe92e929cf6fb037 84156 mx-broadcom-manager_17.5mx16_i386.deb
 Files:
- 02adea528fca2e8f16bea8db5fea0ce3 90684 admin optional mx-broadcom-manager_17.5mx16_i386.deb
+ d547cbb67adb1a959c73dc29b68d7c73 84156 admin optional mx-broadcom-manager_17.5mx16_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZEzPGAAoJEHCTjHgGee6Ye+AH/jSS7OSpMM0zpINdVgNzHO1r
-lCw731SyBe6xcLptYRhT4WXTT/14s2vSjTk5l5bIFU/33abFBwfVRQXYhO8yxBDa
-bMCoIAHrrUV/kd048AWupmwRFlzlVIs21ryBBpXhv+ixmFbw85WGMJHjBZBngOGQ
-g098gGlTHpLU4+sm2dSlZEe2NoTnL72RUXQaY8DDwLs2AHrE7/DI7XrUbM/K3gIZ
-L1b71N446Uu2Nenop5WSBh7lj8fho5LIxAUN6RZ9aI6MCN0hPezQE5VmeCvN+ydw
-L7VoiyQlhBFslRjxeFOM1G6y4+Bmceja8xF8bje0dpdI1zCm2m4sxWYEFKk50QY=
-=8W0m
+iQEcBAEBAgAGBQJZE31wAAoJEHCTjHgGee6YCYAH/1DuLkRSeTcQvJm4fviatNyW
+q4+BWBZW2hC4nXxm93FocauyDG2hrYKKZYbkwU2FfjIuqH0ZPl5H0siEW/0GtoF/
+uzvo3+FfpDVZc1/x60NdKNdbGfX3aeLrNYZ7MtfXW5abaR4aWgNvrprSFgV9I69w
+2D5Pj0AR/FzF0dNNwP+OotGqE8NrF93JhuwNRJITYwdDGSVC3GobAJEvRGLZLbgR
+C9HW0h2+pcG/CnZMcXr5+2trLIRKZriJPajNtcY4lgxST0Gw4w/sMdvWfN4jcSdo
+1TJeCGiZ+VfVB2TLcxxH9t6HjPy/B0WYbhiHGBaY83/AUMZUw5ep9AK5sOMLV+4=
+=O5/5
 -----END PGP SIGNATURE-----

@@ -163,109 +163,109 @@
         <translation>Quant a... </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="96"/>
+        <location filename="../meconfig.ui" line="98"/>
         <source>Help</source>
         <translation>Ajuda </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="157"/>
+        <location filename="../meconfig.ui" line="161"/>
         <source>&amp;Close</source>
         <translation>Tan&amp;ca </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="163"/>
+        <location filename="../meconfig.ui" line="169"/>
         <source>Alt+C</source>
         <translation>Alt+C </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="195"/>
-        <location filename="../meconfig.ui" line="201"/>
+        <location filename="../meconfig.ui" line="200"/>
+        <location filename="../meconfig.ui" line="206"/>
         <source>Introduction</source>
         <translation>Presentació </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="207"/>
+        <location filename="../meconfig.ui" line="212"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometimes be difficult to set up in Linux. There are a number of different types of drivers that have different capabilities and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;La xarxa sense fils Broadcom a vegades es difícil de configurar a Linux. Hi ha una gran diversitat de tipus de controladors que tenen característiques i capacitats diferents.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="223"/>
+        <location filename="../meconfig.ui" line="228"/>
         <source>Hardware detected</source>
         <translation>Maquinari detectat </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="241"/>
+        <location filename="../meconfig.ui" line="246"/>
         <source>Re-scan Hardware</source>
         <translation>Re-explora el maquinari </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="329"/>
+        <location filename="../meconfig.ui" line="333"/>
         <source>Unblocks all soft/hard blocked wireless devices</source>
         <translation>Desbloqueja tots els dispositius sense fils </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="332"/>
+        <location filename="../meconfig.ui" line="336"/>
         <source>Unblock WiFi Devices</source>
         <translation>Desbloqueja els dispositius WiFi </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="351"/>
-        <location filename="../meconfig.ui" line="357"/>
+        <location filename="../meconfig.ui" line="354"/>
+        <location filename="../meconfig.ui" line="360"/>
         <source>Linux drivers</source>
         <translation>Controladors Linux </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="363"/>
+        <location filename="../meconfig.ui" line="366"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Aquesta eina facilita la configuració del controlador de xarxa per a la vostra tarja Broadcom.&lt;p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="382"/>
+        <location filename="../meconfig.ui" line="385"/>
         <source>Associated Linux drivers</source>
         <translation>Controladors Linux associats </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="391"/>
+        <location filename="../meconfig.ui" line="394"/>
         <source>Load Driver</source>
         <translation>Carrega controlador </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="454"/>
+        <location filename="../meconfig.ui" line="457"/>
         <source>Unload Driver</source>
         <translation>Descarrega controlador </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="471"/>
+        <location filename="../meconfig.ui" line="474"/>
         <source>Re-list Linux Drivers</source>
         <translation>Mostra controladors Linux </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="491"/>
+        <location filename="../meconfig.ui" line="493"/>
         <source>Blacklist Driver</source>
         <translation>Controlador a la llista negra </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="510"/>
+        <location filename="../meconfig.ui" line="512"/>
         <source>Windows drivers</source>
         <translation>Controladors Windows </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="516"/>
+        <location filename="../meconfig.ui" line="518"/>
         <source>About NDISwrapper</source>
         <translation>Quant a NDISwrapper </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="528"/>
+        <location filename="../meconfig.ui" line="530"/>
         <source>Install NDISwrapper</source>
         <translation>Instal·la NDISwrapper </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="539"/>
+        <location filename="../meconfig.ui" line="540"/>
         <source>In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
         <translation>Per tal d&apos;usar controladors Windows primer cal instal·lar NDISwrapper, si us plau, premeu el botó d&apos;instal·lació de NDISwrapper. </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="555"/>
+        <location filename="../meconfig.ui" line="556"/>
         <source>Uninstall NDISwrapper</source>
         <translation>Desinstal·la NDISwrapper </translation>
     </message>
@@ -280,71 +280,71 @@
         <translation>Elimina controlador </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="614"/>
+        <location filename="../meconfig.ui" line="613"/>
         <source>Add Driver</source>
         <translation>Afegeix controlador </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="637"/>
+        <location filename="../meconfig.ui" line="635"/>
         <source>List Windows drivers</source>
         <translation>Llista controladors Windows </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="660"/>
+        <location filename="../meconfig.ui" line="658"/>
         <source>Net diagnostics</source>
         <translation>Diagnòstics de xarxa </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="666"/>
+        <location filename="../meconfig.ui" line="664"/>
         <source>IP address</source>
         <translation>Adreça IP </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="695"/>
+        <location filename="../meconfig.ui" line="693"/>
         <source>Ping</source>
         <translation>Ping </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="701"/>
-        <location filename="../meconfig.ui" line="811"/>
+        <location filename="../meconfig.ui" line="699"/>
+        <location filename="../meconfig.ui" line="807"/>
         <source>Target URL:</source>
         <translation>URL objectiu: </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="711"/>
+        <location filename="../meconfig.ui" line="709"/>
         <source>Packets</source>
         <translation>Paquets </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="746"/>
-        <location filename="../meconfig.ui" line="866"/>
+        <location filename="../meconfig.ui" line="744"/>
+        <location filename="../meconfig.ui" line="862"/>
         <source>Start</source>
         <translation>Inici</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="763"/>
-        <location filename="../meconfig.ui" line="883"/>
+        <location filename="../meconfig.ui" line="760"/>
+        <location filename="../meconfig.ui" line="878"/>
         <source>Clear</source>
         <translation>Buida </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="777"/>
-        <location filename="../meconfig.ui" line="897"/>
+        <location filename="../meconfig.ui" line="773"/>
+        <location filename="../meconfig.ui" line="891"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="805"/>
+        <location filename="../meconfig.ui" line="801"/>
         <source>Traceroute</source>
         <translation>Traceroute </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="821"/>
+        <location filename="../meconfig.ui" line="817"/>
         <source>Hops</source>
         <translation>Salts </translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="853"/>
+        <location filename="../meconfig.ui" line="849"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }

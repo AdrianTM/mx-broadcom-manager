@@ -18,26 +18,26 @@ Changes:
  .
    * update icons
 Checksums-Sha1:
- 226f3707ae262aafc65d093aaa1b228841c2334a 1199 mx-broadcom-manager_17.5mx16.dsc
- 43b05c82c8fed758b2c3f0f27f888c4d4e15f07b 53676 mx-broadcom-manager_17.5mx16.tar.xz
- 1c0dc38f45af7a1ced28631a9daacc7ba669eee1 88804 mx-broadcom-manager_17.5mx16_amd64.deb
+ 61a6bbda15474f490f50a62ed7c3a5dc485e75e7 1199 mx-broadcom-manager_17.5mx16.dsc
+ 804bb838fa0303a0cf8cd29fb49714f4efc019af 46704 mx-broadcom-manager_17.5mx16.tar.xz
+ 4f58626f4f4da6157ceca5dee9ffd9800b1f4289 82148 mx-broadcom-manager_17.5mx16_amd64.deb
 Checksums-Sha256:
- d200bc3fd6b15114a693c02b43c167bb06bb7e7576045e0e3e67babf4a8c03b6 1199 mx-broadcom-manager_17.5mx16.dsc
- 9c891041107907f19a40e16646a25031a12f1edb3e9293e75628dfc1db85bb8f 53676 mx-broadcom-manager_17.5mx16.tar.xz
- a1477b3c5fea1663ae69810cefc759b75fdf0eadddfec83ad0ba1fa8ed1c7f86 88804 mx-broadcom-manager_17.5mx16_amd64.deb
+ 077201254cbd764168b1208ac3e9af86d301ce92b56101264cda024e9bc88099 1199 mx-broadcom-manager_17.5mx16.dsc
+ b51e6a1a2269db201a52032cfe867056ced3c7dd4a164397862ac0aab1f4b1ec 46704 mx-broadcom-manager_17.5mx16.tar.xz
+ 38845cf2e52c0160cd326c7d781e3701fea826e1d479a689d55cd76e1cf35792 82148 mx-broadcom-manager_17.5mx16_amd64.deb
 Files:
- 27aeb492cd010ec5690400b621b435d3 1199 admin optional mx-broadcom-manager_17.5mx16.dsc
- f91d50f0fd5262accc78c6d99d9c6615 53676 admin optional mx-broadcom-manager_17.5mx16.tar.xz
- 1cc54619f61bbc11ac0360ef7ea3d84f 88804 admin optional mx-broadcom-manager_17.5mx16_amd64.deb
+ 7ce64258dd45beb3b1a994e435657943 1199 admin optional mx-broadcom-manager_17.5mx16.dsc
+ 1ae3376f817ef2f37da11c7cc964577d 46704 admin optional mx-broadcom-manager_17.5mx16.tar.xz
+ 1f3ca4762db665e1553c07e5dbb4063c 82148 admin optional mx-broadcom-manager_17.5mx16_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZEzM9AAoJEHCTjHgGee6Y3oIH/1lzlrsh+RRcCKRjA6BAqx3Z
-ruCWd76PoSHV/O9UGg0raW4b7m5QKtpmM5vv0XFmYnQ1KP9/lEBg82KPtpm+j514
-MisEZ+Df1ugj5bYuAVBYVp0Qm9vQ4Rpk6wnFLqy32pKKt3ICFtQ+GwD/HY25C3o8
-qpj/w2oBXed0Z8OddBH41IORZgrKNP+S+vZyx8asb0XS7I1CrdSQ+dhdhbwmXUeq
-YmYdyRP1o9J2NRN3LTd5d4shizE/m+fUAEMJ60AVio5P0aH5B7PN0uMGHmLnZxbH
-90o8rpXzWACUnxM/YXZuh9ZTx9XiiD9Ov7Y7QVjoI9P4LIIg79HwVRM/FTKMdKQ=
-=Mr3H
+iQEcBAEBAgAGBQJZE31LAAoJEHCTjHgGee6Y68YH/1Cl5Me+cpIapu5XhfIRBLVb
+vb2D3DOKzIv1YKPBbORPNy5v2VH/VDF533qCZqAYIu79ZL7Z8ejMGmsOF2HEBMEu
+PqS7KhN0gcswD3jBn8w7Ssy18ctBG5aN+4zySSoEXULlIlMNE5dmnbR1Rg9FZY5k
+O3JX/McQZJCjfJvX2CBy15b4NyaeU9InPpWNIg39nf/hUrlXFcpeenGL1g7kxsso
+Av2DCaj8sySAQbDYMZUVdj84UkF4BpgmMwAvLRnied293T+NB+8TSd9qEGYcWxVF
+ScAeOt8dQ2sDvkJKn/ZfIUIIAROML956i824bRZx0ipvXwFeTD6yxl7mpSVWh+8=
+=0A1Q
 -----END PGP SIGNATURE-----

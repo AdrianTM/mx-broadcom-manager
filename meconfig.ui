@@ -80,7 +80,9 @@
         <string>About...</string>
        </property>
        <property name="icon">
-        <iconset theme="help-about"/>
+        <iconset theme="help-about">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string/>
@@ -96,7 +98,9 @@
         <string>Help</string>
        </property>
        <property name="icon">
-        <iconset theme="help-contents"/>
+        <iconset theme="help-contents">
+         <normaloff/>
+        </iconset>
        </property>
       </widget>
      </item>
@@ -157,7 +161,9 @@
         <string>&amp;Close</string>
        </property>
        <property name="icon">
-        <iconset theme="window-close"/>
+        <iconset theme="window-close">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string>Alt+C</string>
@@ -188,8 +194,7 @@
      </property>
      <widget class="QWidget" name="introductionTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/accessories-text-editor.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/accessories-text-editor.png</iconset>
+       <iconset theme="emblem-documents"/>
       </attribute>
       <attribute name="title">
        <string>Introduction</string>
@@ -241,8 +246,7 @@
              <string>Re-scan Hardware</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</iconset>
+             <iconset theme="view-refresh"/>
             </property>
            </widget>
           </item>
@@ -332,8 +336,7 @@
              <string>Unblock WiFi Devices</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/network-wireless.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/network-wireless.png</iconset>
+             <iconset theme="network-wireless"/>
             </property>
            </widget>
           </item>
@@ -344,8 +347,8 @@
      </widget>
      <widget class="QWidget" name="linuxTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/tux.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/tux.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/tux.png</normaloff>:/icons/tux.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Linux drivers</string>
@@ -391,8 +394,8 @@
              <string>Load Driver</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/connect_creating.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/connect_creating.png</iconset>
+             <iconset resource="images.qrc">
+              <normaloff>:/icons/connect_creating.png</normaloff>:/icons/connect_creating.png</iconset>
             </property>
            </widget>
           </item>
@@ -454,8 +457,8 @@
              <string>Unload Driver</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/connect_no.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/connect_no.png</iconset>
+             <iconset resource="images.qrc">
+              <normaloff>:/icons/connect_no.png</normaloff>:/icons/connect_no.png</iconset>
             </property>
            </widget>
           </item>
@@ -471,8 +474,7 @@
              <string>Re-list Linux Drivers</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/reload.png</iconset>
+             <iconset theme="view-refresh"/>
             </property>
            </widget>
           </item>
@@ -491,8 +493,8 @@
              <string>Blacklist Driver</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/file_locked.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/file_locked.png</iconset>
+             <iconset resource="images.qrc">
+              <normaloff>:/icons/file_locked.png</normaloff>:/icons/file_locked.png</iconset>
             </property>
            </widget>
           </item>
@@ -503,8 +505,8 @@
      </widget>
      <widget class="QWidget" name="windowsTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/samba.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/samba.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/samba.png</normaloff>:/icons/samba.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Windows drivers</string>
@@ -528,8 +530,7 @@
              <string>Install NDISwrapper</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/add.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/add.png</iconset>
+             <iconset theme="list-add"/>
             </property>
            </widget>
           </item>
@@ -555,8 +556,7 @@
              <string>Uninstall NDISwrapper</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/remove.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/remove.png</iconset>
+             <iconset theme="list-remove"/>
             </property>
            </widget>
           </item>
@@ -603,8 +603,7 @@
              <string>Remove Driver</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/remove.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/remove.png</iconset>
+             <iconset theme="list-remove"/>
             </property>
            </widget>
           </item>
@@ -614,8 +613,7 @@
              <string>Add Driver</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/add.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/add.png</iconset>
+             <iconset theme="list-add"/>
             </property>
            </widget>
           </item>
@@ -637,8 +635,8 @@
              <string>List Windows drivers</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/samba.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/samba.png</iconset>
+             <iconset resource="images.qrc">
+              <normaloff>:/icons/samba.png</normaloff>:/icons/samba.png</iconset>
             </property>
            </widget>
           </item>
@@ -653,8 +651,8 @@
      </widget>
      <widget class="QWidget" name="diagnosticsTab">
       <attribute name="icon">
-       <iconset>
-        <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/network-workgroup.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/network-workgroup.png</iconset>
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/network-workgroup.png</normaloff>:/icons/network-workgroup.png</iconset>
       </attribute>
       <attribute name="title">
        <string>Net diagnostics</string>
@@ -746,8 +744,7 @@
                <string>Start</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/search.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/search.png</iconset>
+               <iconset theme="system-search"/>
               </property>
               <property name="default">
                <bool>false</bool>
@@ -763,8 +760,7 @@
                <string>Clear</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/emptytrash.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/emptytrash.png</iconset>
+               <iconset theme="user-trash"/>
               </property>
              </widget>
             </item>
@@ -866,8 +862,7 @@ p, li { white-space: pre-wrap; }
                <string>Start</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/search.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/search.png</iconset>
+               <iconset theme="system-search"/>
               </property>
               <property name="default">
                <bool>false</bool>
@@ -883,8 +878,7 @@ p, li { white-space: pre-wrap; }
                <string>Clear</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/emptytrash.png</normaloff>../../../../../../../../usr/share/mx-broadcom-manager/icons/emptytrash.png</iconset>
+               <iconset theme="user-trash"/>
               </property>
              </widget>
             </item>

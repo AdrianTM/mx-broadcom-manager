@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-broadcom-manager deb admin optional arch=any
 Checksums-Sha1:
- 43b05c82c8fed758b2c3f0f27f888c4d4e15f07b 53676 mx-broadcom-manager_17.5mx16.tar.xz
+ 804bb838fa0303a0cf8cd29fb49714f4efc019af 46704 mx-broadcom-manager_17.5mx16.tar.xz
 Checksums-Sha256:
- 9c891041107907f19a40e16646a25031a12f1edb3e9293e75628dfc1db85bb8f 53676 mx-broadcom-manager_17.5mx16.tar.xz
+ b51e6a1a2269db201a52032cfe867056ced3c7dd4a164397862ac0aab1f4b1ec 46704 mx-broadcom-manager_17.5mx16.tar.xz
 Files:
- f91d50f0fd5262accc78c6d99d9c6615 53676 mx-broadcom-manager_17.5mx16.tar.xz
+ 1ae3376f817ef2f37da11c7cc964577d 46704 mx-broadcom-manager_17.5mx16.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZEzM5AAoJEHCTjHgGee6Y930H/ihKGDRBZGRmyGgdNkThweUH
-bTU6we6/umZCeLv5tPrSpc+sUUl6w6ROvfcE+ganznJNE3k8NJZX9Xq+u5Peajro
-xlZIKs7r3liTj5r7MCvJRnlKHrNVCJf3OzYIvFgttFc9kPeqxVUV1Hp5lX/JzhnZ
-k2opddm6yrTiCcy2CHmz7mW5SnjEDBbGK4VPclackGjetOS6CWAignESc1Z3CDao
-yYMeWn7q+OmoY+ahj6H3dqwZjIbGrG4tOq1lzJouNFSITD5WWdx7+IoMG2wbMqj/
-UH0h/dy0wI62O9ghAYv7fGInQE09FK1h0MtAD/6cAtfm89g0C5e3yxJI9bERA3k=
-=XKgj
+iQEcBAEBAgAGBQJZE31IAAoJEHCTjHgGee6YJFEIAMLXPiL6BDeJNZiszj2ub8B8
+NGxKuIoBo0SyDqUaYOYjtAb1Ypm8GshUye0a+scNzkIS+VDXCY70jlz6bPH22V79
+BQNwj7WZ1gJLlPGhHi9pm5NduFoZZmjxD6iRat4ySkqZ+r0VmKKVlt8Mw11LNF+E
+8/PRvEJeoZDLZoUwblsPeiRp35k3oVPXODh33W/lfJVjJigUCalq2nEog2ooM7lF
+UMULxqc1IlFKviAkaUhPoWGTNJuu3jLPFaoHo392J3AuHJiB2GA9uVKL+L6UMvcs
+mHX1j8tFXxD7wjIFpNE+39Cr1uNSqnIW6lEUR+lH/+HeV5jM5KMbsPJ/g45pteo=
+=twPf
 -----END PGP SIGNATURE-----

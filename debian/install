@@ -2,5 +2,4 @@ mx-broadcom-manager 		 usr/sbin
 mx-broadcom-manager.desktop	         usr/share/applications
 translations/*.qm 	 usr/share/mx-broadcom-manager/locale
 mx-broadcom-manager.png	usr/share/pixmaps
-icons/*                 usr/share/mx-broadcom-manager/icons
 license.html   		usr/share/doc/mx-broadcom-manager

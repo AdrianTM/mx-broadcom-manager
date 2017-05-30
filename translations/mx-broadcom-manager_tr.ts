@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
     <name>MConfig</name>
     <message>
@@ -50,22 +48,22 @@
     <message>
         <location filename="../mconfig.cpp" line="378"/>
         <source>Traceroute is not installed, do you want to install it now?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="386"/>
         <source>Traceroute hasn&apos;t been installed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="387"/>
         <source>Traceroute cannot be installed. This may mean you are using the LiveCD or you are unable to reach the software repository,</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="400"/>
         <source>Traceroute is not installed and no Internet connection could be detected so it cannot be installed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="407"/>
@@ -77,17 +75,17 @@
         <location filename="../mconfig.cpp" line="408"/>
         <location filename="../mconfig.cpp" line="460"/>
         <source>Please fill in the destination host field</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1095"/>
         <source>Locate the Windows driver you want to add</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1095"/>
         <source>Windows installation information file (*.inf)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1127"/>
@@ -97,17 +95,17 @@
     <message>
         <location filename="../mconfig.cpp" line="1127"/>
         <source>The *.sys files must be in the same location as the *.inf file. %1 cannot be found</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1138"/>
         <source>sys file reference not found</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1138"/>
         <source>The sys file for the given driver cannot be determined after parsing the inf file</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1157"/>
@@ -186,7 +184,7 @@
     <message>
         <location filename="../meconfig.ui" line="212"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometimes be difficult to set up in Linux. There are a number of different types of drivers that have different capabilities and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="228"/>
@@ -201,7 +199,7 @@
     <message>
         <location filename="../meconfig.ui" line="333"/>
         <source>Unblocks all soft/hard blocked wireless devices</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="336"/>
@@ -217,7 +215,7 @@
     <message>
         <location filename="../meconfig.ui" line="366"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This tool makes it easier to set up the network driver for your Broadcom network card.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="385"/>
@@ -262,7 +260,7 @@
     <message>
         <location filename="../meconfig.ui" line="540"/>
         <source>In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="556"/>
@@ -341,16 +339,20 @@
     <message>
         <location filename="../meconfig.ui" line="817"/>
         <source>Hops</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meconfig.ui" line="849"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -373,7 +375,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mconfig.cpp" line="683"/>
         <source> and in use by </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="692"/>
@@ -394,7 +396,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../mconfig.cpp" line="793"/>
         <location filename="../mconfig.cpp" line="794"/>
         <source>Module blacklisted</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="987"/>
@@ -430,7 +432,7 @@ p, li { white-space: pre-wrap; }
         <location filename="../mconfig.cpp" line="1188"/>
         <source>Could not unlock devices.
 WiFi device(s) might already be unlocked.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mconfig.cpp" line="1190"/>

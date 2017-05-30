@@ -161,48 +161,48 @@
         <translation>About...</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="97"/>
+        <location filename="../meconfig.ui" line="98"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="159"/>
+        <location filename="../meconfig.ui" line="161"/>
         <source>&amp;Close</source>
         <translation>&amp;Close</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="166"/>
+        <location filename="../meconfig.ui" line="169"/>
         <source>Alt+C</source>
         <translation>Alt+C</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="198"/>
-        <location filename="../meconfig.ui" line="204"/>
+        <location filename="../meconfig.ui" line="200"/>
+        <location filename="../meconfig.ui" line="206"/>
         <source>Introduction</source>
         <translation>Introduction</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="210"/>
+        <location filename="../meconfig.ui" line="212"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometimes be difficult to set up in Linux. There are a number of different types of drivers that have different capabilities and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Broadcom wireless can sometimes be difficult to set up in Linux. There are a number of different types of drivers that have different capabilities and features.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="226"/>
+        <location filename="../meconfig.ui" line="228"/>
         <source>Hardware detected</source>
         <translation>Hardware detected</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="244"/>
+        <location filename="../meconfig.ui" line="246"/>
         <source>Re-scan Hardware</source>
         <translation>Re-scan Hardware</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="332"/>
+        <location filename="../meconfig.ui" line="333"/>
         <source>Unblocks all soft/hard blocked wireless devices</source>
         <translation>Unblocks all soft/hard blocked wireless devices</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="335"/>
+        <location filename="../meconfig.ui" line="336"/>
         <source>Unblock WiFi Devices</source>
         <translation>Unblock WiFi Devices</translation>
     </message>
@@ -238,120 +238,120 @@
         <translation>Re-list Linux Drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="494"/>
+        <location filename="../meconfig.ui" line="493"/>
         <source>Blacklist Driver</source>
         <translation>Blacklist Driver</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="513"/>
+        <location filename="../meconfig.ui" line="512"/>
         <source>Windows drivers</source>
         <translation>Windows drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="519"/>
+        <location filename="../meconfig.ui" line="518"/>
         <source>About NDISwrapper</source>
         <translation>About NDISwrapper</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="531"/>
+        <location filename="../meconfig.ui" line="530"/>
         <source>Install NDISwrapper</source>
         <translation>Install NDISwrapper</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="542"/>
+        <location filename="../meconfig.ui" line="540"/>
         <source>In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</source>
         <translation>In order to use Windows drivers you need first to install NDISwrapper, please press the Install NDISwrapper button.</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="558"/>
+        <location filename="../meconfig.ui" line="556"/>
         <source>Uninstall NDISwrapper</source>
         <translation>Uninstall NDISwrapper</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="572"/>
+        <location filename="../meconfig.ui" line="569"/>
         <source>Windows Drivers</source>
         <translation>Windows Drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="606"/>
+        <location filename="../meconfig.ui" line="603"/>
         <source>Remove Driver</source>
         <translation>Remove Driver</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="617"/>
+        <location filename="../meconfig.ui" line="613"/>
         <source>Add Driver</source>
         <translation>Add Driver</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="640"/>
+        <location filename="../meconfig.ui" line="635"/>
         <source>List Windows drivers</source>
         <translation>List Windows drivers</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="663"/>
+        <location filename="../meconfig.ui" line="658"/>
         <source>Net diagnostics</source>
         <translation>Net diagnostics</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="669"/>
+        <location filename="../meconfig.ui" line="664"/>
         <source>IP address</source>
         <translation>IP address</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="698"/>
+        <location filename="../meconfig.ui" line="693"/>
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="704"/>
-        <location filename="../meconfig.ui" line="814"/>
+        <location filename="../meconfig.ui" line="699"/>
+        <location filename="../meconfig.ui" line="807"/>
         <source>Target URL:</source>
         <translation>Target URL:</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="714"/>
+        <location filename="../meconfig.ui" line="709"/>
         <source>Packets</source>
         <translation>Packets</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="749"/>
-        <location filename="../meconfig.ui" line="869"/>
+        <location filename="../meconfig.ui" line="744"/>
+        <location filename="../meconfig.ui" line="862"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="766"/>
-        <location filename="../meconfig.ui" line="886"/>
+        <location filename="../meconfig.ui" line="760"/>
+        <location filename="../meconfig.ui" line="878"/>
         <source>Clear</source>
         <translation>Clear</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="780"/>
-        <location filename="../meconfig.ui" line="900"/>
+        <location filename="../meconfig.ui" line="773"/>
+        <location filename="../meconfig.ui" line="891"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="808"/>
+        <location filename="../meconfig.ui" line="801"/>
         <source>Traceroute</source>
         <translation>Traceroute</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="824"/>
+        <location filename="../meconfig.ui" line="817"/>
         <source>Hops</source>
         <translation>Hops</translation>
     </message>
     <message>
-        <location filename="../meconfig.ui" line="856"/>
+        <location filename="../meconfig.ui" line="849"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
@@ -441,14 +441,14 @@ WiFi device(s) might already be unlocked.</translation>
         <translation>WiFi devices unlocked.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1239"/>
         <location filename="../mconfig.cpp" line="1240"/>
+        <location filename="../mconfig.cpp" line="1241"/>
         <source>Driver loaded successfully</source>
         <translation>Driver loaded successfully</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="1258"/>
         <location filename="../mconfig.cpp" line="1259"/>
+        <location filename="../mconfig.cpp" line="1260"/>
         <source>Driver unloaded successfully</source>
         <translation>Driver unloaded successfully</translation>
     </message>

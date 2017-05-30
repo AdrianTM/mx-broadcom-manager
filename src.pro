@@ -16,6 +16,7 @@ TRANSLATIONS += translations/mx-broadcom-manager_ca.ts \
                 translations/mx-broadcom-manager_pt.ts \
                 translations/mx-broadcom-manager_ro.ts \
                 translations/mx-broadcom-manager_ru.ts \
+                translations/mx-broadcom-manager_sk.ts \
                 translations/mx-broadcom-manager_sv.ts \
                 translations/mx-broadcom-manager_tr.ts
 FORMS += meconfig.ui

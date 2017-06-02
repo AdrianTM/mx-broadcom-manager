@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 02 Jun 2017 13:07:16 -0400
+Source: mx-broadcom-manager
+Binary: mx-broadcom-manager
+Architecture: i386
+Version: 17.6mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-broadcom-manager - MX program for network troubleshooting and configuration
+Changes:
+ mx-broadcom-manager (17.6mx16) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ f025a0720528667eccd35b801b27f40d6997be80 86158 mx-broadcom-manager_17.6mx16_i386.deb
+Checksums-Sha256:
+ 1a59eb0aeb3a1eeb22ed98628361ef5fd9569ae68f941f29cca56030960f5f20 86158 mx-broadcom-manager_17.6mx16_i386.deb
+Files:
+ a7304276d35bc5204fbb312157faf314 86158 admin optional mx-broadcom-manager_17.6mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZMZwfAAoJEHCTjHgGee6YgT0H/1vkbSn5v2kvpoIzQUu10ZWe
+LomOFsb/gdWJ2/5f8vlwZyqO6iGqddGgl3GGTG5mtHxsusNwvI8uOE1AXqD4v7uo
+RSFtyDJRj0j1GfmkWFBErsXlyDIORFsO83AsXipnRhat6YsLkFMD/0t7xQqxvRcQ
+YFynnY0DBrVWI+aQWaBFq6FiTHmmbSeWRg/fW4ldM/w/VPq2vdK660szqmA3AgFg
+pjyU0qcYAmIBv0ZtG7+rQAKmikrmWYf34nQgMfNC84JTdodEs+TqCGath0jLjRrf
+wZeN6pERzGx69yyhYXMm5YLyqc2Ck+eNXFU+Mckzaca3kUr9eCpPTnbr23vSVkE=
+=tYpT
+-----END PGP SIGNATURE-----
